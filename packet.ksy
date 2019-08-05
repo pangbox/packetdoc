@@ -5,17 +5,22 @@ meta:
   endian: le
   imports:
     - 'loginserver/packet'
+    - 'common/origin'
 
 params:
-  - id: servertype
+  - id: type
     type: u1
+    enum: servertype
+  - id: origin
+    type: u1
+    enum: origin
 
 seq:
-  - id: login_packet
+  - id: packet
     type:
-      switch-on: servertype
+      switch-on: type
       cases:
-        0: loginserver_packet
+        0: loginserver_packet(origin)
 
 enums:
   servertype:

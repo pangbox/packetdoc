@@ -11,6 +11,7 @@ meta:
 params:
   - id: origin
     type: u1
+    enum: origin
 
 seq:
   - id: login_packet

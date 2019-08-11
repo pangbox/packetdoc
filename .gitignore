@@ -3,3 +3,4 @@
 /out/
 /dist/
 /node_modules/
+/src/scripts/kaitai/*.js

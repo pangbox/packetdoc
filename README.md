@@ -1,5 +1,7 @@
 # PacketDoc
 
+**[Click here to view the browsable documentation!](https://packets.pangdox.com/)**
+
 This is a WIP project to document all of the known PangYa packets. Currently,
 the effort is to create a single Kaitai Struct instance that can decode any
 packet. Using this metadata, we can then generate validation tests and

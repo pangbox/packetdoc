@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf8">
+    <title>Pangdox</title>
+    <link href="/styles/index.scss" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/48faac965d.js"></script>
+</head>
+<body>
+    <main>
+        <aside>
+            <div id="logo">
+                <a href="/index.ksy"><img src="/assets/logo.png" srcset="/assets/logo.png 1x, /assets/logo@2x.png 2x" width="200" height="200"></a>
+                <h1><a href="/index.ksy">Packetdoc</a></h1>
+            </div>
+            <h2>Navigation</h2>
+            <ul>
+                <li>
+                    <a href="/index.ksy">Home</a>
+                </li>
+                <li>
+                    <a href="/packets/loginservice/index.ksy">LoginService</a>
+                    <ul>
+                        <li><a href="/packets/loginservice/client/index.ksy">Client Packets</a></li>
+                        <li><a href="/packets/loginservice/server/index.ksy">Server Packets</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="/packets/gameservice/index.ksy">GameService</a>
+                    <ul>
+                        <li><a href="/packets/gameservice/client/index.ksy">Client Packets</a></li>
+                        <li><a href="/packets/gameservice/server/index.ksy">Server Packets</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="/packets/messageservice/index.ksy">MessageService</a>
+                    <ul>
+                        <li><a href="/packets/messageservice/client/index.ksy">Client Packets</a></li>
+                        <li><a href="/packets/messageservice/server/index.ksy">Server Packets</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </aside>
+        <article>
+        {% block body %}
+        {% endblock %}
+        </article>
+    </main>
+    <footer>
+        <p>
+            Packetdoc is Open Source! Know something we don't? Please contribute by
+            opening a Pull Request. No Git experience? No problem! Simply use the
+            GitHub user interface to edit a file; no command line or Git experience
+            needed.
+        </p>
+        <p>
+            Copyright &copy; 2019 the Pangbox authors. Licensed under the ISC license.
+        </p>
+    </footer>
+</body>
+</html>

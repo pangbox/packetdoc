@@ -1,0 +1,40 @@
+body {
+    display: flex;
+    flex-direction: column;
+
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+}
+
+aside {
+    flex-basis: 200px;
+    flex-shrink: 0;
+}
+
+article {
+    flex-grow: 1;
+    overflow: hidden;
+    margin: 1em;
+}
+
+div#logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h1 {
+        margin: 0.5em;
+    }
+}
+
+footer {
+    margin: 4em 1em 1em;
+    padding: 1em;
+    background-color: var(--bg-color);
+    font-size: 12px;   
+}

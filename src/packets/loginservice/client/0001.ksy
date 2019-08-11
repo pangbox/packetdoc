@@ -1,16 +1,18 @@
+#pragma.examples loginservice/client 0001
+#pragma.parseAs LoginserviceClientPacket
 ---
 meta:
-  id: loginserver_client_0001_login
-  title: LoginServer Client 0x0001 Login Packet
+  id: loginservice_client_0001_login
+  title: LoginService Client 0x0001 Login Packet
   encoding: ASCII
   endian: le
   imports:
-    - /common/pstring
+    - ../../common/pstring
 
 doc: |
   This packet is sent by the PangYa client when the user clicks the 'Login'
   button. Upon clicking login, the client opens a TCP connection to the
-  LoginServer, performs the protocol handshake, sends this message, and then
+  LoginService, performs the protocol handshake, sends this message, and then
   awaits a reply from the server.
 
 seq:

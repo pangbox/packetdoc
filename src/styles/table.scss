@@ -1,0 +1,26 @@
+table {
+    border: 1px solid var(--accent-2);
+    border-spacing: 0;
+    border-collapse: collapse;
+    width: 100%;
+
+    tr {
+        td, th {
+            text-align: left;
+            vertical-align: top;
+            padding: 0.5em;
+        }
+    }
+
+    thead {
+        background-color: var(--accent-1);
+    }
+
+    tbody {
+        background-color: var(--bg-color);
+
+        tr td {
+            border-top: 1px solid var(--accent-2);
+        }
+    }
+}

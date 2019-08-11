@@ -1,0 +1,29 @@
+{% layout "base" %}
+
+{% block body %}
+    <h1>{{ struct.meta.title }}</h1>
+    {{ struct.doc | markdown }}
+    <h2>Packets</h2>
+    <table>
+        <thead>
+            <tr>
+                <th width="100">ID</th>
+                <th>Summary</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for case in cases %}
+            <tr>
+                <td>
+                    <a href="{{ types[case.value].urlpath }}">
+                        0x{{ case.key | packetid }}
+                    </a>
+                </td>
+                <td>
+                    {{ types[case.value].struct.doc }}
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </ul>
+{% endblock %}

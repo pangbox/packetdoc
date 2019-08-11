@@ -1,0 +1,77 @@
+/* Font face */
+html {
+    font-family: Cambria, Georgia, serif;
+    font-size: 14px;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 23px;
+}
+
+/* Headers */
+h1, h2, h3, h4, h5, h6 {
+    color: var(--fg-color);
+    font-weight: 400;
+    a:link, a:visited {
+        color: inherit; text-decoration: none;
+    }
+    a:hover, a:active {
+        text-decoration: underline;
+    }
+}
+
+h2, h4, h6 { font-weight: 700; }
+
+h1 { font-size: 28px; }
+h2 { font-size: 22px; }
+h3 { font-size: 17px; }
+h4 { font-size: 16px; }
+h5 { font-size: 15px; }
+h6 { font-size: 14px; }
+
+blockquote {
+    font-size: 17px;
+}
+
+pre {
+    font-size: 11px;
+    margin: 0;
+}
+
+code {
+    font-family: monospace;
+    white-space: pre;
+}
+
+a:link, a:visited {
+    color: #007eff;
+    text-decoration: none;
+}
+
+a:hover, a:active {
+    text-decoration: underline;
+}
+
+ul {
+    padding-left: 20px;
+    list-style-type: square;
+}
+
+ul.horizontal {
+    padding-left: 0;
+
+    & > li {
+        display: inline;
+        margin-right: 0.5em;
+    }
+}
+
+a.button {
+    background-color: var(--bg-color);
+    border-radius: 2px;
+    border: 1px solid var(--accent-2);
+    padding: 4px;
+
+    &, &:link, &:visited, &:hover, &:active {
+        color: var(--fg-color);
+    }
+}

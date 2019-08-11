@@ -1,4 +1,5 @@
-# Generated files...
-env
-*.py
-__pycache__
+/env/
+/__pycache__/
+/out/
+/dist/
+/node_modules/

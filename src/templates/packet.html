@@ -1,0 +1,44 @@
+{% layout "base" %}
+
+{% block body %}
+    <h1>{{ struct.meta.title }}</h1>
+    {{ struct.meta.doc | markdown }}
+    <h2>Summary</h2>
+    {{ struct.doc | default: "_No documentation._" | markdown }}
+    <h2>Structure</h2>
+    <table cellspacing="0">
+        <thead>
+            <tr>
+                <th width="100">Name</th>
+                <th width="100">Type</th>
+                <th>Summary</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for field in struct.seq %}
+            <tr>
+                <td><code>{{ field.id }}</code></td>
+                <td><code>{{ field.type | default: "bytes" }}</code></td>
+                <td>{{ field.doc | default: "" }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <h2>Definition</h2>
+    <nav>
+        <ul class="horizontal">
+            <li><a class="button" href="https://github.com/pangbox/packetdoc/blob/master/{{ repopath }}"><i class="fab fa-github-alt"></i> View on GitHub</a></li>
+            <li><a class="button" href="https://github.com/pangbox/packetdoc/edit/master/{{ repopath }}"><i class="fal fa-edit"></i> Edit on GitHub</a></li>
+        </ul>
+    </nav>
+    <div class="source"><code><pre>{{ struct | stripdocs | yaml | highlight }}</pre></code></div>
+    <h2>Examples</h2>
+    {% for example in examples %}
+    <div>
+        <b>Agent:</b> {{ example.agent }}
+        {{ example.data | hexdump: parser }}
+    </div>
+    {% else %}
+    <i>No examples available. <a href="https://github.com/pangbox/packetdoc/upload/master">Contribute one?</a></i>
+    {% endfor %}
+{% endblock %}

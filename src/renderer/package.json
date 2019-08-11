@@ -1,0 +1,8 @@
+{
+    "name": "parcel-plugin-ksy",
+    "version": "0.0.1",
+    "description": "Parcel plugin for rendering ksy files into HTML templates.",
+    "main": "index.js",
+    "devDependencies": {},
+    "dependencies": {}
+  }

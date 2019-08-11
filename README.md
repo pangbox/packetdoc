@@ -1,4 +1,4 @@
-# PacketDoc
+# PacketDoc [![Netlify Status](https://api.netlify.com/api/v1/badges/f7e36de0-d78f-413c-af2f-61b6ab51700b/deploy-status)](https://app.netlify.com/sites/suspicious-kirch-7ba6e6/deploys)
 
 **[Click here to view the browsable documentation!](https://packets.pangdox.com/)**
 

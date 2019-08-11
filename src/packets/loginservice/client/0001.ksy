@@ -14,6 +14,8 @@ doc: |
   button. Upon clicking login, the client opens a TCP connection to the
   LoginService, performs the protocol handshake, sends this message, and then
   awaits a reply from the server.
+  
+  In hsreina/pangya-server, the packet ID is TCLPID.PLAYER_LOGIN.
 
 seq:
   - id: username

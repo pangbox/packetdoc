@@ -252,6 +252,8 @@ class KaitaiStructAsset extends Asset {
   }
 
   collectDependencies() {
+    this.loadExamples();
+
     if (!this.ast.yaml.meta || !this.ast.yaml.meta.imports) {
       return;
     }
@@ -262,8 +264,6 @@ class KaitaiStructAsset extends Asset {
         dynamic: true
       });
     }
-
-    this.loadExamples();
   }
 
   getTemplateContext() {

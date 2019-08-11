@@ -7,6 +7,7 @@ meta:
   endian: le
   imports:
     - '0001'
+    - '0003'
 
 seq:
   - id: packet_id
@@ -16,3 +17,4 @@ seq:
       switch-on: packet_id
       cases:
         0x0001: loginservice_client_0001_login
+        0x0003: loginservice_client_0003_select_server

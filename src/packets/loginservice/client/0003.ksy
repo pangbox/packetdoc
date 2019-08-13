@@ -11,7 +11,10 @@ doc: |
   This packet is sent when the user clicks on a server on the left-hand side
   of the PangYa serverlist.
 
-  In hsreina/pangya-server, the packet ID is TCLPID.PLAYER_SELECT_SERVER.
+  There are two bytes that appear to be unused. The outcome of this packet
+  does not vary regardless of what bit pattern is present in these bytes.
+
+  In `hsreina/pangya-server`, the packet ID is `TCLPID.PLAYER_SELECT_SERVER`.
 
 seq:
   - id: server_id

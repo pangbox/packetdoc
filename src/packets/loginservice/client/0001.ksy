@@ -15,7 +15,9 @@ doc: |
   LoginService, performs the protocol handshake, sends this message, and then
   awaits a reply from the server.
   
-  In hsreina/pangya-server, the packet ID is TCLPID.PLAYER_LOGIN.
+  In `hsreina/pangya-server`, the packet ID is `TCLPID.PLAYER_LOGIN`.
+
+  **See Also**: [LoginService Server 0x0001 Login Packet](/packets/loginservice/server/0001.ksy)
 
 seq:
   - id: username
@@ -41,3 +43,6 @@ seq:
       release, because this is zeroed, the last four characters of the MD5 sum
       will appear unobfuscated in the ciphertext, because they will be XOR'd
       with the zeros.
+
+      The server does not seem to actually read these bytes and any pattern of
+      bits will be accepted.

@@ -35,4 +35,4 @@ kaitaiImporter.importYaml(entryFn).then(async ksy => {
     fs.writeFileSync(path.join(outputDir, name), source);
   }
   console.log("All done.")
-});
+}).catch(console.error);

@@ -1,0 +1,14 @@
+<span class="enum-value">
+    {% assign enum = enums[fullname] %}
+    <div class="popup">
+        <dl>
+            <dt>Enum: </dt>
+            <dd>{{ enum.name }}</dd>
+            <dt>Key: </dt>
+            <dd>{{ enum.key }}</dd>
+            <dt>Value: </dt>
+            <dd>{{ enum.value }}</dd>
+        </dl>
+    </div>
+    {{- fullname -}}
+</span>

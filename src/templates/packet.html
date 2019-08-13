@@ -6,24 +6,35 @@
     <h2>Summary</h2>
     {{ struct.doc | default: "_No documentation._" | markdown }}
     <h2>Structure</h2>
-    <table cellspacing="0">
-        <thead>
-            <tr>
-                <th width="100">Name</th>
-                <th width="100">Type</th>
-                <th>Summary</th>
-            </tr>
-        </thead>
-        <tbody>
-            {% for field in struct.seq %}
-            <tr>
-                <td><code>{{ field.id }}</code></td>
-                <td><code>{{ field.type | default: "bytes" }}</code></td>
-                <td>{{ field.doc | default: "" }}</td>
-            </tr>
-            {% endfor %}
-        </tbody>
-    </table>
+    {% include 'partials/struct.html' with fields: struct.seq, name: struct.meta.id %}
+    {% if struct.types %}
+        <h2>Subtypes</h2>
+        {% for type in struct.types %}
+        {% include 'partials/struct.html' with name: type[0], doc: type[1].doc, fields: type[1].seq %}
+        {% endfor %}
+    {% endif %}
+    {% if struct.enums %}
+        <h2>Enums</h2>
+        {% for type in struct.enums %}
+        <h3>{{ type[0] }}</h3>
+        <table cellspacing="0">
+            <thead>
+                <tr>
+                    <th width="100">Key</th>
+                    <th>Value</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for case in type[1] %}
+                <tr>
+                    <td><code>{{ type[0] }}::{{ case[1] }}</code></td>
+                    <td><code>{{ case[0] }}</code></td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        {% endfor %}
+    {% endif %}
     <h2>Definition</h2>
     <nav>
         <ul class="horizontal">

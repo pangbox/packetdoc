@@ -272,6 +272,7 @@ class KaitaiStructAsset extends Asset {
       parser: this.ast.parser,
       examples: this.ast.examples,
       cases: this.ast.cases,
+      enums: this.ast.enums,
       types: this.ast.types,
       urlpath: "/" + path.relative(this.options.rootDir, this.name),
       repopath: path.relative(path.dirname(this.options.rootDir), this.name),
@@ -300,6 +301,16 @@ class KaitaiStructAsset extends Asset {
         }
         for (const [key, value] of Object.entries(field.type.cases)) {
           this.ast.cases.push({ key, value: value.split("(", 1)[0] });
+        }
+      }
+    }
+  
+    // Provide enums.
+    this.ast.enums = {};
+    if (this.ast.yaml.enums) {
+      for (const [name, values] of Object.entries(this.ast.yaml.enums)) {
+        for (const [value, key] of Object.entries(values)) {
+          this.ast.enums[`${name}::${key}`] = {name, key, value};
         }
       }
     }

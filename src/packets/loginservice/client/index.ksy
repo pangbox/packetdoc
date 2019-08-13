@@ -8,6 +8,7 @@ meta:
   imports:
     - '0001'
     - '0003'
+    - '0004'
 
 seq:
   - id: packet_id
@@ -18,3 +19,4 @@ seq:
       cases:
         0x0001: loginservice_client_0001_login
         0x0003: loginservice_client_0003_select_server
+        0x0004: loginservice_client_0004_ghost

@@ -8,7 +8,7 @@
         <thead>
             <tr>
                 <th width="100">ID</th>
-                <th>Summary</th>
+                <th>Title</th>
             </tr>
         </thead>
         <tbody>
@@ -20,7 +20,7 @@
                     </a>
                 </td>
                 <td>
-                    {{ types[case.value].struct.doc }}
+                    {{ types[case.value].struct.meta.title }}
                 </td>
             </tr>
             {% endfor %}

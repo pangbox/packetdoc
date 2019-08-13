@@ -37,9 +37,16 @@ pre {
     margin: 0;
 }
 
+dl {
+    margin: 0;
+    display: grid;
+    grid: auto-flow/repeat(2,auto);
+    dt { font-weight: 700; }
+    dd { margin-left: 1em; }
+}
+
 code {
     font-family: monospace;
-    white-space: pre;
 }
 
 a:link, a:visited {
@@ -78,4 +85,8 @@ a.button {
 
 .float-right {
     float: right;
+}
+
+.nowrap {
+    white-space: nowrap;
 }

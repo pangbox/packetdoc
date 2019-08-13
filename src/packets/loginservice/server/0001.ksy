@@ -99,3 +99,4 @@ enums:
   error_code:
     5100019: already_logged_in
     5100107: duplicate_connection
+    5100143: invalid_credentials

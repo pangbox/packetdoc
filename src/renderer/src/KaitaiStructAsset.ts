@@ -1,38 +1,39 @@
-const Asset = require("parcel-bundler/lib/Asset");
-const Liquid = require("liquidjs");
-const yaml = require("js-yaml");
-const path = require("path");
-const fs = require("fs");
-const hljs = require("highlight.js");
-const marked = require('marked');
-const glob = require("glob");
-const KaitaiStream = require('kaitai-struct/KaitaiStream');
+import Asset from "parcel-bundler/lib/Asset";
+import Liquid from "liquidjs";
+import yaml from "js-yaml";
+import path from "path";
+import fs from "fs";
+import hljs from "highlight.js";
+import marked from 'marked';
+import glob from "glob";
+import KaitaiStream from 'kaitai-struct/KaitaiStream';
+import IFS from "liquidjs/dist/fs/ifs";
 
-const templateDir = path.resolve(__dirname, "../../src/templates/");
-const examplesDir = path.resolve(__dirname, "../../examples/")
-const kaitaiDir = "../../src/scripts/kaitai/";
+const templateDir = path.resolve(__dirname, "../../../src/templates/");
+const examplesDir = path.resolve(__dirname, "../../../examples/")
+const kaitaiDir = "../../../src/scripts/kaitai/";
 
 marked.setOptions({
   highlight: function(code, lang) {
     if (lang) {
-      return hljs.highlight(lang, code);
+      return hljs.highlight(lang, code).value;
     } else {
-      return hljs.highlightAuto(code);
+      return hljs.highlightAuto(code).value;
     }
   }
 });
 
-function patchFsWithDeps(fs, asset) {
+function patchFsWithDeps(fs: IFS, asset: Asset) {
   return {
     ...fs,
-    readFile: filepath => {
+    readFile: (filepath: string) => {
       asset.addDependency(filepath, { includedInParent: true, dynamic: true });
       return fs.readFile(filepath);
     }
   };
 }
 
-function stripdocs(data) {
+function stripdocs(data: object) {
   if (Array.isArray(data)) {
     return data.map(stripdocs);
   } else if(typeof data === 'object') {
@@ -49,18 +50,18 @@ function stripdocs(data) {
   }
 }
 
-function getParser(parser) {
-  return require(path.join(kaitaiDir, parser));
+function getParser(parserName: string) {
+  return require(path.join(kaitaiDir, parserName));
 }
 
-function parseBin(data, parser) {
+function parseBin(data: Buffer, parser: string) {
   const Struct = getParser(parser);
   const struct = new Struct(new KaitaiStream(data));
   struct._read();
   return struct;
 }
 
-function extractSpans(struct, level=0) {
+function extractSpans(struct: any, level=0) {
   let spans = [];
 
   for (const key of Object.keys(struct)) {
@@ -150,14 +151,6 @@ function hexdump(data, parser) {
       asciibuf += "\n";
     }
 
-    for (const span in spans) {
-      if (i === span.start) {
-        asciibuf += genspanstart(span);
-      } else if (i === span.end) {
-        asciibuf += genspanend(span);
-      }
-    }
-
     const byte = data[i];
     if (byte >= 0x20 && byte <= 0x7F) {
       asciibuf += String.fromCharCode(byte);
@@ -172,7 +165,9 @@ function hexdump(data, parser) {
 }
 
 class KaitaiStructAsset extends Asset {
-  constructor(filepath, options) {
+  engine: Liquid;
+
+  constructor(filepath: string, options: any) {
     super(filepath, options);
     this.type = "html";
     this.engine = new Liquid({
@@ -181,7 +176,7 @@ class KaitaiStructAsset extends Asset {
     });
 
     // Hack to add some dependency tracking for template files.
-    this.engine.fs = patchFsWithDeps(this.engine.fs, this);
+    this.engine['fs'] = patchFsWithDeps(this.engine['fs'], this);
 
     this.engine.registerFilter("yaml", data => {
       return yaml.safeDump(data);
@@ -212,7 +207,7 @@ class KaitaiStructAsset extends Asset {
     }
   }
 
-  async parse(code) {
+  async parse(code: string) {
     const templatePragma = /#pragma\.template (.+)/g.exec(code);
     let template = "packet";
     if (templatePragma) {
@@ -299,7 +294,7 @@ class KaitaiStructAsset extends Asset {
         if (!field.type || !field.type.cases) {
           continue;
         }
-        for (const [key, value] of Object.entries(field.type.cases)) {
+        for (const [key, value] of Object.entries<string>(field.type.cases)) {
           this.ast.cases.push({ key, value: value.split("(", 1)[0] });
         }
       }

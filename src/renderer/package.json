@@ -2,7 +2,23 @@
     "name": "parcel-plugin-ksy",
     "version": "0.0.1",
     "description": "Parcel plugin for rendering ksy files into HTML templates.",
-    "main": "index.js",
+    "main": "dist/index.js",
     "devDependencies": {},
-    "dependencies": {}
-  }
+    "dependencies": {
+        "@types/glob": "^7.1.1",
+        "@types/highlight.js": "^9.12.3",
+        "@types/js-yaml": "^3.12.1",
+        "@types/marked": "^0.6.5",
+        "@types/parcel-bundler": "^1.12.0",
+        "glob": "^7.1.4",
+        "highlight.js": "^9.15.9",
+        "js-yaml": "^3.13.1",
+        "kaitai-struct": "^0.8.0-SNAPSHOT.11",
+        "liquidjs": "^8.5.2",
+        "marked": "^0.7.0",
+        "typescript": "^3.5.3"
+    },
+    "scripts": {
+        "postinstall": "tsc"
+    }
+}

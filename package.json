@@ -6,13 +6,7 @@
   "author": "John Chadwick <johnwchadwick@gmail.com>",
   "license": "ISC",
   "dependencies": {
-    "glob": "^7.1.4",
-    "highlight.js": "^9.15.9",
-    "js-yaml": "^3.13.1",
-    "kaitai-struct": "^0.8.0-SNAPSHOT.11",
     "kaitai-struct-compiler": "^0.8.0-SNAPSHOT.20180205.11616",
-    "liquidjs": "^8.5.2",
-    "marked": "^0.7.0",
     "parcel-bundler": "^1.12.3",
     "parcel-plugin-ksy": "./src/renderer",
     "sass": "^1.22.9"

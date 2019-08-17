@@ -9,6 +9,9 @@ meta:
     - '0001'
     - '0003'
     - '0004'
+    - '0006'
+    - '0007'
+    - '0008'
 
 seq:
   - id: packet_id
@@ -20,3 +23,6 @@ seq:
         0x0001: loginservice_client_0001_login
         0x0003: loginservice_client_0003_select_server
         0x0004: loginservice_client_0004_ghost
+        0x0006: loginservice_client_0006_set_nickname
+        0x0007: loginservice_client_0007_check_nickname
+        0x0008: loginservice_client_0008_select_character

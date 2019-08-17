@@ -3,7 +3,7 @@
 ---
 meta:
   id: loginservice_client_0004_ghost
-  title: LoginService Client 0x0004 Ghost
+  title: LoginService Client Ghost
   encoding: ASCII
   endian: le
 

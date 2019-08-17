@@ -3,7 +3,7 @@
 ---
 meta:
   id: loginservice_client_0001_login
-  title: LoginService Client 0x0001 Login Packet
+  title: LoginService Client Login Packet
   encoding: ASCII
   endian: le
   imports:

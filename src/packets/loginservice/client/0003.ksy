@@ -3,7 +3,7 @@
 ---
 meta:
   id: loginservice_client_0003_select_server
-  title: LoginService Client 0x0003 Select Server
+  title: LoginService Client Select Server
   encoding: ASCII
   endian: le
 

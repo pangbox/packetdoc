@@ -192,7 +192,7 @@ class KaitaiStructAsset extends Asset {
     this.engine.registerFilter("stripdocs", stripdocs);
     this.engine.registerFilter("markdown", md => marked(md || ""));
     this.engine.registerFilter("hexdump", hexdump);
-    this.engine.registerFilter("packetid", id => id.toString(16).padStart(4, "0"));
+    this.engine.registerFilter("packetid", id => parseInt(id).toString(16).padStart(4, "0"));
   }
 
   findExamples(subdir, packet) {

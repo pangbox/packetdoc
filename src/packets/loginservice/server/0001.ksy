@@ -100,3 +100,4 @@ enums:
     5100019: already_logged_in
     5100107: duplicate_connection
     5100143: invalid_credentials
+    5157002: bad_reconnect_token

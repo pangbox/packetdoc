@@ -12,6 +12,7 @@ meta:
     - '0006'
     - '0007'
     - '0008'
+    - '000b'
 
 seq:
   - id: packet_id
@@ -26,3 +27,4 @@ seq:
         0x0006: loginservice_client_0006_set_nickname
         0x0007: loginservice_client_0007_check_nickname
         0x0008: loginservice_client_0008_select_character
+        0x000b: loginservice_client_000b_reconnect

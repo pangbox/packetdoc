@@ -3,20 +3,20 @@ import path from "path";
 
 class KaitaiCase {
   parent: KaitaiSwitch;
-  rawValue: number|string;
+  rawValue: number | string;
   rawKey: string;
 
-  constructor(parent: KaitaiSwitch, rawValue: number|string, rawKey: string) {
+  constructor(parent: KaitaiSwitch, rawValue: number | string, rawKey: string) {
     this.parent = parent;
     this.rawValue = rawValue;
     this.rawKey = rawKey;
   }
 
-  get value(): number|null {
+  get value(): number | null {
     if (typeof this.rawValue === "number") {
       return this.rawValue;
     }
-  
+
     const enumValue = this.file.enumValues.get(this.rawValue);
     if (enumValue) {
       return enumValue.value;
@@ -25,7 +25,7 @@ class KaitaiCase {
     return null;
   }
 
-  get type(): KaitaiStruct|null {
+  get type(): KaitaiStruct | null {
     const typeName = this.rawKey.split("(")[0];
     return this.file.typeMap.get(typeName) || null;
   }
@@ -58,7 +58,7 @@ class KaitaiField {
   id: string;
   type?: string;
   doc?: string;
-  switch: KaitaiSwitch|null = null;
+  switch: KaitaiSwitch | null = null;
 
   constructor(parent: KaitaiStruct, raw: Map<any, any>) {
     this.parent = parent;
@@ -71,14 +71,14 @@ class KaitaiField {
     return this.parent.parent;
   }
 
-  get struct(): KaitaiStruct|null {
-    return this.type && this.file.typeMap.get(this.type) || null;
+  get struct(): KaitaiStruct | null {
+    return (this.type && this.file.typeMap.get(this.type)) || null;
   }
 
   private parseType(raw: any) {
     if (typeof raw === "string") {
       this.type = raw;
-    } else if(raw instanceof Map) {
+    } else if (raw instanceof Map) {
       this.type = "switch";
       this.switch = new KaitaiSwitch(this, raw);
     }
@@ -87,7 +87,7 @@ class KaitaiField {
 
 export class KaitaiStruct {
   parent: KaitaiStructFile;
-  id: string;
+  id: string = "";
   title?: string;
   doc?: string;
   fields: KaitaiField[] = [];
@@ -150,7 +150,11 @@ export class KaitaiEnum {
   id: string;
   values: KaitaiEnumValue[] = [];
 
-  constructor(parent: KaitaiStructFile, id: string, valueMap: Map<number, string>) {
+  constructor(
+    parent: KaitaiStructFile,
+    id: string,
+    valueMap: Map<number, string>
+  ) {
     this.parent = parent;
     this.id = id;
 
@@ -233,7 +237,10 @@ export class KaitaiStructFile {
   }
 
   importToFullPath(importName: string) {
-    return path.resolve(path.dirname(this.filename), this.dependencyForImport(importName));
+    return path.resolve(
+      path.dirname(this.filename),
+      this.dependencyForImport(importName)
+    );
   }
 
   addImportedTypes(importFile: KaitaiStructFile) {
@@ -247,6 +254,8 @@ export class KaitaiStructFile {
   }
 
   get localTypes(): KaitaiStruct[] {
-    return this.types.filter(type => type.parent === this && type !== this.root);
+    return this.types.filter(
+      type => type.parent === this && type !== this.root
+    );
   }
 }

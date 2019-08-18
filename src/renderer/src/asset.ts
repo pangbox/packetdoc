@@ -48,7 +48,7 @@ class AssetData {
 }
 
 class KaitaiStructAsset extends Asset {
-  ast: AssetData;
+  ast: AssetData | null = null;
   renderer: TemplateRenderer;
 
   constructor(filepath: string, options: any) {
@@ -58,7 +58,7 @@ class KaitaiStructAsset extends Asset {
   }
 
   loadExamples() {
-    if (!this.ast.examplesSubDir || !this.ast.examplesArg) {
+    if (!this.ast || !this.ast.examplesSubDir || !this.ast.examplesArg) {
       return;
     }
 
@@ -78,6 +78,8 @@ class KaitaiStructAsset extends Asset {
   }
 
   get cases() {
+    if (!this.ast) return;
+
     for (const field of this.ast.file.root.fields) {
       if (field.switch) {
         return field.switch.cases;
@@ -90,6 +92,8 @@ class KaitaiStructAsset extends Asset {
   }
 
   collectDependencies() {
+    if (!this.ast) return;
+
     this.ast.file.loadImports(filename => {
       const relativeName = path.relative(path.dirname(this.name), filename);
       this.addURLDependency(relativeName, {
@@ -101,6 +105,8 @@ class KaitaiStructAsset extends Asset {
   }
 
   getTemplateContext() {
+    if (!this.ast) return {};
+
     return {
       file: this.ast.file,
       struct: this.ast.file.root,
@@ -110,11 +116,13 @@ class KaitaiStructAsset extends Asset {
       enums: this.ast.file.localEnums,
       types: this.ast.file.localTypes,
       typeMap: this.ast.file.typeMap,
-      repopath: path.relative(path.dirname(this.options.rootDir), this.name),
+      repopath: path.relative(path.dirname(this.options.rootDir), this.name)
     };
   }
 
   async generate() {
+    if (!this.ast) return;
+
     this.loadExamples();
 
     return [

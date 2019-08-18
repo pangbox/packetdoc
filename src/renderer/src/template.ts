@@ -7,7 +7,12 @@ import highlightFilter from "./filters/highlight";
 import markdownFilter from "./filters/markdown";
 import stripdocsFilter from "./filters/stripdocs";
 import yamlFilter from "./filters/yaml";
-import { KaitaiStructFile, KaitaiStruct, KaitaiEnum, KaitaiEnumValue } from "./struct";
+import {
+  KaitaiStructFile,
+  KaitaiStruct,
+  KaitaiEnum,
+  KaitaiEnumValue
+} from "./struct";
 
 const templateDir = path.resolve(__dirname, "../../../src/templates/");
 
@@ -42,12 +47,15 @@ export class TemplateRenderer {
       (file: KaitaiStructFile) =>
         "/" + path.relative(asset.options.rootDir, file.filename)
     );
-    this.engine.registerFilter("urlhash", (type: KaitaiStruct|KaitaiEnum|KaitaiEnumValue) => {
-      if (type instanceof KaitaiEnumValue) {
-        return `${type.parent.id}__${type.id}`;
+    this.engine.registerFilter(
+      "urlhash",
+      (type: KaitaiStruct | KaitaiEnum | KaitaiEnumValue) => {
+        if (type instanceof KaitaiEnumValue) {
+          return `${type.parent.id}__${type.id}`;
+        }
+        return type.id;
       }
-      return type.id;
-    });
+    );
     this.engine.registerFilter("mapGet", (map: Map<any, any>, key: any) =>
       map.get(key)
     );

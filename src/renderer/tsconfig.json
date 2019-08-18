@@ -5,6 +5,7 @@
         "module":"commonjs",
         "outDir": "dist",
         "target": "ES2016",
+        "strictNullChecks": true,
     },
     "include": [
         "types/*.d.ts",

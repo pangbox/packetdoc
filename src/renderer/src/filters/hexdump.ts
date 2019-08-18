@@ -3,6 +3,15 @@ import path from "path";
 
 const kaitaiDir = "../../../../src/scripts/kaitai/";
 
+interface Span {
+  id: string;
+  class: string;
+  start: number;
+  end: number;
+  value: number;
+  level: number;
+}
+
 function getParser(parserName: string) {
   return require(path.join(kaitaiDir, parserName));
 }
@@ -15,7 +24,7 @@ function parseBin(data: Buffer, parser: string) {
 }
 
 function extractSpans(struct: any, level = 0) {
-  let spans = [];
+  let spans: Span[] = [];
 
   for (const key of Object.keys(struct)) {
     if (key[0] === "_") {
@@ -49,8 +58,8 @@ export default function hexdump(data: Buffer, parser: string) {
     hexbuf = "",
     asciibuf = "";
   let linecount = ((data.length + 15) / 16) | 0;
-  let spans = [];
-  let spanstack = [];
+  let spans: Span[] = [];
+  let spanstack: Span[] = [];
 
   if (parser) {
     const parsed = parseBin(data, parser);

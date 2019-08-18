@@ -12,16 +12,22 @@ class KaitaiCase {
     this.rawKey = rawKey;
   }
 
-  get value(): number {
+  get value(): number|null {
     if (typeof this.rawValue === "number") {
       return this.rawValue;
     }
   
-    return this.file.enumValues.get(this.rawValue).value;
+    const enumValue = this.file.enumValues.get(this.rawValue);
+    if (enumValue) {
+      return enumValue.value;
+    }
+
+    return null;
   }
 
-  get type(): KaitaiStruct {
-    return this.file.typeMap.get(this.rawKey.split("(")[0]);
+  get type(): KaitaiStruct|null {
+    const typeName = this.rawKey.split("(")[0];
+    return this.file.typeMap.get(typeName) || null;
   }
 
   get file(): KaitaiStructFile {
@@ -66,10 +72,7 @@ class KaitaiField {
   }
 
   get struct(): KaitaiStruct|null {
-    if (this.file.typeMap.has(this.type)) {
-      return this.file.typeMap.get(this.type);
-    }
-    return null;
+    return this.type && this.file.typeMap.get(this.type) || null;
   }
 
   private parseType(raw: any) {

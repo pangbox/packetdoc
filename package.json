@@ -8,12 +8,12 @@
   "dependencies": {
     "kaitai-struct-compiler": "^0.8.0-SNAPSHOT.20180205.11616",
     "parcel-bundler": "^1.12.3",
-    "parcel-plugin-ksy": "./src/renderer",
+    "parcel-plugin-pangdox": "git+https://git@github.com/pangbox/parcel-plugin-pangdox.git",
     "sass": "^1.22.9"
   },
   "scripts": {
     "genksy": "node ./tools/genksy",
-    "build": "yarn run genksy && yarn run parcel build --no-cache src/*.ksy src/*.md",
-    "serve": "yarn run genksy && yarn run parcel serve --no-cache src/*.ksy src/*.md"
+    "build": "npm run genksy && parcel build --no-cache src/*.ksy src/*.md",
+    "serve": "npm run genksy && parcel serve --no-cache src/*.ksy src/*.md"
   }
 }

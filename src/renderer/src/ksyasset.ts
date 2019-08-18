@@ -9,8 +9,6 @@ const pragmaTemplateRe = /#pragma\.template (.+)/;
 const pragmaExamplesRe = /#pragma\.examples ([a-z0-9/]+) ([a-f0-9]+)/;
 const pragmaParseAsRe = /#pragma\.parseAs (.+)/;
 
-const examplesDir = path.resolve(__dirname, "../../../examples/");
-
 interface Example {
   agent: string;
   filename: string;
@@ -54,7 +52,19 @@ class KaitaiStructAsset extends Asset {
   constructor(filepath: string, options: any) {
     super(filepath, options);
     this.type = "html";
-    this.renderer = new TemplateRenderer(this);
+    this.renderer = new TemplateRenderer(this.templatesDir, this);
+  }
+
+  get repoRoot() {
+    return path.dirname(this.options.rootDir)
+  }
+
+  get examplesDir() {
+    return path.resolve(this.repoRoot, "examples");
+  }
+
+  get templatesDir() {
+    return path.resolve(this.options.rootDir, "templates");
   }
 
   loadExamples() {
@@ -62,7 +72,7 @@ class KaitaiStructAsset extends Asset {
       return;
     }
 
-    const fullPath = path.join(examplesDir, this.ast.examplesSubDir);
+    const fullPath = path.join(this.examplesDir, this.ast.examplesSubDir);
     for (const filename of glob.sync(
       `${fullPath}/*/${this.ast.examplesArg}*.bin`
     )) {
@@ -116,7 +126,7 @@ class KaitaiStructAsset extends Asset {
       enums: this.ast.file.localEnums,
       types: this.ast.file.localTypes,
       typeMap: this.ast.file.typeMap,
-      repopath: path.relative(path.dirname(this.options.rootDir), this.name)
+      repopath: path.relative(this.repoRoot, this.name)
     };
   }
 

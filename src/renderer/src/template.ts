@@ -15,8 +15,6 @@ import {
   KaitaiEnumValue
 } from "./struct";
 
-const templateDir = path.resolve(__dirname, "../../../src/templates/");
-
 function patchFsWithDeps(engine: Liquid, asset: Asset) {
   const readFile = engine["fs"].readFile;
   engine["fs"] = {
@@ -31,7 +29,7 @@ function patchFsWithDeps(engine: Liquid, asset: Asset) {
 export class TemplateRenderer {
   engine: Liquid;
 
-  constructor(asset: Asset) {
+  constructor(templateDir: string, asset: Asset) {
     this.engine = new Liquid({ root: templateDir, extname: ".html" });
     this.engine.registerFilter("yaml", yamlFilter);
     this.engine.registerFilter("highlight", highlightFilter);

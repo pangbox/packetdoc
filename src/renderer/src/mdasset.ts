@@ -9,7 +9,15 @@ class MarkdownAsset extends Asset {
   constructor(filepath: string, options: any) {
     super(filepath, options);
     this.type = "html";
-    this.renderer = new TemplateRenderer(this);
+    this.renderer = new TemplateRenderer(this.templatesDir, this);
+  }
+
+  get repoRoot() {
+    return path.dirname(this.options.rootDir)
+  }
+
+  get templatesDir() {
+    return path.resolve(this.options.rootDir, "templates");
   }
 
   async parse(code: string): Promise<string> {
@@ -19,7 +27,7 @@ class MarkdownAsset extends Asset {
   getTemplateContext() {
     return {
       code: this.ast,
-      repopath: path.relative(path.dirname(this.options.rootDir), this.name)
+      repopath: this.repoRoot,
     };
   }
 

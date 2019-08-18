@@ -7,6 +7,7 @@ import highlightFilter from "./filters/highlight";
 import markdownFilter from "./filters/markdown";
 import stripdocsFilter from "./filters/stripdocs";
 import yamlFilter from "./filters/yaml";
+import toHexFilter from "./filters/toHex";
 import {
   KaitaiStructFile,
   KaitaiStruct,
@@ -37,11 +38,7 @@ export class TemplateRenderer {
     this.engine.registerFilter("stripdocs", stripdocsFilter);
     this.engine.registerFilter("markdown", markdownFilter);
     this.engine.registerFilter("hexdump", hexdumpFilter);
-    this.engine.registerFilter("packetid", id =>
-      Number(id)
-        .toString(16)
-        .padStart(4, "0")
-    );
+    this.engine.registerFilter("toHex", toHexFilter);
     this.engine.registerFilter(
       "urlpath",
       (file: KaitaiStructFile) =>

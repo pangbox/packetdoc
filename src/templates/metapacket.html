@@ -16,7 +16,7 @@
             <tr>
                 <td>
                     <a href="{{ case.type.file | urlpath }}">
-                        0x{{ case.value | packetid }}
+                        0x{{ case.value | toHex: 4 }}
                     </a>
                 </td>
                 <td>

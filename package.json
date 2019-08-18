@@ -13,7 +13,7 @@
   },
   "scripts": {
     "genksy": "node ./tools/genksy",
-    "build": "yarn run genksy && yarn run parcel build --no-cache src/index.ksy",
-    "serve": "yarn run genksy && yarn run parcel serve --no-cache src/index.ksy"
+    "build": "yarn run genksy && yarn run parcel build --no-cache src/*.ksy src/*.md",
+    "serve": "yarn run genksy && yarn run parcel serve --no-cache src/*.ksy src/*.md"
   }
 }

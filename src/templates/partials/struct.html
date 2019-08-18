@@ -26,7 +26,11 @@
             {% else %}
             <tr>
                 <td><code class="nowrap">{{ field.id }}</code></td>
+                {% if field.struct %}
+                <td><code class="nowrap">{% include 'partials/type_link.html' with type: field.struct %}</code></td>
+                {% else %}
                 <td><code class="nowrap">{{ field.type | default: "bytes" }}</code></td>
+                {% endif %}
                 <td>{{ field.doc | default: "" }}</td>
             </tr>
             {% endif %}

@@ -65,6 +65,13 @@ class KaitaiField {
     return this.parent.parent;
   }
 
+  get struct(): KaitaiStruct|null {
+    if (this.file.typeMap.has(this.type)) {
+      return this.file.typeMap.get(this.type);
+    }
+    return null;
+  }
+
   private parseType(raw: any) {
     if (typeof raw === "string") {
       this.type = raw;

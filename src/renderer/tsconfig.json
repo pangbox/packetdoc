@@ -6,6 +6,7 @@
         "outDir": "dist",
         "target": "ES2016",
         "strictNullChecks": true,
+        "noImplicitAny": true,
     },
     "include": [
         "types/*.d.ts",

@@ -1,4 +1,4 @@
-export default function stripdocs(data: object) {
+export default function stripdocs(data: any): any {
   if (Array.isArray(data)) {
     return data.map(stripdocs);
   } else if (data instanceof Map) {

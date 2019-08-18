@@ -85,7 +85,7 @@ class KaitaiStructAsset extends Asset {
     }
   }
 
-  async parse(code: string) {
+  async parse(code: string): Promise<AssetData> {
     return new AssetData(this, code);
   }
 

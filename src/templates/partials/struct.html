@@ -1,4 +1,4 @@
-<h3>{{ name }}</h3>
+<h3><a id="{{ struct | urlhash}}">{{ struct.id }}</a></h3>
 {{ doc | markdown }}
 <table cellspacing="0">
     <thead>
@@ -9,18 +9,18 @@
         </tr>
     </thead>
     <tbody>
-        {% for field in fields %}
-            {% if field.type.cases %}
+        {% for field in struct.fields %}
+            {% if field.switch %}
             <tr>
                 <td><code class="nowrap">{{ field.id }}</code></td>
-                <td><code class="nowrap">switch({{ field.type.switch-on }})</code></td>
+                <td><code class="nowrap">switch({{ field.switch.switchOn }})</code></td>
                 <td>{{ field.doc | default: "" }}</td>
             </tr>
-            {% for case in field.type.cases %}
+            {% for case in field.switch.cases %}
             <tr>
-                <td><code class="nowrap">case {% include 'partials/enum_value.html' with fullname: case[0] %}</code></td>
-                <td><code class="nowrap">{{ case[1] }}</code></td>
-                <td><i>Case when <code>{{ field.type.switch-on }} == {% include 'partials/enum_value.html' with fullname: case[0] %}</code></i></td>
+                <td><code class="nowrap">case {% include 'partials/enum_link.html' with id: case.rawValue %}</code></td>
+                <td><code class="nowrap">{% include 'partials/type_link.html' with type: case.type %}</code></td>
+                <td><i>Case when <code>{{ field.switch.switchOn }} == {% include 'partials/enum_link.html' with id: case.rawValue %}</code></i></td>
             </tr>
             {% endfor %}
             {% else %}

@@ -1,22 +1,22 @@
 {% layout "base" %}
 
 {% block body %}
-    <h1>{{ struct.meta.title }}</h1>
+    <h1>{{ struct.title }}</h1>
     {{ struct.meta.doc | markdown }}
     <h2>Summary</h2>
     {{ struct.doc | default: "_No documentation._" | markdown }}
     <h2>Structure</h2>
-    {% include 'partials/struct.html' with fields: struct.seq, name: struct.meta.id %}
-    {% if struct.types %}
+    {% include 'partials/struct.html' with struct: struct %}
+    {% if file.localTypes.length > 0 %}
         <h2>Subtypes</h2>
-        {% for type in struct.types %}
-        {% include 'partials/struct.html' with name: type[0], doc: type[1].doc, fields: type[1].seq %}
+        {% for struct in file.localTypes %}
+        {% include 'partials/struct.html' with struct: struct, doc: struct.doc %}
         {% endfor %}
     {% endif %}
-    {% if struct.enums %}
+    {% if file.localEnums.length > 0 %}
         <h2>Enums</h2>
-        {% for type in struct.enums %}
-        <h3>{{ type[0] }}</h3>
+        {% for type in file.localEnums %}
+        <h3><a id="{{ type | urlhash}}">{{ type.id }}</a></h3>
         <table cellspacing="0">
             <thead>
                 <tr>
@@ -25,10 +25,10 @@
                 </tr>
             </thead>
             <tbody>
-                {% for case in type[1] %}
+                {% for enumvalue in type.values %}
                 <tr>
-                    <td><code>{{ type[0] }}::{{ case[1] }}</code></td>
-                    <td><code>{{ case[0] }}</code></td>
+                    <td><code><a id="{{ enumvalue | urlhash }}">{{ enumvalue.fullname }}</a></code></td>
+                    <td><code>{{ enumvalue.value }}</code></td>
                 </tr>
                 {% endfor %}
             </tbody>
@@ -42,7 +42,7 @@
             <li><a class="button" href="https://github.com/pangbox/packetdoc/edit/master/{{ repopath }}"><i class="fal fa-edit"></i> Edit on GitHub</a></li>
         </ul>
     </nav>
-    <div class="source"><code><pre>{{ struct | stripdocs | yaml | highlight }}</pre></code></div>
+    <div class="source"><code><pre>{{ file.raw | stripdocs | yaml | highlight }}</pre></code></div>
     <h2>Examples</h2>
     {% for example in examples %}
     <div>

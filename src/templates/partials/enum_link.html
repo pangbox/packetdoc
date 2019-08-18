@@ -1,0 +1,14 @@
+<span class="enum-value">
+    {% assign enum = file.enumValues | mapGet: id %}
+    <div class="popup">
+        <dl>
+            <dt>Enum: </dt>
+            <dd><a href="{{enum.file | urlpath}}#{{enum.parent | urlhash}}">{{ enum.parent.id }}</a></dd>
+            <dt>Key: </dt>
+            <dd>{{ enum.id }}</dd>
+            <dt>Value: </dt>
+            <dd>{{ enum.value }}</dd>
+        </dl>
+    </div>
+    <a href="{{enum.file | urlpath}}#{{enum | urlhash}}">{{ enum.id }}</a>
+</span>

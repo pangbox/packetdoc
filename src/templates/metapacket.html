@@ -1,7 +1,7 @@
 {% layout "base" %}
 
 {% block body %}
-    <h1>{{ struct.meta.title }}</h1>
+    <h1>{{ struct.title }}</h1>
     {{ struct.doc | markdown }}
     <h2>Packets</h2>
     <table>
@@ -15,12 +15,12 @@
             {% for case in cases %}
             <tr>
                 <td>
-                    <a href="{{ types[case.value].urlpath }}">
-                        0x{{ case.key | packetid }}
+                    <a href="{{ case.type.file | urlpath }}">
+                        0x{{ case.value | packetid }}
                     </a>
                 </td>
                 <td>
-                    {{ types[case.value].struct.meta.title }}
+                    {{ case.type.title }}
                 </td>
             </tr>
             {% endfor %}

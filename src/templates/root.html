@@ -1,14 +1,14 @@
 {% layout "base" %}
 
 {% block body %}
-    <h1>{{ struct.meta.title }}</h1>
+    <h1>{{ struct.title }}</h1>
     {{ struct.doc | markdown }}
     <h2>Services</h2>
     <ul>
         {% for case in cases %}
         <li>
-            <a href="{{ types[case.value].urlpath }}">
-                {{ types[case.value].struct.meta.title }}
+            <a href="{{ case.type.file | urlpath }}">
+                {{ case.type.title }}
             </a>
         </li>
         {% endfor %}

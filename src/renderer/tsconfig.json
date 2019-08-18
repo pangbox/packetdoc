@@ -7,10 +7,7 @@
         "target": "ES2016",
     },
     "include": [
-        "types/*.d.ts"
-    ],
-    "files": [
-        "src/index.ts",
-        "src/KaitaiStructAsset.ts"
+        "types/*.d.ts",
+        "src/**/*"
     ]
 }

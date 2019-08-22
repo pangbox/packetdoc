@@ -10,10 +10,10 @@ div.source {
 }
 
 div.hexdump {
-    position: relative;
     border: 1px dashed var(--accent-2);
     background-color: var(--bg-color);
     padding: 0.5em;
+    line-height: 100%;
 
     code {
         display: flex;
@@ -38,13 +38,15 @@ div.hexdump {
     }
 
     .structspan {
+        position: relative;
+
         &>.popup {
             display: none;
             border: 1px solid var(--accent-2);
             background-color: var(--bg-color);
             padding: 0.5em;
             z-index: 10;
-            top: -30px;
+            top: -50px;
             position: absolute;
         }
 

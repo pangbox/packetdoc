@@ -31,17 +31,14 @@ types:
         size: 40
         doc: Display name of server.
       - id: id
-        type: u2
+        type: u4
         doc: ID of server, used in the Select Server packet.
-      - id: num_users
-        type: u2
-        doc: Number of users currently online.
       - id: max_users
-        type: u2
+        type: u4
+        doc: Number of users currently online.
+      - id: num_users
+        type: u4
         doc: Maximum number of simultaneous users allowed.
-      - id: unknown1
-        size: 6
-        doc: Some unknown bytes.
       - id: ip_address
         type: strz
         size: 18
@@ -58,5 +55,8 @@ types:
           This field contains server flags. The meaning of each bit differs
           per region.
       - id: unknown3
-        size: 16
+        size: 14
         doc: More unknown bytes.
+      - id: char_icon
+        type: u2
+        doc: Specifies which character to display next to the server icon.

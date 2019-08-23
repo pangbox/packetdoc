@@ -59,4 +59,4 @@ types:
         doc: More unknown bytes.
       - id: char_icon
         type: u2
-        doc: Specifies which character to display next to the server icon.
+        doc: Specifies which character icon to display next to the server.

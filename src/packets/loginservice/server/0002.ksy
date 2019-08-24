@@ -35,10 +35,10 @@ types:
         doc: ID of server, used in the Select Server packet.
       - id: max_users
         type: u4
-        doc: Number of users currently online.
+        doc: Maximum number of simultaneous users allowed.
       - id: num_users
         type: u4
-        doc: Maximum number of simultaneous users allowed.
+        doc: Number of users currently online.
       - id: ip_address
         type: strz
         size: 18

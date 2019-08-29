@@ -1,5 +1,6 @@
+{% assign enum = file.enumValues | mapGet: id %}
+{% if enum %}
 <span class="enum-value">
-    {% assign enum = file.enumValues | mapGet: id %}
     <div class="popup">
         <dl>
             <dt>Enum: </dt>
@@ -12,3 +13,6 @@
     </div>
     <a href="{{enum.file | urlpath}}#{{enum | urlhash}}">{{ enum.id }}</a>
 </span>
+{% else %}
+    {{ id }}
+{% endif %}

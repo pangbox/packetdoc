@@ -13,7 +13,7 @@ doc: |
   This packet contains a locker combination attempt.
   
   The response is [Gameservice Server 0x016C Locker Combination Response](/packets/gameservice/server/016c.ksy).
-  
+
 seq:
   - id: locker_combination
     type: pstring

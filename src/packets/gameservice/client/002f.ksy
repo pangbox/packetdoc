@@ -15,7 +15,7 @@ doc: |
   The response for type $00 is Gameservice Server 0x0158 Unknown (to do.)
   
   The response for type $05 is [Gameservice Server 0x0157 Room Information Response](/packets/gameservice/server/0157.ksy).
-  
+
 seq:
   - id: user_id
     type: u4

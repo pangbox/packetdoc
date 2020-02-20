@@ -11,7 +11,7 @@ meta:
 
 doc: |
   This is a stub entry.
-  
+
 seq:
   - id: unknown_a
     size: 1

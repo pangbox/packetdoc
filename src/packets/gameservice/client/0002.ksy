@@ -12,7 +12,7 @@ meta:
 doc: |
   This packet begins communication between the gameserver and the client, after
   interaction with the loginserver has completed and the client has been handed off.
-  
+
 seq:
   - id: user_name
     type: pstring
@@ -43,4 +43,4 @@ seq:
   - id: session_key
     type: pstring
     doc: |
-      Provided by LoginServer 0x0003.
+      Provided by [Loginservice Server 0x0003 Session Key](/packets/loginservice/server/0003.ksy) or [Gameservice Server 0x01D4 New Session Key](/packets/loginservice/server/01d4.ksy).

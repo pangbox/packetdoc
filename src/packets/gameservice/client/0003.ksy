@@ -12,7 +12,7 @@ meta:
 doc: |
   This packet sends a message to be displayed through the public chat area of the
   lobby or a game room.
-  
+
 seq:
   - id: padding_a
     size: 4
@@ -25,4 +25,3 @@ seq:
     type: pstring
     doc: |
       Message to send. $13 = apostrophes. Censoring is done client-side with $A8 (PangyaTH).
-

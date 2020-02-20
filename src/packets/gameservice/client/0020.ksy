@@ -13,7 +13,7 @@ doc: |
   This packet commits any changes to the player's equipment.
   
   The response is [Gameservice Server 0x006B Equipment Response](/packets/gameservice/server/006b.ksy).
-  
+
 seq:
   - id: subtype
     type: u1
@@ -24,8 +24,8 @@ seq:
       switch-on: subtype
       cases:
         0x02: equipment_update_02_consumables
-	0x09: equipment_update_09_unknown
-      
+        0x09: equipment_update_09_unknown
+
 types:
   equipment_update_02_consumables:
     seq:

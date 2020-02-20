@@ -13,7 +13,7 @@ doc: |
   This packet directs the server to connect the client to the sub-server specified,
   as identified in [GameService Server 0x004D Sub-Server List](/packets/gameservice/server/004d.ksy)
   or [GameService Server 0x009F Server List](/packets/gameservice/server/009f.ksy).
-  
+
 seq:
   - id: sub_server_id
     type: u1

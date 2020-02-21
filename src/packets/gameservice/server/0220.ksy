@@ -42,8 +42,13 @@ types:
     seq:
       - id: achievement_id
         type: u4
-      - id: unknown_d
-        size: 8
+        doc: From pangya_xx.iff/Achievement.iff
+      - id: achievement_status_id
+        type: u4
+        doc: Referenced in [Gameservice Server 0x0216 User Status Update](/packets/gameservice/server/0216.ksy).
+      - id: achievement_status_slot
+        type: u4
+        doc: Referenced in [Gameservice Server 0x0216 User Status Update](/packets/gameservice/server/0216.ksy).
       - id: achievement_unix_time
         type: u4
         doc: Timestamp of when achieved. 0 = unachieved.

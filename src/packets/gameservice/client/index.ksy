@@ -21,6 +21,7 @@ meta:
     - '0119'
     - '0143'
     - '0144'
+    - '014b'
     - '0157'
 
 seq:
@@ -45,4 +46,5 @@ seq:
         0x0119: gameservice_client_0119_new_session_key_request
         0x0143: gameservice_client_0143_mailbox_request
         0x0144: gameservice_client_0144_mail_read_request
+        0x014b: gameservice_client_014b_black_papel_play
         0x0157: gameservice_client_0157_unknown

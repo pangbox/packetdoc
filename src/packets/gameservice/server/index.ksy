@@ -16,6 +16,7 @@ meta:
     - '0084'
     - '0086'
     - '009f'
+    - '00fb'
     - '0133'
     - '0157'
     - '016c'
@@ -30,7 +31,7 @@ meta:
     - '0220'
     - '022d'
     - '022e'
-    
+
 seq:
   - id: packet_id
     type: u2
@@ -48,6 +49,7 @@ seq:
         0x0084: gameservice_server_0084_whisper_data
         0x0086: gameservice_server_0086_room_information_response
         0x009f: gameservice_server_009f_server_list
+        0x00fb: gameservice_server_00fb_unknown_black_papel_related
         0x0133: gameservice_server_0133_treasure_point_result
         0x0157: gameservice_server_0157_user_information_response
         0x016c: gameservice_server_016c_locker_combination_response
@@ -62,4 +64,3 @@ seq:
         0x0220: gameservice_server_0220_achievement_list
         0x022d: gameservice_server_022d_unknown
         0x022e: gameservice_server_022e_achievement_unlocked
-        

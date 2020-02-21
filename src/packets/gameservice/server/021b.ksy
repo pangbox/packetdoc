@@ -24,6 +24,8 @@ seq:
     type: item
     repeat: expr
     repeat-expr: item_count
+  - id: unknown_d
+    size: 16
 
 types:
   item:

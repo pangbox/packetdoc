@@ -16,6 +16,7 @@ meta:
     - '002D'
     - '002F'
     - '0043'
+    - '0077'
     - '00CC'
     - '0108'
     - '0119'
@@ -41,6 +42,7 @@ seq:
         0x002D: gameservice_client_002d_room_information_request
         0x002F: gameservice_client_002f_user_information_request
         0x0043: gameservice_client_0043_server_list_update_request
+        0x0077: gameservice_client_0077_user_shop_inventory_request
         0x00CC: gameservice_client_00cc_send_locker_combination
         0x0108: gameservice_client_0108_guild_list_request
         0x0119: gameservice_client_0119_new_session_key_request

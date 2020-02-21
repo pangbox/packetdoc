@@ -24,6 +24,7 @@ meta:
     - '0144'
     - '014b'
     - '0157'
+    - '0179'
 
 seq:
   - id: packet_id
@@ -50,3 +51,4 @@ seq:
         0x0144: gameservice_client_0144_mail_read_request
         0x014b: gameservice_client_014b_black_papel_play
         0x0157: gameservice_client_0157_unknown
+        0x0179: gameservice_client_0179_join_event_room

@@ -35,7 +35,7 @@ seq:
         0x0002: gameservice_client_0002_hello
         0x0003: gameservice_client_0003_send_chat_message
         0x0004: gameservice_client_0004_sub_server_connect
-        0x0009: gameservice_client_0009_send_room_password
+        0x0009: gameservice_client_0009_join_room
         0x001F: gameservice_client_001f_unknown
         0x0020: gameservice_client_0020_equipment_update
         0x002A: gameservice_client_002a_send_whisper

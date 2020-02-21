@@ -10,6 +10,7 @@ meta:
     - '0044'
     - '0046'
     - '0047'
+    - '0049'
     - '004d'
     - '006b'
     - '0073'
@@ -43,6 +44,7 @@ seq:
         0x0044: gameservice_server_0044_unknown
         0x0046: gameservice_server_0046_user_census
         0x0047: gameservice_server_0047_room_list
+        0x0049: gameservice_server_0049_join_room_response
         0x004d: gameservice_server_004d_sub_server_list
         0x006b: gameservice_server_006b_equipment_response
         0x0073: gameservice_server_0073_user_inventory

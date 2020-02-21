@@ -1,18 +1,19 @@
-#pragma.examples gameservice/server 0211
+#pragma.examples gameservice/server 0215
 #pragma.parseAs GameserviceServerPacket
 ---
 meta:
-  id: gameservice_server_0211_mailbox_response
-  title: GameService Server Mailbox Response
+  id: gameservice_server_0215_mail_delete_response
+  title: GameService Server Mail Delete Response
   encoding: ASCII
   endian: le
   imports:
     - ../../common/pstring
 
 doc: |
-  This packet contains a page of the user's mailbox.
+  This packet contains a page of the user's mailbox to display after the user has deleted a message. It is identical to
+  [GameService Server 0x0211 Mailbox Response](/packets/gameservice/server/0211.ksy).
   
-  This packet is a response to [Gameservice Client 0x0143 Mailbox Request](/packets/gameservice/client/0143.ksy).
+  This packet is a response to [Gameservice Client 0x0147 Mail Delete](/packets/gameservice/client/0147.ksy).
 
 seq:
   - id: unknown_d

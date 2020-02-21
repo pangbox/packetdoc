@@ -25,6 +25,8 @@ meta:
     - '01d4'
     - '0211'
     - '0212'
+    - '0214'
+    - '0215'
     - '0216'
     - '021b'
     - '021d'
@@ -59,6 +61,8 @@ seq:
         0x01d4: gameservice_server_01d4_new_session_key
         0x0211: gameservice_server_0211_mailbox_response
         0x0212: gameservice_server_0212_mail_read_response
+        0x0214: gameservice_server_0214_mail_take_attachments_response
+        0x0215: gameservice_server_0215_mail_delete_response
         0x0216: gameservice_server_0216_user_status_update
         0x021b: gameservice_server_021b_black_papel_result
         0x021d: gameservice_server_021d_unknown

@@ -31,10 +31,10 @@ types:
     seq:
       - id: item_id
         type: u4
-	repeat: expr
-	repeat-expr: 10
-	doc: |
-	  Always exactly 10 entries, corresponding to 10 consumable item slots in-game (no distinction between the 8 default slots and 2 unlockable slots). IDs from pangya_xx.iff/Item.iff.
+        repeat: expr
+        repeat-expr: 10
+        doc: |
+          Always exactly 10 entries, corresponding to 10 consumable item slots in-game (no distinction between the 8 default slots and 2 unlockable slots). IDs from pangya_xx.iff/Item.iff.
   equipment_update_09_unknown:
     seq:
       - id: unknown_a

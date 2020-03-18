@@ -12,7 +12,7 @@ meta:
 doc: |
   This is a stub entry.
   
-  It appears as part of a type $00 [Gameservice Client 0x002F User Information Request](/packets/gameservice/server/002f.ksy).
+  It appears as part of a type $00 [Gameservice Client 0x002F User Information Request](/packets/gameservice/client/002f.ksy).
   
 seq:
   - id: user_id

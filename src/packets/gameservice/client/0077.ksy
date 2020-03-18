@@ -12,7 +12,7 @@ meta:
 doc: |
   This packet requests a particular user's shop while in a lounge.
   
-  The response is [GameService Server 0x0077 User Shop Inventory](/packets/gameservice/server/0077.ksy).
+  The response is [GameService Server 0x00E6 User Shop Inventory](/packets/gameservice/server/00e6.ksy).
 
 seq:
   - id: user_id

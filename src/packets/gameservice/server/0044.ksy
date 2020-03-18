@@ -10,10 +10,12 @@ meta:
     - ../../common/pstring
 
 doc: |
-  This packet is sent 19 times after 
-  GameService Client 0x0002 Hello (TODO: Add link.);
-  first an instance of subtype 0xD3, then 17 instances of subtype 0xD2, and
+  This packet is sent 19 times after connecting to the server.
+  
+  First is an instance of subtype 0xD3, then 17 instances of subtype 0xD2, and
   finally an instance of subtype 0x00.
+  
+  This packet is sent during the response to [GameService Client 0x0002 Hello](/packets/gameservice/client/0002.ksy).
   
 seq:
   - id: subtype

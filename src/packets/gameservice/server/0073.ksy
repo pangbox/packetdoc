@@ -18,8 +18,7 @@ doc: |
   'pending' integer in each is the total count of entries in the current packet
   plus all future packets in the series.
   
-  This packet is sent during the response to
-  GameService Client 0x0002 Hello. (TODO: Add link.)
+  This packet is sent during the response to [GameService Client 0x0002 Hello](/packets/gameservice/client/0002.ksy).
 
 seq:
   - id: unique_items_pending

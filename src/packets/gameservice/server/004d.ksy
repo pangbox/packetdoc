@@ -13,8 +13,7 @@ doc: |
   This packet lists all sub-servers on the connected server
   ("Free#1", "Rookie", etc.)
   
-  This packet is sent during the response to
-  GameService Client 0x0002 Hello. (TODO: Add link.)
+  This packet is sent during the response to [GameService Client 0x0002 Hello](/packets/gameservice/client/0002.ksy).
 
 seq:
   - id: sub_server_count

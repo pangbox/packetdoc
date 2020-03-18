@@ -8,6 +8,10 @@ meta:
   imports:
     - '0001'
     - '0002'
+    - '0003'
+    - '0006'
+    - '0009'
+    - '0010'
 
 seq:
   - id: packet_id
@@ -18,3 +22,7 @@ seq:
       cases:
         0x0001: loginservice_server_0001_login
         0x0002: loginservice_server_0002_game_server_list
+        0x0003: loginservice_server_0003_session_key
+        0x0006: loginservice_server_0006_chat_macro_list
+        0x0009: loginservice_server_0009_message_server_list
+        0x0010: loginservice_server_0010_login_key

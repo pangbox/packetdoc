@@ -30,7 +30,7 @@ seq:
   - id: login_key
     type: pstring
     doc: |
-      Provided by LoginServer 0x0010.
+      Provided by [Loginservice Server 0x0010 Login Key](/packets/loginservice/server/0010.ksy).
   - id: client_version
     type: pstring
     doc: |

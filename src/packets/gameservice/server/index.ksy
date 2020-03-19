@@ -16,6 +16,7 @@ meta:
     - '0073'
     - '0084'
     - '0086'
+    - '0095'
     - '009f'
     - '00e6'
     - '010e'
@@ -54,6 +55,7 @@ seq:
         0x0073: gameservice_server_0073_user_inventory
         0x0084: gameservice_server_0084_whisper_data
         0x0086: gameservice_server_0086_room_information_response
+        0x0095: gameservice_server_0095_update_money
         0x009f: gameservice_server_009f_server_list
         0x00e6: gameservice_server_00e6_user_shop_inventory
         0x010c: gameservice_server_010e_unknown_friends_related_response

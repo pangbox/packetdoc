@@ -15,6 +15,7 @@ meta:
     - '002a'
     - '002d'
     - '002f'
+    - '003c'
     - '0043'
     - '0077'
     - '009c'
@@ -46,6 +47,7 @@ seq:
         0x002a: gameservice_client_002a_send_whisper
         0x002d: gameservice_client_002d_room_information_request
         0x002f: gameservice_client_002f_user_information_request
+        0x003c: gameservice_client_003c_send_note
         0x0043: gameservice_client_0043_server_list_update_request
         0x0077: gameservice_client_0077_user_shop_inventory_request
         0x009c: gameservice_client_009c_unknown_friends_related_request

@@ -73,4 +73,4 @@ seq:
         0x0220: gameservice_server_0220_achievement_list
         0x022d: gameservice_server_022d_unknown
         0x022e: gameservice_server_022e_achievement_unlocked
-        0x0248: gameservice_server_0248_login_bonus
+        0x0248: gameservice_server_0248_login_bonus_response

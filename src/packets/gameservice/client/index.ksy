@@ -27,6 +27,7 @@ meta:
     - '0147'
     - '014b'
     - '0157'
+    - '016e'
     - '0179'
 
 seq:
@@ -57,4 +58,5 @@ seq:
         0x0147: gameservice_client_0147_mail_delete
         0x014b: gameservice_client_014b_black_papel_play
         0x0157: gameservice_client_0157_unknown
+        0x016e: gameservice_client_016e_login_bonus_request
         0x0179: gameservice_client_0179_join_event_room

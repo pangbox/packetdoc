@@ -2,8 +2,8 @@
 #pragma.parseAs GameserviceServerPacket
 ---
 meta:
-  id: gameservice_server_0248_login_bonus
-  title: GameService Server Login Bonus
+  id: gameservice_server_0248_login_bonus_response
+  title: GameService Server Login Bonus Response
   encoding: ASCII
   endian: le
   imports:
@@ -12,6 +12,8 @@ meta:
 doc: |
   This packet contains what the current login bonus item is, whether
   it's been collected or not, as well as the next login bonus item.
+  
+  This packet is sent as the response to [GameService Client 0x016e Login Bonus Request](/packets/gameservice/client/016e.ksy).
 
 seq:
   - id: unknown_a

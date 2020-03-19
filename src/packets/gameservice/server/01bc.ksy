@@ -14,8 +14,7 @@ doc: |
   
   The number of guilds on a page is set at 15 in PangyaTH.
   
-  This packet is a response to
-  GameService Client 0x0108 Guild List Request. (TODO: Add link.)
+  This packet is a response to [GameService Client 0x0108 Guild List Request](/packets/gameservice/client/0108.ksy).
 
 seq:
   - id: unknown_a

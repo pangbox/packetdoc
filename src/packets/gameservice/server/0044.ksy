@@ -52,7 +52,7 @@ types:
         doc: Local user's guild's emblem ID
       - id: connection_id
         type: u4
-        doc: Connection ID, seen elsewhere in places like Server 0x0086.
+        doc: Connection ID, seen elsewhere in places like [GameService Server 0x0086 Room Information Response](/packets/gameservice/server/0086.ksy).
       - id: unknown_d
         size: 44
       - id: username_atnt

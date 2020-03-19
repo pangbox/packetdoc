@@ -12,9 +12,7 @@ meta:
 doc: |
   This packet reports if a locker combination attempt was valid or not.
   
-  This packet is a response to
-  GameService Client 0x00CC Locker Combination Attempt. (TODO: Add link.)
-
+  This packet is a response to [GameService Client 0x00CC Locker Combination Attempt](/packets/gameservice/client/00cc.ksy).
 
 seq:
   - id: result

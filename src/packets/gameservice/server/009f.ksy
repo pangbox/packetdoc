@@ -12,8 +12,7 @@ meta:
 doc: |
   This packet is a fresh server listing and sub-server listing.
   
-  This packet is sent as the response to
-  GameService Client 0x0043 Server List Request. (TODO: Add link.)
+  This packet is sent as the response to [GameService Client 0x0043 Server List Request](/packets/gameservice/client/0043.ksy).
   
   **See Also**:
   
@@ -37,7 +36,7 @@ seq:
 
 types:
   server:
-    doc: Identical to LoginServer 0x0002.
+    doc: Identical to [LoginService Server 0x0002 Server List](/packets/loginservice/server/0002.ksy).
     seq:
       - id: server_name
         type: strz
@@ -63,7 +62,7 @@ types:
         type: u2
         enum: server_icons
   sub_server:
-    doc: Identical to GameServer 0x004D. 
+    doc: Identical to [GameService Server 0x004D Sub-Server List](/packets/gameservice/server/004d.ksy). 
     seq:
       - id: sub_server_name
         type: strz

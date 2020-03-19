@@ -10,8 +10,7 @@ meta:
     - ../../common/pstring
 
 doc: |
-  This packet acknowledges changes to equipment from
-  GameService Client 0x0020 Equipment Update. (TODO: Add link.)
+  This packet acknowledges changes to equipment from [GameService Client 0x0020 Equipment Update](/packets/gameservice/client/0020.ksy).
 
 seq:
   - id: unknown_a

@@ -63,5 +63,4 @@ types:
       - id: username_atnt
         type: strz
         size: 128
-        doc: See Server 0x0044.
-          
+        doc: See notes in [GameService Server 0x0044 Unknown](/packets/gameservice/server/0044.ksy).

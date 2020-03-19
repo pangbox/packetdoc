@@ -12,8 +12,7 @@ meta:
 doc: |
   This packet contains details about a requested user.
   
-  This packet is a response to
-  GameService Client 0x002F User Information Request. (TODO: Add link.)
+  This packet is a response to [GameService Client 0x002F User Information Request](/packets/gameservice/client/002f.ksy).
 
 seq:
   - id: unknown_a

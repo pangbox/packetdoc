@@ -12,8 +12,7 @@ meta:
 doc: |
   This packet contains the results of a Black Papel play.
   
-  This packet is part of the response to
-  GameService Client 0x014B Black Papel Play. (TODO: Add link.)
+  This packet is part of the response to [GameService Client 0x014B Black Papel Play](/packets/gameservice/client/014b.ksy).
 
 seq:
   - id: unknown_a

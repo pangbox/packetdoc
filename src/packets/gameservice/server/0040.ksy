@@ -18,9 +18,9 @@ doc: |
   
   *   [GameService Server 0x0084 Whisper Data](/packets/gameservice/server/0084.ksy)
   
-  *   GameService Client 0x0003 Send Message (TODO: Add link.)
+  *   [GameService Client 0x0003 Send Message](/packets/gameservice/client/0003.ksy)
   
-  *   GameService Client 0x002A Send Whisper (TODO: Add link.)
+  *   [GameService Client 0x002A Send Whisper](/packets/gameservice/client/002a.ksy)
 
 seq:
   - id: subtype
@@ -40,7 +40,7 @@ types:
   message_data_00_chat_message:
     doc: |
       Relays incoming chat messages. These include messages the local user
-      has sent via Client 0x0003.
+      has sent via [GameService Client 0x0003 Send Message](/packets/gameservice/client/0003.ksy)
     seq:
       - id: user_nickname
         type: pstring

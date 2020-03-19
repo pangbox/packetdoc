@@ -13,8 +13,7 @@ doc: |
   This packet contains the details of a selected game room, especially the list
   of users within it.
   
-  This packet is sent as the response to
-  GameService Client 0x002D Room Information Request. (TODO: Add link.)
+  This packet is sent as the response to [GameService Client 0x002D Room Information Request](/packets/gameservice/client/002d.ksy).
   
   **See Also**:
   [GameService Server 0x0046 User Census](/packets/gameservice/server/0046.ksy)
@@ -43,5 +42,5 @@ types:
         doc: IDs from pangya_xx.iff/Skin.iff. 0 = no custom title / standard rank visible.
       - id: unknown_c
         size: 4
-        doc: Matches 4 bytes after user_title_badge in Server 0x0046.
+        doc: Matches 4 bytes after user_title_badge in [GameService Server 0x0046 User Census](/packets/gameservice/server/0046.ksy).
         

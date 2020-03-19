@@ -13,8 +13,7 @@ doc: |
   This packet contains a new session key on the new server during a
   server switch.
   
-  This packet is a response to
-  GameService Client 0x0119 Switch Server (TODO: Add link.)
+  This packet is a response to [GameService Client 0x0119 Switch Server](/packets/gameservice/client/0119.ksy).
 
 seq:
   - id: unknown_a

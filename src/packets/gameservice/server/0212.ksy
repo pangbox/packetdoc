@@ -12,8 +12,7 @@ meta:
 doc: |
   This packet contains the contents of a piece of mail.
   
-  This packet is a response to
-  GameService Client 0x0144 Mail Read Request (TODO: Add link.)
+  This packet is a response to [GameService Client 0x0144 Mail Read Request](/packets/gameservice/client/0144.ksy).
   
   **See Also**:
   [GameService Server 0x0211 Mailbox Response](/packets/gameservice/server/0211.ksy)
@@ -41,7 +40,7 @@ seq:
 
 types:
   mail_attachment:
-    doc: Identical to Server 0x0211.
+    doc: Identical to [GameService Server 0x0211 Mailbox Response](/packets/gameservice/server/0211.ksy).
     seq:
       - id: unknown_a
         size: 4

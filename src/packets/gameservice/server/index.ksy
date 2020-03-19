@@ -11,6 +11,7 @@ meta:
     - '0046'
     - '0047'
     - '0049'
+    - '004a'
     - '004d'
     - '006b'
     - '0073'
@@ -23,6 +24,7 @@ meta:
     - '0133'
     - '0157'
     - '016c'
+    - '0196'
     - '01bc'
     - '01d4'
     - '0211'
@@ -50,6 +52,7 @@ seq:
         0x0046: gameservice_server_0046_user_census
         0x0047: gameservice_server_0047_room_list
         0x0049: gameservice_server_0049_join_room_response
+        0x004a: gameservice_server_004a_room_status_update
         0x004d: gameservice_server_004d_sub_server_list
         0x006b: gameservice_server_006b_equipment_response
         0x0073: gameservice_server_0073_user_inventory
@@ -62,6 +65,7 @@ seq:
         0x0133: gameservice_server_0133_treasure_point_result
         0x0157: gameservice_server_0157_user_information_response
         0x016c: gameservice_server_016c_locker_combination_response
+        0x0196: gameservice_server_0196_unknown_lounge_related_response
         0x01bc: gameservice_server_01bc_guild_list
         0x01d4: gameservice_server_01d4_new_session_key
         0x0211: gameservice_server_0211_mailbox_response

@@ -20,6 +20,7 @@ meta:
     - '0077'
     - '009c'
     - '00cc'
+    - '00eb'
     - '0108'
     - '0119'
     - '0143'
@@ -52,6 +53,7 @@ seq:
         0x0077: gameservice_client_0077_user_shop_inventory_request
         0x009c: gameservice_client_009c_unknown_friends_related_request
         0x00cc: gameservice_client_00cc_send_locker_combination
+        0x00eb: gameservice_client_00eb_unknown_lounge_related_request
         0x0108: gameservice_client_0108_guild_list_request
         0x0119: gameservice_client_0119_new_session_key_request
         0x0143: gameservice_client_0143_mailbox_request

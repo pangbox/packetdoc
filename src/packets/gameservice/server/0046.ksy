@@ -16,10 +16,12 @@ doc: |
   This packet is sent periodically by the server without prompting.
 
 seq:
-  - id: unknown_a
-    size: 1
+  - id: user_list_modifcation_type
+    type: u1
+    doc: Unconfirmed. 0x01 = Add User, 0x03 = Remove User, 0x04 = Initial List, 0x05 = Continued List.
   - id: user_count
     type: u1
+    doc: Appears to cap out at 0x24 (36); type 0x05 used to add additional people beyond this limit.
   - id: user_list
     type: user
     repeat: expr

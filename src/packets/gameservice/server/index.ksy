@@ -13,13 +13,20 @@ meta:
     - '0049'
     - '004a'
     - '004d'
+    - '0056'
+    - '0059'
+    - '005a'
+    - '0063'
     - '006b'
+    - '0072'
     - '0073'
+    - '0078'
     - '0084'
     - '0086'
     - '0095'
     - '009f'
     - '00e6'
+    - '00fb'
     - '010e'
     - '0133'
     - '0157'
@@ -54,14 +61,21 @@ seq:
         0x0049: gameservice_server_0049_join_room_response
         0x004a: gameservice_server_004a_room_status_update
         0x004d: gameservice_server_004d_sub_server_list
+        0x0056: gameservice_server_0056_user_rotate_shot_announce
+        0x0059: gameservice_server_0059_user_change_club_announce
+        0x005a: gameservice_server_005a_user_use_consumable_item_announce
+        0x0063: gameservice_server_0063_user_at_play_announce
         0x006b: gameservice_server_006b_equipment_response
+        0x0072: gameservice_server_0072_user_equipment
         0x0073: gameservice_server_0073_user_inventory
+        0x0078: gameservice_server_0078_user_ready_state_response
         0x0084: gameservice_server_0084_whisper_data
         0x0086: gameservice_server_0086_room_information_response
         0x0095: gameservice_server_0095_update_money
         0x009f: gameservice_server_009f_server_list
         0x00e6: gameservice_server_00e6_user_shop_inventory
-        0x010c: gameservice_server_010e_unknown_friends_related_response
+        0x00fb: gameservice_server_00fb_unknown_black_papel_related
+        0x010c: gameservice_server_010e_unknown_opponent_related_response
         0x0133: gameservice_server_0133_treasure_point_result
         0x0157: gameservice_server_0157_user_information_response
         0x016c: gameservice_server_016c_locker_combination_response

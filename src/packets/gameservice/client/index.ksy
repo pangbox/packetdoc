@@ -10,6 +10,10 @@ meta:
     - '0003'
     - '0004'
     - '0009'
+    - '000d'
+    - '0013'
+    - '0016'
+    - '0017'
     - '001f'
     - '0020'
     - '002a'
@@ -17,6 +21,7 @@ meta:
     - '002f'
     - '003c'
     - '0043'
+    - '0048'
     - '0077'
     - '009c'
     - '00cc'
@@ -43,6 +48,10 @@ seq:
         0x0003: gameservice_client_0003_send_chat_message
         0x0004: gameservice_client_0004_sub_server_connect
         0x0009: gameservice_client_0009_join_room
+        0x000d: gameservice_client_000d_user_ready_state
+        0x0013: gameservice_client_0013_user_rotate_shot
+        0x0016: gameservice_client_0016_user_change_club
+        0x0017: gameservice_client_0017_user_use_consumable_item
         0x001f: gameservice_client_001f_unknown
         0x0020: gameservice_client_0020_equipment_update
         0x002a: gameservice_client_002a_send_whisper
@@ -50,8 +59,9 @@ seq:
         0x002f: gameservice_client_002f_user_information_request
         0x003c: gameservice_client_003c_send_note
         0x0043: gameservice_client_0043_server_list_update_request
+        0x0048: gameservice_client_0048_unknown_loading_related_counter
         0x0077: gameservice_client_0077_user_shop_inventory_request
-        0x009c: gameservice_client_009c_unknown_friends_related_request
+        0x009c: gameservice_client_009c_unknown_opponent_related_request
         0x00cc: gameservice_client_00cc_send_locker_combination
         0x00eb: gameservice_client_00eb_unknown_lounge_related_request
         0x0108: gameservice_client_0108_guild_list_request

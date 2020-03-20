@@ -2,18 +2,17 @@
 #pragma.parseAs GameserviceServerPacket
 ---
 meta:
-  id: gameservice_server_010e_unknown_friends_related_response
-  title: GameService Server 010E Unknown Response (Friends Related?)
+  id: gameservice_server_010e_unknown_opponent_related_response
+  title: GameService Server 010E Unknown Response (VS Mode Opponent Related)
   encoding: ASCII
   endian: le
   imports:
     - ../../common/pstring
 
 doc: |
-  This packet appears to contain a list of other accounts that may have something
-  to do with the friends list. Maybe.
+  This packet contains particulars about the current opponent(s) in VS mode.
   
-  This packet is a response to [Gameservice Client 0x009C Unknown Request (Friends Related?)](/packets/gameservice/client/009c.ksy).
+  This packet is a response to [Gameservice Client 0x009C Unknown Request (VS Mode Opponent Related)](/packets/gameservice/client/009c.ksy).
 
 seq:
   - id: unknown_a

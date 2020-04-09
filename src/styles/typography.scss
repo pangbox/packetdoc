@@ -54,8 +54,12 @@ code {
 }
 
 a:link, a:visited {
-    color: #007eff;
+    color: #0012ff;
     text-decoration: none;
+    
+    @media (prefers-color-scheme: dark) {
+        color: #007eff;
+    }
 }
 
 a:hover, a:active {

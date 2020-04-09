@@ -4,6 +4,11 @@ body {
 
     max-width: 1200px;
     margin: 0 auto;
+    
+    @media (prefers-color-scheme: dark) {
+        background: #000;
+        color: #FFF;
+    }
 }
 
 main {
@@ -19,6 +24,16 @@ aside {
     flex-basis: 200px;
     flex-shrink: 0;
     margin: 1em;
+}
+
+ul.navlist li a {
+    @media only screen and (max-width: 600px) {
+        display: block;
+        line-height: 40px;
+        background-color: var(--bg-color);
+        padding: 4px;
+        margin: 4px 0;
+    }
 }
 
 article {

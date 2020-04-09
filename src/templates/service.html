@@ -4,7 +4,7 @@
     <h1>{{ struct.title }}</h1>
     {{ struct.doc | markdown }}
     <h2>Origins</h2>
-    <ul>
+    <ul class="navlist">
         {% for case in cases %}
         <li>
             <a href="{{ case.type.file | urlpath }}">

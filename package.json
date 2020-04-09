@@ -7,9 +7,9 @@
   "license": "ISC",
   "dependencies": {
     "kaitai-struct-compiler": "^0.8.0-SNAPSHOT.20180205.11616",
-    "parcel-bundler": "^1.12.3",
+    "parcel-bundler": "^1.12.4",
     "parcel-plugin-pangdox": "git+https://git@github.com/pangbox/parcel-plugin-pangdox.git",
-    "sass": "^1.22.9"
+    "sass": "^1.26.3"
   },
   "scripts": {
     "genksy": "node ./tools/genksy",

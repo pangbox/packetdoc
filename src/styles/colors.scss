@@ -4,3 +4,17 @@
     --accent-1: #DCD0C0;
     --accent-2: #C0B283;
 }
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg-color: #373737;
+        --fg-color: #F4F4F4;
+        --accent-1: #554b2b;
+        --accent-2: #514829;
+    }
+
+    body {
+        background: #000;
+        color: #FFF;
+    }
+}

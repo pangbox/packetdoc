@@ -38,8 +38,8 @@
     <h2>Definition</h2>
     <nav>
         <ul class="horizontal">
-            <li><a class="button" href="https://github.com/pangbox/packetdoc/blob/master/{{ repopath }}"><i class="fab fa-github-alt"></i> View on GitHub</a></li>
-            <li><a class="button" href="https://github.com/pangbox/packetdoc/edit/master/{{ repopath }}"><i class="fal fa-edit"></i> Edit on GitHub</a></li>
+            <li><a class="button" href="https://github.com/pangbox/packetdoc/blob/master/{{ repopath }}"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" class="svg-icon"><use href="#github-icon" /></svg>  View on GitHub</a></li>
+            <li><a class="button" href="https://github.com/pangbox/packetdoc/edit/master/{{ repopath }}"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" class="svg-icon"><use href="#edit-icon" /></svg> Edit on GitHub</a></li>
         </ul>
     </nav>
     <div class="source"><code><pre>{{ file.raw | stripdocs | yaml | highlight }}</pre></code></div>

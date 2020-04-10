@@ -29,6 +29,7 @@ meta:
     - '00fb'
     - '010e'
     - '0133'
+    - '0154'
     - '0157'
     - '016c'
     - '0196'
@@ -77,6 +78,7 @@ seq:
         0x00fb: gameservice_server_00fb_unknown_black_papel_related
         0x010c: gameservice_server_010e_unknown_opponent_related_response
         0x0133: gameservice_server_0133_treasure_point_result
+        0x0154: gameservice_server_0154_cardholic_pack_open_response
         0x0157: gameservice_server_0157_user_information_response
         0x016c: gameservice_server_016c_locker_combination_response
         0x0196: gameservice_server_0196_unknown_lounge_related_response

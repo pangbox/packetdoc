@@ -24,6 +24,7 @@ meta:
     - '0048'
     - '0077'
     - '009c'
+    - '00ca'
     - '00cc'
     - '00eb'
     - '0108'
@@ -62,6 +63,7 @@ seq:
         0x0048: gameservice_client_0048_unknown_loading_related_counter
         0x0077: gameservice_client_0077_user_shop_inventory_request
         0x009c: gameservice_client_009c_unknown_opponent_related_request
+        0x00ca: gameservice_client_00ca_cardholic_pack_open
         0x00cc: gameservice_client_00cc_send_locker_combination
         0x00eb: gameservice_client_00eb_unknown_lounge_related_request
         0x0108: gameservice_client_0108_guild_list_request

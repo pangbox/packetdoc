@@ -7,7 +7,7 @@ the effort is to create a single Kaitai Struct instance that can decode any
 packet. Using this metadata, we can then generate validation tests and
 documentation pages.
 
-The root type is in [src/index.ksy](./src/index.ksy).
+The root type is in [src/packets/index.ksy](./src/packets/index.ksy).
 
 ## Code Quality Warning
 

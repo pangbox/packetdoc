@@ -12,7 +12,6 @@ div.source {
 div.hexdump {
     border: 1px dashed var(--accent-2);
     background-color: var(--bg-color);
-    overflow-x: auto;
     padding: 0.5em;
     line-height: 100%;
 
@@ -58,6 +57,10 @@ div.hexdump {
                 display: block;
             }
         }
+    }
+
+    @media only screen and (max-width: 600px) {
+        overflow-x: auto;
     }
 }
 

@@ -1,7 +1,7 @@
 {
   "name": "packetdoc",
   "version": "1.0.0",
-  "main": "src/index.ksy",
+  "main": "src/index.md",
   "repository": "git@github.com:pangbox/packetdoc.git",
   "author": "John Chadwick <johnwchadwick@gmail.com>",
   "license": "ISC",
@@ -13,7 +13,7 @@
   },
   "scripts": {
     "genksy": "node ./tools/genksy",
-    "build": "npm run genksy && node --preserve-symlinks node_modules/.bin/parcel build --no-cache src/index.ksy src/*.md",
-    "serve": "npm run genksy && node --preserve-symlinks node_modules/.bin/parcel serve --no-cache src/index.ksy src/*.md"
+    "build": "npm run genksy && node --preserve-symlinks node_modules/.bin/parcel build --no-cache src/index.md src/*.md",
+    "serve": "npm run genksy && node --preserve-symlinks node_modules/.bin/parcel serve --no-cache src/index.md src/*.md"
   }
 }

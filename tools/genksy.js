@@ -4,7 +4,7 @@ const yaml = require("js-yaml");
 const KaitaiStructCompiler = require("kaitai-struct-compiler");
 const compiler = new KaitaiStructCompiler();
 
-const entryFn = "../src/index";
+const entryFn = "../src/packets/index";
 const entryDir = path.dirname(path.resolve(__dirname, entryFn));
 const outputDir = path.resolve(__dirname, "../src/scripts/kaitai");
 
@@ -28,7 +28,7 @@ kaitaiImporter = {
   }
 };
 
-kaitaiImporter.importYaml(entryFn).then(async ksy => {
+kaitaiImporter.importYaml(path.relative(__dirname, entryFn)).then(async ksy => {
   const files = await compiler.compile("javascript", ksy, kaitaiImporter, true);
   for (const [name, source] of Object.entries(files)) {
     console.log(`Writing ${name}.`)

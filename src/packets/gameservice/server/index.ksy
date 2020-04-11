@@ -32,10 +32,15 @@ meta:
     - '00fb'
     - '010b'
     - '010e'
+    - '012b'
+    - '012d'
     - '0133'
     - '0154'
     - '0157'
+    - '0168'
     - '016c'
+    - '016d'
+    - '0170'
     - '0196'
     - '01bc'
     - '01d4'
@@ -86,10 +91,15 @@ seq:
         0x00fb: gameservice_server_00fb_unknown_black_papel_related
         0x010b: gameservice_server_010b_rare_shop_open_response
         0x010c: gameservice_server_010e_unknown_opponent_related_response
+        0x012b: gameservice_server_012b_inventory_open_a_response
+        0x012d: gameservice_server_012d_my_room_layout
         0x0133: gameservice_server_0133_treasure_point_result
         0x0154: gameservice_server_0154_cardholic_pack_open_response
         0x0157: gameservice_server_0157_user_information_response
+        0x0168: gameservice_server_0168_user_information
         0x016c: gameservice_server_016c_locker_combination_response
+        0x016d: gameservice_server_016d_locker_deposit_item_response
+        0x0170: gameservice_server_0170_locker_inventory_response
         0x0196: gameservice_server_0196_unknown_lounge_related_response
         0x01bc: gameservice_server_01bc_guild_list
         0x01d4: gameservice_server_01d4_new_session_key

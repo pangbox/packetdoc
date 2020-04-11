@@ -28,8 +28,12 @@ meta:
     - '0082'
     - '0098'
     - '009c'
+    - '00b5'
+    - '00b7'
     - '00ca'
     - '00cc'
+    - '00cd'
+    - '00d3'
     - '00eb'
     - '0108'
     - '0119'
@@ -72,8 +76,12 @@ seq:
         0x0082: gameservice_client_0082_multiplayer_mode_leave
         0x0098: gameservice_client_0098_rare_shop_open
         0x009c: gameservice_client_009c_unknown_opponent_related_request
+        0x00b5: gameservice_client_00b5_inventory_open_a
+        0x00b7: gameservice_client_00b7_inventory_open_b
         0x00ca: gameservice_client_00ca_cardholic_pack_open
-        0x00cc: gameservice_client_00cc_send_locker_combination
+        0x00cc: gameservice_client_00cc_locker_combination_attempt
+        0x00cd: gameservice_client_00cd_locker_deposit_item
+        0x00d3: gameservice_client_00d3_locker_inventory_request
         0x00eb: gameservice_client_00eb_unknown_lounge_related_request
         0x0108: gameservice_client_0108_guild_list_request
         0x0119: gameservice_client_0119_new_session_key_request

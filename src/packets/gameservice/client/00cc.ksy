@@ -2,8 +2,8 @@
 #pragma.parseAs GameserviceClientPacket
 ---
 meta:
-  id: gameservice_client_00cc_send_locker_combination
-  title: GameService Client Send Locker Combination
+  id: gameservice_client_00cc_locker_combination_attempt
+  title: GameService Client Locker Combination Attempt
   encoding: ASCII
   endian: le
   imports:

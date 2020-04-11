@@ -2,8 +2,8 @@
 #pragma.parseAs GameserviceClientPacket
 ---
 meta:
-  id: gameservice_client_0003_send_chat_message
-  title: GameService Client Send Chat Message
+  id: gameservice_client_0003_message_send
+  title: GameService Client Message Send
   encoding: ASCII
   endian: le
   imports:

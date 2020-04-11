@@ -51,20 +51,20 @@ seq:
       switch-on: packet_id
       cases:
         0x0002: gameservice_client_0002_hello
-        0x0003: gameservice_client_0003_send_chat_message
+        0x0003: gameservice_client_0003_message_send
         0x0004: gameservice_client_0004_sub_server_connect
         0x0007: gameservice_client_0007_user_status_request
-        0x0009: gameservice_client_0009_join_room
+        0x0009: gameservice_client_0009_room_join
         0x000d: gameservice_client_000d_user_ready_state
         0x0013: gameservice_client_0013_user_rotate_shot
         0x0016: gameservice_client_0016_user_change_club
         0x0017: gameservice_client_0017_user_use_consumable_item
         0x001f: gameservice_client_001f_unknown
         0x0020: gameservice_client_0020_equipment_update
-        0x002a: gameservice_client_002a_send_whisper
+        0x002a: gameservice_client_002a_whisper_send
         0x002d: gameservice_client_002d_room_information_request
         0x002f: gameservice_client_002f_user_information_request
-        0x003c: gameservice_client_003c_send_note
+        0x003c: gameservice_client_003c_note_send
         0x0043: gameservice_client_0043_server_list_update_request
         0x0048: gameservice_client_0048_unknown_loading_related_counter
         0x0077: gameservice_client_0077_user_shop_inventory_request
@@ -85,4 +85,4 @@ seq:
         0x014b: gameservice_client_014b_black_papel_play
         0x0157: gameservice_client_0157_unknown
         0x016e: gameservice_client_016e_login_bonus_request
-        0x0179: gameservice_client_0179_join_event_room
+        0x0179: gameservice_client_0179_event_room_join

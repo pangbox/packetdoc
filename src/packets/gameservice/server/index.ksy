@@ -64,7 +64,7 @@ seq:
         0x0044: gameservice_server_0044_unknown
         0x0046: gameservice_server_0046_user_census
         0x0047: gameservice_server_0047_room_list
-        0x0049: gameservice_server_0049_join_room_response
+        0x0049: gameservice_server_0049_room_join_response
         0x004a: gameservice_server_004a_room_status_update
         0x004d: gameservice_server_004d_sub_server_list
         0x0056: gameservice_server_0056_user_rotate_shot_announce
@@ -77,7 +77,7 @@ seq:
         0x0078: gameservice_server_0078_user_ready_state_response
         0x0084: gameservice_server_0084_whisper_data
         0x0086: gameservice_server_0086_room_information_response
-        0x0095: gameservice_server_0095_update_money
+        0x0095: gameservice_server_0095_money_update
         0x009f: gameservice_server_009f_server_list
         0x00a1: gameservice_server_00a1_user_status_response
         0x00e6: gameservice_server_00e6_user_shop_inventory

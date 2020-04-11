@@ -2,8 +2,8 @@
 #pragma.parseAs GameserviceServerPacket
 ---
 meta:
-  id: gameservice_server_0095_update_money
-  title: GameService Server Update Money
+  id: gameservice_server_0095_money_update
+  title: GameService Server Money Update
   encoding: ASCII
   endian: le
   imports:
@@ -12,7 +12,7 @@ meta:
 doc: |
   Subtype 0x0102 appears for an unknown reason after every [GameService Client 0x0004 Sub-server Connect](/packets/gameservice/client/0004.ksy).
   
-  Subtype 0x0111 updates the player's pang amount after sending [GameService Client 0x003c Send Note](/packets/gameservice/client/003c.ksy).
+  Subtype 0x0111 updates the player's pang amount after sending [GameService Client 0x003c Note Send](/packets/gameservice/client/003c.ksy).
   
 seq:
   - id: subtype

@@ -2,8 +2,8 @@
 #pragma.parseAs GameserviceClientPacket
 ---
 meta:
-  id: gameservice_client_002a_send_whisper
-  title: GameService Client Send Whisper
+  id: gameservice_client_002a_whisper_send
+  title: GameService Client Whisper Send
   encoding: ASCII
   endian: le
   imports:

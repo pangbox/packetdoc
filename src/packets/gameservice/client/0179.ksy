@@ -2,8 +2,8 @@
 #pragma.parseAs GameserviceClientPacket
 ---
 meta:
-  id: gameservice_client_0179_join_event_room
-  title: GameService Client Join Event Room
+  id: gameservice_client_0179_event_room_join
+  title: GameService Client Event Room Join
   encoding: ASCII
   endian: le
   imports:
@@ -12,7 +12,7 @@ meta:
 doc: |
   This packet is a request to join a particular event room.
   
-  Its response is [Gameservice Server 0x0049 Join Room Response](/packets/gameservice/server/0049.ksy).
+  Its response is [Gameservice Server 0x0049 Room Join Response](/packets/gameservice/server/0049.ksy).
   
 seq:
   - id: event_number

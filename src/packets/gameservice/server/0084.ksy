@@ -16,9 +16,9 @@ doc: |
   
   *   [GameService Server 0x0040 Message Data](/packets/gameservice/server/0040.ksy)
   
-  *   [GameService Client 0x0003 Send Message](/packets/gameservice/client/0003.ksy)
+  *   [GameService Client 0x0003 Message Send](/packets/gameservice/client/0003.ksy)
   
-  *   [GameService Client 0x002A Send Whisper](/packets/gameservice/client/002a.ksy)
+  *   [GameService Client 0x002A Whisper Send](/packets/gameservice/client/002a.ksy)
 
 seq:
   - id: unknown_a

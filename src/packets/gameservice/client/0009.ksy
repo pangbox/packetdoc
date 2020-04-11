@@ -2,8 +2,8 @@
 #pragma.parseAs GameserviceClientPacket
 ---
 meta:
-  id: gameservice_client_0009_join_room
-  title: GameService Client Join Room
+  id: gameservice_client_0009_room_join
+  title: GameService Client Room Join
   encoding: ASCII
   endian: le
   imports:
@@ -12,6 +12,8 @@ meta:
 doc: |
   This packet is a request to join a particular game room. If the room is passworded, the password attempt is sent
   here. If the room is not passworded, the password length is 0.
+  
+  The response is [GameService Server 0x0049 Room Join Response](/packets/gameservice/server/0049.ksy).
   
 seq:
   - id: room_number

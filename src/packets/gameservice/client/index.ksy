@@ -24,6 +24,8 @@ meta:
     - '0043'
     - '0048'
     - '0077'
+    - '0081'
+    - '0082'
     - '0098'
     - '009c'
     - '00ca'
@@ -66,6 +68,8 @@ seq:
         0x0043: gameservice_client_0043_server_list_update_request
         0x0048: gameservice_client_0048_unknown_loading_related_counter
         0x0077: gameservice_client_0077_user_shop_inventory_request
+        0x0081: gameservice_client_0081_multiplayer_mode_join
+        0x0082: gameservice_client_0082_multiplayer_mode_leave
         0x0098: gameservice_client_0098_rare_shop_open
         0x009c: gameservice_client_009c_unknown_opponent_related_request
         0x00ca: gameservice_client_00ca_cardholic_pack_open

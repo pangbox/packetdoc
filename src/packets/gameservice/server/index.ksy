@@ -27,6 +27,9 @@ meta:
     - '009f'
     - '00a1'
     - '00e6'
+    - '00e7'
+    - '00ec'
+    - '00ed'
     - '00f5'
     - '00f6'
     - '00fb'
@@ -89,6 +92,9 @@ seq:
         0x009f: gameservice_server_009f_server_list
         0x00a1: gameservice_server_00a1_user_status_response
         0x00e6: gameservice_server_00e6_user_shop_inventory
+        0x00e7: gameservice_server_00e7_user_shop_leave_response
+        0x00ec: gameservice_server_00ec_user_shop_buy_item_response
+        0x00ed: gameservice_server_00ed_user_shop_purchase_announce
         0x00f5: gameservice_server_00f5_multiplayer_mode_join_response
         0x00f6: gameservice_server_00f6_multiplayer_mode_leave_response
         0x00fb: gameservice_server_00fb_unknown_black_papel_related

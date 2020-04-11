@@ -10,9 +10,12 @@ meta:
     - ../../common/pstring
 
 doc: |
-  This packet requests a particular user's shop while in a lounge.
+  This packet signals a user starting to browse a particular user shop in a lounge,
+  and requests said shop's inventory.
   
   The response is [GameService Server 0x00E6 User Shop Inventory](/packets/gameservice/server/00e6.ksy).
+  
+  **See Also:** [GameService Client 0x0078 User Shop Leave](/packets/gameservice/client/0078.ksy), to stop browsing.
 
 seq:
   - id: user_id

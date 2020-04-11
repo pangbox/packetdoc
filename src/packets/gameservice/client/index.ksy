@@ -9,6 +9,7 @@ meta:
     - '0002'
     - '0003'
     - '0004'
+    - '0007'
     - '0009'
     - '000d'
     - '0013'
@@ -23,6 +24,7 @@ meta:
     - '0043'
     - '0048'
     - '0077'
+    - '0098'
     - '009c'
     - '00ca'
     - '00cc'
@@ -31,6 +33,7 @@ meta:
     - '0119'
     - '0143'
     - '0144'
+    - '0145'
     - '0146'
     - '0147'
     - '014b'
@@ -48,6 +51,7 @@ seq:
         0x0002: gameservice_client_0002_hello
         0x0003: gameservice_client_0003_send_chat_message
         0x0004: gameservice_client_0004_sub_server_connect
+        0x0007: gameservice_client_0007_user_status_request
         0x0009: gameservice_client_0009_join_room
         0x000d: gameservice_client_000d_user_ready_state
         0x0013: gameservice_client_0013_user_rotate_shot
@@ -62,6 +66,7 @@ seq:
         0x0043: gameservice_client_0043_server_list_update_request
         0x0048: gameservice_client_0048_unknown_loading_related_counter
         0x0077: gameservice_client_0077_user_shop_inventory_request
+        0x0098: gameservice_client_0098_rare_shop_open
         0x009c: gameservice_client_009c_unknown_opponent_related_request
         0x00ca: gameservice_client_00ca_cardholic_pack_open
         0x00cc: gameservice_client_00cc_send_locker_combination
@@ -70,6 +75,7 @@ seq:
         0x0119: gameservice_client_0119_new_session_key_request
         0x0143: gameservice_client_0143_mailbox_request
         0x0144: gameservice_client_0144_mail_read_request
+        0x0145: gameservice_client_0145_mail_send
         0x0146: gameservice_client_0146_mail_take_attachments
         0x0147: gameservice_client_0147_mail_delete
         0x014b: gameservice_client_014b_black_papel_play

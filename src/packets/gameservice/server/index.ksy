@@ -25,8 +25,10 @@ meta:
     - '0086'
     - '0095'
     - '009f'
+    - '00a1'
     - '00e6'
     - '00fb'
+    - '010b'
     - '010e'
     - '0133'
     - '0154'
@@ -37,6 +39,7 @@ meta:
     - '01d4'
     - '0211'
     - '0212'
+    - '0213'
     - '0214'
     - '0215'
     - '0216'
@@ -74,8 +77,10 @@ seq:
         0x0086: gameservice_server_0086_room_information_response
         0x0095: gameservice_server_0095_update_money
         0x009f: gameservice_server_009f_server_list
+        0x00a1: gameservice_server_00a1_user_status_response
         0x00e6: gameservice_server_00e6_user_shop_inventory
         0x00fb: gameservice_server_00fb_unknown_black_papel_related
+        0x010b: gameservice_server_010b_rare_shop_open_response
         0x010c: gameservice_server_010e_unknown_opponent_related_response
         0x0133: gameservice_server_0133_treasure_point_result
         0x0154: gameservice_server_0154_cardholic_pack_open_response
@@ -86,6 +91,7 @@ seq:
         0x01d4: gameservice_server_01d4_new_session_key
         0x0211: gameservice_server_0211_mailbox_response
         0x0212: gameservice_server_0212_mail_read_response
+        0x0213: gameservice_server_0213_mail_send_response
         0x0214: gameservice_server_0214_mail_take_attachments_response
         0x0215: gameservice_server_0215_mail_delete_response
         0x0216: gameservice_server_0216_user_status_update

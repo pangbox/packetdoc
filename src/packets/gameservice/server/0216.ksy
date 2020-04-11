@@ -45,7 +45,7 @@ types:
         doc: item_id or quest_status_id or achievement_status_id
       - id: status_slot
         type: u4
-        doc: inventory_slot or quest_slot?
+        doc: inventory_slot or quest_slot
       - id: unknown_a
         size: 4
         doc: Likely padding?

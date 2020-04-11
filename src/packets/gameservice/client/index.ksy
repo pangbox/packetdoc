@@ -43,6 +43,7 @@ meta:
     - '0146'
     - '0147'
     - '014b'
+    - '0151'
     - '0157'
     - '016e'
     - '0179'
@@ -91,6 +92,7 @@ seq:
         0x0146: gameservice_client_0146_mail_take_attachments
         0x0147: gameservice_client_0147_mail_delete
         0x014b: gameservice_client_014b_black_papel_play
-        0x0157: gameservice_client_0157_unknown
+        0x0151: gameservice_client_0151_quest_status_request
+        0x0157: gameservice_client_0157_achievement_status_request
         0x016e: gameservice_client_016e_login_bonus_request
         0x0179: gameservice_client_0179_event_room_join

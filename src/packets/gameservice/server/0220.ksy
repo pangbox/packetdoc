@@ -2,16 +2,16 @@
 #pragma.parseAs GameserviceServerPacket
 ---
 meta:
-  id: gameservice_server_0220_achievement_list
-  title: GameService Server Achievement List
+  id: gameservice_server_0220_achievement_update
+  title: GameService Server Achievement Update
   encoding: ASCII
   endian: le
   imports:
     - ../../common/pstring
 
 doc: |
-  This packet is a list of all achievements IDs, including timestamps to when
-  the user has earnt them.
+  This packet is an abridged list of achievements, usually appearing after
+  [GameService Server 0x022E Achievement Unlocked](/packets/gameservice/server/022e.ksy).
 
 seq:
   - id: unknown_a

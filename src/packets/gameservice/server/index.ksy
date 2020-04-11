@@ -54,6 +54,8 @@ meta:
     - '021d'
     - '021e'
     - '0220'
+    - '0225'
+    - '022c'
     - '022d'
     - '022e'
     - '0248'
@@ -112,7 +114,9 @@ seq:
         0x021b: gameservice_server_021b_black_papel_result
         0x021d: gameservice_server_021d_unknown
         0x021e: gameservice_server_021e_unknown
-        0x0220: gameservice_server_0220_achievement_list
-        0x022d: gameservice_server_022d_unknown
+        0x0220: gameservice_server_0220_achievement_update
+        0x0225: gameservice_server_0225_quest_status_response
+        0x022c: gameservice_server_022c_unknown_achievement_related_response
+        0x022d: gameservice_server_022d_achievement_status_response
         0x022e: gameservice_server_022e_achievement_unlocked
         0x0248: gameservice_server_0248_login_bonus_response

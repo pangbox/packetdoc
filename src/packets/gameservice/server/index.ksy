@@ -59,6 +59,7 @@ meta:
     - '022d'
     - '022e'
     - '0248'
+    - '0249'
 
 seq:
   - id: packet_id
@@ -119,4 +120,5 @@ seq:
         0x022c: gameservice_server_022c_unknown_achievement_related_response
         0x022d: gameservice_server_022d_achievement_status_response
         0x022e: gameservice_server_022e_achievement_unlocked
-        0x0248: gameservice_server_0248_login_bonus_response
+        0x0248: gameservice_server_0248_login_bonus_status_response
+        0x0249: gameservice_server_0249_login_bonus_claim_response

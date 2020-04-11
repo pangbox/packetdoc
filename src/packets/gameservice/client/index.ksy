@@ -46,6 +46,7 @@ meta:
     - '0151'
     - '0157'
     - '016e'
+    - '016f'
     - '0179'
 
 seq:
@@ -94,5 +95,6 @@ seq:
         0x014b: gameservice_client_014b_black_papel_play
         0x0151: gameservice_client_0151_quest_status_request
         0x0157: gameservice_client_0157_achievement_status_request
-        0x016e: gameservice_client_016e_login_bonus_request
+        0x016e: gameservice_client_016e_login_bonus_status_request
+        0x016f: gameservice_client_016f_login_bonus_claim
         0x0179: gameservice_client_0179_event_room_join

@@ -54,6 +54,7 @@ meta:
     - '0177'
     - '0179'
     - '017a'
+    - '017f'
 
 seq:
   - id: packet_id
@@ -110,3 +111,4 @@ seq:
         0x0177: gameservice_client_0177_event_mode_leave
         0x0179: gameservice_client_0179_event_room_join
         0x017a: gameservice_client_017a_event_room_leave
+        0x017f: gameservice_client_017f_memorial_coin_play

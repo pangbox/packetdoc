@@ -68,6 +68,7 @@ meta:
     - '0251'
     - '0253'
     - '0254'
+    - '0264'
 
 seq:
   - id: packet_id
@@ -138,3 +139,4 @@ seq:
         0x0251: gameservice_server_0251_event_mode_leave_response
         0x0253: gameservice_server_0253_event_room_join_response
         0x0254: gameservice_server_0254_event_room_leave_response
+        0x0264: gameservice_server_0264_memorial_coin_result

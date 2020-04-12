@@ -69,6 +69,8 @@ meta:
     - '0253'
     - '0254'
     - '0264'
+    - '026a'
+    - '026b'
 
 seq:
   - id: packet_id
@@ -140,3 +142,5 @@ seq:
         0x0253: gameservice_server_0253_event_room_join_response
         0x0254: gameservice_server_0254_event_room_leave_response
         0x0264: gameservice_server_0264_memorial_coin_result
+        0x026a: gameservice_server_026a_shot_assist_toggle_response
+        0x026b: gameservice_server_026b_shot_assist_activate_response

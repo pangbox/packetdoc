@@ -55,6 +55,8 @@ meta:
     - '0179'
     - '017a'
     - '017f'
+    - '0184'
+    - '0185'
 
 seq:
   - id: packet_id
@@ -112,3 +114,5 @@ seq:
         0x0179: gameservice_client_0179_event_room_join
         0x017a: gameservice_client_017a_event_room_leave
         0x017f: gameservice_client_017f_memorial_coin_play
+        0x0184: gameservice_client_0184_shot_assist_toggle
+        0x0185: gameservice_client_0185_shot_assist_activate

@@ -2,8 +2,8 @@
 #pragma.parseAs GameserviceClientPacket
 ---
 meta:
-  id: gameservice_client_0017_user_use_consumable_item
-  title: GameService Client User Use Consumable Item
+  id: gameservice_client_0017_shot_item_use
+  title: GameService Client Shot Item Use
   encoding: ASCII
   endian: le
   imports:
@@ -12,7 +12,7 @@ meta:
 doc: |
   This packet signals the use of a consumable item during a match.
   
-  The response is [GameServer Service 005A User Use Consumable Item Announce](/packets/gameservice/server/005a.ksy)
+  The response is [GameServer Service 005A Shot Item Use Announce](/packets/gameservice/server/005a.ksy)
 
 seq:
   - id: item_id

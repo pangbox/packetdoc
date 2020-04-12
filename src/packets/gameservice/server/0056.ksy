@@ -2,8 +2,8 @@
 #pragma.parseAs GameserviceServerPacket
 ---
 meta:
-  id: gameservice_server_0056_user_rotate_shot_announce
-  title: GameService Server User Rotate/Aim Shot Announce
+  id: gameservice_server_0056_shot_rotate_announce
+  title: GameService Server Shot Rotate/Aim Announce
   encoding: ASCII
   endian: le
   imports:
@@ -12,7 +12,7 @@ meta:
 doc: |
   This packet relays the user's new rotation value to all players.
   
-  This is a response to [GameService Client 0013 User Rotate/Aim Shot](/packets/gameservice/client/0013.ksy).
+  This is a response to [GameService Client 0013 Shot Rotate/Aim](/packets/gameservice/client/0013.ksy).
 
 seq:
   - id: connection_id

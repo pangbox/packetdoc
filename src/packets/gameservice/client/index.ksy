@@ -70,11 +70,11 @@ seq:
         0x0004: gameservice_client_0004_sub_server_connect
         0x0007: gameservice_client_0007_user_status_request
         0x0009: gameservice_client_0009_room_join
-        0x000d: gameservice_client_000d_user_ready_state
+        0x000d: gameservice_client_000d_room_user_ready_state
         0x000f: gameservice_client_000f_room_leave
-        0x0013: gameservice_client_0013_user_rotate_shot
-        0x0016: gameservice_client_0016_user_change_club
-        0x0017: gameservice_client_0017_user_use_consumable_item
+        0x0013: gameservice_client_0013_shot_rotate
+        0x0016: gameservice_client_0016_shot_club_change
+        0x0017: gameservice_client_0017_shot_item_use
         0x001f: gameservice_client_001f_unknown
         0x0020: gameservice_client_0020_equipment_update
         0x002a: gameservice_client_002a_whisper_send

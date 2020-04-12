@@ -3,7 +3,7 @@
 ---
 meta:
   id: gameservice_client_0157_achievement_status_request
-  title: GameService Client 0157 Achievement Status Request
+  title: GameService Client Achievement Status Request
   encoding: ASCII
   endian: le
   imports:

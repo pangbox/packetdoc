@@ -87,14 +87,14 @@ seq:
         0x004a: gameservice_server_004a_room_status_update
         0x004c: gameservice_server_004c_room_leave_response
         0x004d: gameservice_server_004d_sub_server_list
-        0x0056: gameservice_server_0056_user_rotate_shot_announce
-        0x0059: gameservice_server_0059_user_change_club_announce
-        0x005a: gameservice_server_005a_user_use_consumable_item_announce
+        0x0056: gameservice_server_0056_shot_rotate_announce
+        0x0059: gameservice_server_0059_shot_club_change_announce
+        0x005a: gameservice_server_005a_shot_item_use_announce
         0x0063: gameservice_server_0063_user_at_play_announce
         0x006b: gameservice_server_006b_equipment_response
         0x0072: gameservice_server_0072_user_equipment
         0x0073: gameservice_server_0073_user_inventory
-        0x0078: gameservice_server_0078_user_ready_state_response
+        0x0078: gameservice_server_0078_room_user_ready_state_response
         0x0084: gameservice_server_0084_whisper_data
         0x0086: gameservice_server_0086_room_information_response
         0x0095: gameservice_server_0095_money_update

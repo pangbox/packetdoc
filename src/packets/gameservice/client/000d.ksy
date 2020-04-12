@@ -2,8 +2,8 @@
 #pragma.parseAs GameserviceClientPacket
 ---
 meta:
-  id: gameservice_client_000d_user_ready_state
-  title: GameService Client User Ready State
+  id: gameservice_client_000d_room_user_ready_state
+  title: GameService Client Room User Ready State
   encoding: ASCII
   endian: le
   imports:
@@ -12,7 +12,7 @@ meta:
 doc: |
   This packet announces the user's ready state in a game room after clicking the 'Ready' button.
   
-  The response is [Gameservice Server 0x0078 User Ready State Response](/packets/gameservice/server/0078.ksy).
+  The response is [Gameservice Server 0x0078 Room User Ready State Response](/packets/gameservice/server/0078.ksy).
   
 seq:
   - id: user_readiness

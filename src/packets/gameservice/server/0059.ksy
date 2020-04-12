@@ -2,8 +2,8 @@
 #pragma.parseAs GameserviceServerPacket
 ---
 meta:
-  id: gameservice_server_0059_user_change_club_announce
-  title: GameService Server User Change Club Announce
+  id: gameservice_server_0059_shot_club_change_announce
+  title: GameService Server Shot Club Change Announce
   encoding: ASCII
   endian: le
   imports:
@@ -12,7 +12,7 @@ meta:
 doc: |
   This packet relays a user's changed club value to all players.
   
-  This is a response to [GameService Client 0016 User Change Club](/packets/gameservice/client/0016.ksy).
+  This is a response to [GameService Client 0016 Shot Club Change](/packets/gameservice/client/0016.ksy).
 
 seq:
   - id: connection_id

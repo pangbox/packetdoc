@@ -64,6 +64,10 @@ meta:
     - '022e'
     - '0248'
     - '0249'
+    - '0250'
+    - '0251'
+    - '0253'
+    - '0254'
 
 seq:
   - id: packet_id
@@ -130,3 +134,7 @@ seq:
         0x022e: gameservice_server_022e_achievement_unlocked
         0x0248: gameservice_server_0248_login_bonus_status_response
         0x0249: gameservice_server_0249_login_bonus_claim_response
+        0x0250: gameservice_server_0250_event_mode_join_response
+        0x0251: gameservice_server_0251_event_mode_leave_response
+        0x0253: gameservice_server_0253_event_room_join_response
+        0x0254: gameservice_server_0254_event_room_leave_response

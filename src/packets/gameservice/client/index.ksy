@@ -50,7 +50,10 @@ meta:
     - '0157'
     - '016e'
     - '016f'
+    - '0176'
+    - '0177'
     - '0179'
+    - '017a'
 
 seq:
   - id: packet_id
@@ -103,4 +106,7 @@ seq:
         0x0157: gameservice_client_0157_achievement_status_request
         0x016e: gameservice_client_016e_login_bonus_status_request
         0x016f: gameservice_client_016f_login_bonus_claim
+        0x0176: gameservice_client_0176_event_mode_join
+        0x0177: gameservice_client_0177_event_mode_leave
         0x0179: gameservice_client_0179_event_room_join
+        0x017a: gameservice_client_017a_event_room_leave

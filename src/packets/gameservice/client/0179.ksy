@@ -12,9 +12,10 @@ meta:
 doc: |
   This packet is a request to join a particular event room.
   
-  Its response is [Gameservice Server 0x0049 Room Join Response](/packets/gameservice/server/0049.ksy).
+  Its responses are [GameService Server 0x0049 Room Join Response](/packets/gameservice/server/0049.ksy),
+  then [GameService Server 0x0253 Event Room Join Response](/packets/gameservice/server/0253.ksy).
   
 seq:
   - id: event_number
     type: u4
-    doc: It is currently unknown where this number comes from. Still investigating.
+    doc: From [GameService Server 0x0047 Room List](/packets/gameservice/server/0047.ksy).

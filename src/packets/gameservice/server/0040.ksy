@@ -33,7 +33,7 @@ seq:
       cases:
         0x00: message_data_00_chat_message
         0x0b: message_data_0b_unknown
-        0x0c: message_data_0c_unknown
+        0x0c: message_data_0c_countdown
         0x11: message_data_11_departure
 
 types:
@@ -52,12 +52,14 @@ types:
         type: pstring
       - id: unknown_a
         size: 6
-  message_data_0c_unknown:
+  message_data_0c_countdown:
     seq:
       - id: unknown_b
         size: 4
-      - id: unknown_c
-        size: 4
+        doc: Appears to always be 0 (0x00000000).
+      - id: countdown_seconds
+        type: u4
+        doc: Countdown until game/event begins. Sent at 90, 60, 30, 20, 10 through 1 seconds.
   message_data_11_departure:
     seq:
       - id: user_nickname

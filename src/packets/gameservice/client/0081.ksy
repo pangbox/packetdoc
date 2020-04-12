@@ -18,4 +18,7 @@ doc: |
   
   The response is [GameService Server 0x00F5 Multiplayer Mode Join Response](/packets/gameservice/server/00f5.ksy).
   
-  ** See Also ** [GameService Client 0x0082 Multiplayer Mode Leave](/packets/gameservice/client/0082.ksy).
+  **See Also:**
+  * [GameService Client 0x0082 Multiplayer Mode Leave](/packets/gameservice/client/0082.ksy)
+  * [GameService Client 0x0176 Event Mode Join](/packets/gameservice/client/0176.ksy)
+  * [GameService Client 0x0177 Event Mode Leave](/packets/gameservice/client/0177.ksy)

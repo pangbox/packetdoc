@@ -17,9 +17,13 @@ doc: |
 
 seq:
   - id: room_count
-    type: u2
+    type: u1
+  - id: room_type
+    type: u1
+    enum: room_type
   - id: unknown_a
-    size: 2
+    type: s2
+    doc: Always -1 (0xFFFF).
   - id: room_list
     type: room
     repeat: expr
@@ -33,7 +37,7 @@ types:
         size: 64
       - id: is_public
         type: u1
-        doc: 1 is public, 0 is private requiring password
+        doc: 0x01 is public, 0x00 is private requiring password
       - id: unknown_b
         size: 2
       - id: user_max
@@ -46,10 +50,20 @@ types:
         size: 18
       - id: hole_number
         type: u1
-        doc: Current hole number for chat rooms ?
+        doc: Current hole number for chat rooms?
       - id: unknown_d
         size: 1
       - id: room_number
         type: u2
       - id: unknown_e
-        size: 127
+        size: 111
+      - id: event_number
+        type: u4
+        doc: 0 if non-event.
+      - id: unknown_f
+        size: 12
+
+enums:
+  room_type:
+    0x00: multiplayer_mode
+    0x01: event_mode

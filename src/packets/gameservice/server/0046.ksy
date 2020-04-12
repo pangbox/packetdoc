@@ -16,9 +16,10 @@ doc: |
   This packet is sent periodically by the server without prompting.
 
 seq:
-  - id: user_list_modifcation_type
+  - id: census_type
     type: u1
-    doc: Unconfirmed. 0x01 = Add User, 0x03 = Remove User, 0x04 = Initial List, 0x05 = Continued List.
+    enum: census_type
+    doc: Unconfirmed.
   - id: user_count
     type: u1
     doc: Appears to cap out at 0x24 (36); type 0x05 used to add additional people beyond this limit.
@@ -35,14 +36,14 @@ types:
       - id: connection_id
         type: u4
       - id: room_number
-        type: u2
-        doc: User is in this game room. $FFFF = not in a room.
+        type: s2
+        doc: User is in this game room. -1 (0xFFFF) is the multiplayer lobby.
       - id: user_nickname
         type: strz
         size: 22
       - id: user_rank
         type: u1
-        doc: Range from $00 = 'Rookie F' through $46 = 'Infinity Legend I'
+        doc: Range from 0x00 ('Rookie F') through 0x46 ('Infinity Legend I').
       - id: unknown_b
         size: 4
       - id: user_title_badge
@@ -64,3 +65,10 @@ types:
         type: strz
         size: 128
         doc: See notes in [GameService Server 0x0044 Unknown](/packets/gameservice/server/0044.ksy).
+
+enums:
+  census_type:
+    0x01: census_user_add
+    0x03: census_user_remove
+    0x04: census_list_new
+    0x05: census_list_append

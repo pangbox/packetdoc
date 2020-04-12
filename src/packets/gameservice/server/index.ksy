@@ -12,6 +12,7 @@ meta:
     - '0047'
     - '0049'
     - '004a'
+    - '004c'
     - '004d'
     - '0056'
     - '0059'
@@ -77,6 +78,7 @@ seq:
         0x0047: gameservice_server_0047_room_list
         0x0049: gameservice_server_0049_room_join_response
         0x004a: gameservice_server_004a_room_status_update
+        0x004c: gameservice_server_004c_room_leave_response
         0x004d: gameservice_server_004d_sub_server_list
         0x0056: gameservice_server_0056_user_rotate_shot_announce
         0x0059: gameservice_server_0059_user_change_club_announce

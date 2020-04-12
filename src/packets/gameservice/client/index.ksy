@@ -12,6 +12,7 @@ meta:
     - '0007'
     - '0009'
     - '000d'
+    - '000f'
     - '0013'
     - '0016'
     - '0017'
@@ -64,6 +65,7 @@ seq:
         0x0007: gameservice_client_0007_user_status_request
         0x0009: gameservice_client_0009_room_join
         0x000d: gameservice_client_000d_user_ready_state
+        0x000f: gameservice_client_000f_room_leave
         0x0013: gameservice_client_0013_user_rotate_shot
         0x0016: gameservice_client_0016_user_change_club
         0x0017: gameservice_client_0017_user_use_consumable_item

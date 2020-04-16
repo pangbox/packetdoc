@@ -2,15 +2,19 @@
 #pragma.parseAs GameserviceServerPacket
 ---
 meta:
-  id: gameservice_server_0063_user_at_play_announce
-  title: GameService Server User At Play Announce
+  id: gameservice_server_0063_shot_active_user_announce
+  title: GameService Server Shot Active User Announce
   encoding: ASCII
   endian: le
   imports:
     - ../../common/pstring
 
 doc: |
-  This packet announces which user in a VS room is currently up to play.
+  This packet announces which user is currently up to play.
+  
+  As with all other shot announce packets, it is not relayed during tournaments/simultaneous play.
+  
+  The response (from the appropriate client) is [GameService Client 0x0022 Shot Active User Acknowledge](/packets/gameservice/client/0022.ksy).
 
 seq:
   - id: connection_id

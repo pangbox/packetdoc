@@ -22,6 +22,7 @@ meta:
     - '001d'
     - '001f'
     - '0020'
+    - '0022'
     - '002a'
     - '002d'
     - '002f'
@@ -88,6 +89,7 @@ seq:
         0x001d: gameservice_client_001d_pangya_shop_buy_item
         0x001f: gameservice_client_001f_unknown
         0x0020: gameservice_client_0020_equipment_update
+        0x0022: gameservice_client_0022_shot_active_user_acknowledge
         0x002a: gameservice_client_002a_whisper_send
         0x002d: gameservice_client_002d_room_information_request
         0x002f: gameservice_client_002f_user_information_request

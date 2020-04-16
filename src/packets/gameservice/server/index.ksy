@@ -97,7 +97,7 @@ seq:
         0x0058: gameservice_server_0058_shot_power_announce
         0x0059: gameservice_server_0059_shot_club_change_announce
         0x005a: gameservice_server_005a_shot_item_use_announce
-        0x0063: gameservice_server_0063_user_at_play_announce
+        0x0063: gameservice_server_0063_shot_active_user_announce
         0x0068: gameservice_server_0068_pangya_shop_buy_item
         0x006b: gameservice_server_006b_equipment_response
         0x0072: gameservice_server_0072_user_equipment

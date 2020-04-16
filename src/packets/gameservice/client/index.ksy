@@ -25,6 +25,7 @@ meta:
     - '002d'
     - '002f'
     - '003c'
+    - '003d'
     - '0043'
     - '0048'
     - '0077'
@@ -34,6 +35,7 @@ meta:
     - '0082'
     - '0098'
     - '009c'
+    - '00a2'
     - '00b5'
     - '00b7'
     - '00ca'
@@ -60,6 +62,7 @@ meta:
     - '017f'
     - '0184'
     - '0185'
+    - '0195'
 
 seq:
   - id: packet_id
@@ -87,6 +90,7 @@ seq:
         0x002d: gameservice_client_002d_room_information_request
         0x002f: gameservice_client_002f_user_information_request
         0x003c: gameservice_client_003c_note_send
+        0x003d: gameservice_client_003d_unknown_cookies_related
         0x0043: gameservice_client_0043_server_list_update_request
         0x0048: gameservice_client_0048_unknown_loading_related_counter
         0x0077: gameservice_client_0077_user_shop_inventory_request
@@ -96,6 +100,7 @@ seq:
         0x0082: gameservice_client_0082_multiplayer_mode_leave
         0x0098: gameservice_client_0098_rare_shop_open
         0x009c: gameservice_client_009c_unknown_opponent_related_request
+        0x00a2: gameservice_client_00a2_unknown_cookies_related
         0x00b5: gameservice_client_00b5_inventory_open_a
         0x00b7: gameservice_client_00b7_inventory_open_b
         0x00ca: gameservice_client_00ca_cardholic_pack_open
@@ -122,3 +127,4 @@ seq:
         0x017f: gameservice_client_017f_memorial_coin_play
         0x0184: gameservice_client_0184_shot_assist_toggle
         0x0185: gameservice_client_0185_shot_assist_activate
+        0x0195: gameservice_client_0195_unknown_cookies_related

@@ -27,6 +27,7 @@ meta:
     - '0084'
     - '0086'
     - '0095'
+    - '0096'
     - '009f'
     - '00a1'
     - '00e6'
@@ -73,6 +74,7 @@ meta:
     - '0264'
     - '026a'
     - '026b'
+    - '027d'
 
 seq:
   - id: packet_id
@@ -102,6 +104,7 @@ seq:
         0x0084: gameservice_server_0084_whisper_data
         0x0086: gameservice_server_0086_room_information_response
         0x0095: gameservice_server_0095_money_update
+        0x0096: gameservice_server_0096_unknown_cookies_related_response
         0x009f: gameservice_server_009f_server_list
         0x00a1: gameservice_server_00a1_user_status_response
         0x00e6: gameservice_server_00e6_user_shop_inventory
@@ -148,3 +151,4 @@ seq:
         0x0264: gameservice_server_0264_memorial_coin_result
         0x026a: gameservice_server_026a_shot_assist_toggle_response
         0x026b: gameservice_server_026b_shot_assist_activate_response
+        0x027d: gameservice_server_027d_unknown_cookies_related_response

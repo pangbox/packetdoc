@@ -22,6 +22,7 @@ meta:
     - '0063'
     - '0068'
     - '006b'
+    - '006e'
     - '0072'
     - '0073'
     - '0078'
@@ -52,6 +53,7 @@ meta:
     - '0196'
     - '01bc'
     - '01d4'
+    - '01f7'
     - '0211'
     - '0212'
     - '0213'
@@ -100,6 +102,7 @@ seq:
         0x0063: gameservice_server_0063_shot_active_user_announce
         0x0068: gameservice_server_0068_pangya_shop_buy_item
         0x006b: gameservice_server_006b_equipment_response
+        0x006e: gameservice_server_006e_unknown_tourney_related_announce
         0x0072: gameservice_server_0072_user_equipment
         0x0073: gameservice_server_0073_user_inventory
         0x0078: gameservice_server_0078_room_user_ready_state_response
@@ -130,6 +133,7 @@ seq:
         0x0196: gameservice_server_0196_unknown_lounge_related_response
         0x01bc: gameservice_server_01bc_guild_list
         0x01d4: gameservice_server_01d4_new_session_key
+        0x01f7: gameservice_server_01f7_unknown_tourney_related_announce
         0x0211: gameservice_server_0211_mailbox_response
         0x0212: gameservice_server_0212_mail_read_response
         0x0213: gameservice_server_0213_mail_send_response

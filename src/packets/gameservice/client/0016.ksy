@@ -12,7 +12,7 @@ meta:
 doc: |
   This packet relays how the user has changed their active club, so it can be relayed to all other players in the room.
   
-  The response is [GameService Server 0059 Shot Club Change Announce](/packets/gameservice/server/0059.ksy).
+  The response is [GameService Server 0x0059 Shot Club Change Announce](/packets/gameservice/server/0059.ksy).
   
 seq:
   - id: club

@@ -13,7 +13,10 @@ meta:
     - '0009'
     - '000d'
     - '000f'
+    - '0012'
     - '0013'
+    - '0014'
+    - '0015'
     - '0016'
     - '0017'
     - '001f'
@@ -72,7 +75,10 @@ seq:
         0x0009: gameservice_client_0009_room_join
         0x000d: gameservice_client_000d_room_user_ready_state
         0x000f: gameservice_client_000f_room_leave
+        0x0012: gameservice_client_0012_shot_commit
         0x0013: gameservice_client_0013_shot_rotate
+        0x0014: gameservice_client_0014_shot_meter_input
+        0x0015: gameservice_client_0015_shot_power
         0x0016: gameservice_client_0016_shot_club_change
         0x0017: gameservice_client_0017_shot_item_use
         0x001f: gameservice_client_001f_unknown

@@ -14,7 +14,9 @@ meta:
     - '004a'
     - '004c'
     - '004d'
+    - '0055'
     - '0056'
+    - '0058'
     - '0059'
     - '005a'
     - '0063'
@@ -87,7 +89,9 @@ seq:
         0x004a: gameservice_server_004a_room_status_update
         0x004c: gameservice_server_004c_room_leave_response
         0x004d: gameservice_server_004d_sub_server_list
+        0x0055: gameservice_server_0055_shot_commit_announce
         0x0056: gameservice_server_0056_shot_rotate_announce
+        0x0058: gameservice_server_0058_shot_power_announce
         0x0059: gameservice_server_0059_shot_club_change_announce
         0x005a: gameservice_server_005a_shot_item_use_announce
         0x0063: gameservice_server_0063_user_at_play_announce

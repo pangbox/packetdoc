@@ -12,7 +12,9 @@ meta:
 doc: |
   This packet relays a user's use of a consumable item.
   
-  This is a response to [GameService Client 0017 Shot Item Use](/packets/gameservice/client/0017.ksy).
+  As with all other shot announce packets, it is not relayed during tournaments/simultaneous play.
+  
+  This is a response to [GameService Client 0x0017 Shot Item Use](/packets/gameservice/client/0017.ksy).
 
 seq:
   - id: item_id

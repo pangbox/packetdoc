@@ -13,9 +13,9 @@ doc: |
   This packet relays how the user has rotated/adjusted the aim of their shot, so it can be relayed to all other
   players in the room.
   
-  The response is [GameService Server 0056 Shot Rotate Announce](/packets/gameservice/server/0056.ksy).
+  The response is [GameService Server 0x0056 Shot Rotate Announce](/packets/gameservice/server/0056.ksy).
   
 seq:
   - id: rotation_angle
-    type: s4
+    type: f4
     doc: Increments counterclockwise.

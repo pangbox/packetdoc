@@ -12,7 +12,7 @@ meta:
 doc: |
   This packet signals the use of a consumable item during a match.
   
-  The response is [GameServer Service 005A Shot Item Use Announce](/packets/gameservice/server/005a.ksy)
+  The response is [GameServer Service 0x005A Shot Item Use Announce](/packets/gameservice/server/005a.ksy)
 
 seq:
   - id: item_id

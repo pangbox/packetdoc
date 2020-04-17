@@ -30,6 +30,7 @@ meta:
     - '003d'
     - '0043'
     - '0048'
+    - '0069'
     - '0077'
     - '0078'
     - '007d'
@@ -97,6 +98,7 @@ seq:
         0x003d: gameservice_client_003d_unknown_cookies_related
         0x0043: gameservice_client_0043_server_list_update_request
         0x0048: gameservice_client_0048_unknown_loading_related_counter
+        0x0069: gameservice_client_0069_chat_macro_update
         0x0077: gameservice_client_0077_user_shop_inventory_request
         0x0078: gameservice_client_0078_user_shop_leave
         0x007d: gameservice_client_007d_user_shop_buy_item

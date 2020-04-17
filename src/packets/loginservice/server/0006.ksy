@@ -12,6 +12,8 @@ meta:
 doc: |
   This packet defines the user's 9 in-game chat macros.
   It is sent after a successful login.
+  
+  This list is altered with [GameService Client 0x0069 Chat Macro Update](/packets/gameservice/client/0069.ksy).
 
 seq:
   - id: chat_macro

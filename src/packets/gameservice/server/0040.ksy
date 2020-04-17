@@ -34,7 +34,7 @@ seq:
         0x00: message_data_00_chat_message
         0x0b: message_data_0b_unknown
         0x0c: message_data_0c_countdown
-        0x11: message_data_11_departure
+        0x11: message_data_11_completion
 
 types:
   message_data_00_chat_message:
@@ -59,16 +59,24 @@ types:
         doc: Appears to always be 0 (0x00000000).
       - id: countdown_seconds
         type: u4
-        doc: Countdown until game/event begins. Sent at 90, 60, 30, 20, 10 through 1 seconds.
-  message_data_11_departure:
+        doc: Countdown until game/event begins. Sent every 30 seconds until 30, then 20, and 10 through 1 seconds.
+  message_data_11_completion:
+    doc: |
+      Announces when a player has finished in a tournament.
+      Immediately precedes [GameService Server 0x006C Tournament User Finish](/packets/gameservice/server/006c.ksy).
     seq:
       - id: user_nickname
         type: pstring
       - id: unknown_d
         size: 2
-      - id: unknown_e
+      - id: user_score
         type: s4
-      - id: unknown_f
+        doc: Final score attained in game.
+      - id: user_pang
         type: u4
+        doc: Final pang attained in game.
       - id: unknown_g
-        size: 5
+        size: 4
+      - id: user_assist_mode
+        type: u1
+        doc: User used shot assist during game.

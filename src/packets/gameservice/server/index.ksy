@@ -22,6 +22,8 @@ meta:
     - '0063'
     - '0068'
     - '006b'
+    - '006c'
+    - '006d'
     - '006e'
     - '0072'
     - '0073'
@@ -32,6 +34,7 @@ meta:
     - '0096'
     - '009f'
     - '00a1'
+    - '00ce'
     - '00e6'
     - '00e7'
     - '00ec'
@@ -44,6 +47,7 @@ meta:
     - '012b'
     - '012d'
     - '0133'
+    - '0134'
     - '0154'
     - '0157'
     - '0168'
@@ -102,6 +106,8 @@ seq:
         0x0063: gameservice_server_0063_shot_active_user_announce
         0x0068: gameservice_server_0068_pangya_shop_buy_item
         0x006b: gameservice_server_006b_equipment_response
+        0x006c: gameservice_server_006c_tournament_user_finish
+        0x006d: gameservice_server_006d_tournament_user_update
         0x006e: gameservice_server_006e_unknown_tourney_related_announce
         0x0072: gameservice_server_0072_user_equipment
         0x0073: gameservice_server_0073_user_inventory
@@ -112,6 +118,7 @@ seq:
         0x0096: gameservice_server_0096_unknown_cookies_related_response
         0x009f: gameservice_server_009f_server_list
         0x00a1: gameservice_server_00a1_user_status_response
+        0x00ce: gameservice_server_00ce_tournament_item_winnings
         0x00e6: gameservice_server_00e6_user_shop_inventory
         0x00e7: gameservice_server_00e7_user_shop_leave_response
         0x00ec: gameservice_server_00ec_user_shop_buy_item_response
@@ -124,6 +131,7 @@ seq:
         0x012b: gameservice_server_012b_inventory_open_a_response
         0x012d: gameservice_server_012d_my_room_layout
         0x0133: gameservice_server_0133_treasure_point_result
+        0x0134: gameservice_server_0134_treasure_point_winnings
         0x0154: gameservice_server_0154_cardholic_pack_open_response
         0x0157: gameservice_server_0157_user_information_response
         0x0168: gameservice_server_0168_user_information

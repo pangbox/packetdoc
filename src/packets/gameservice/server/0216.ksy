@@ -34,30 +34,30 @@ types:
         type:
           switch-on: subtype
           cases:
-            0x02: status_change_02_items_or_quests
+            0x02: status_change_02_items_achievements_quests
             0xc9: status_change_c9_character_mastery
             0xcc: status_change_cc_unknown
 
-  status_change_02_items_or_quests:
+  status_change_02_items_achievements_quests:
     seq:      
       - id: status_id
         type: u4
-        doc: item_id or quest_status_id or achievement_status_id
+        doc: item_id, achievement_status_id, quest_status_id
       - id: status_slot
         type: u4
-        doc: inventory_slot or quest_slot
+        doc: inventory_slot, achievement_status_slot, quest_status_slot
       - id: unknown_a
         size: 4
         doc: Likely padding?
       - id: status_amount_old
         type: u4
-        doc: Value of item/quest before change
+        doc: Value of item/achievement/quest before change.
       - id: status_amount_new
         type: u4
-        doc: Value of item/quest after change
+        doc: Value of item/achievement/quest after change.
       - id: status_amount_delta
         type: s4
-        doc: Change in value of item/quest. Can be negative.
+        doc: Change in value of item/achievement/quest. Can be negative.
       - id: unknown_d
         size: 25
   status_change_c9_character_mastery:

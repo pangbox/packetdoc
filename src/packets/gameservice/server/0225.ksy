@@ -32,10 +32,9 @@ seq:
     doc: From pangya_xx.iff/Quest.iff.
   - id: quest_slot_count
     type: u4
-  - id: quest_slot
+  - id: quest_status_slot
     type: u4
     repeat: expr
     repeat-expr: quest_slot_count
     doc: |
       See [GameService Server 0x0216 User Status Update](/packets/gameservice/server/0216.ksy).
-      When present, appears to be assigned sequentially?

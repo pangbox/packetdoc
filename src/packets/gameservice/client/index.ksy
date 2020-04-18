@@ -55,6 +55,9 @@ meta:
     - '0147'
     - '014b'
     - '0151'
+    - '0152'
+    - '0153'
+    - '0154'
     - '0157'
     - '016e'
     - '016f'
@@ -123,6 +126,9 @@ seq:
         0x0147: gameservice_client_0147_mail_delete
         0x014b: gameservice_client_014b_black_papel_play
         0x0151: gameservice_client_0151_quest_status_request
+        0x0152: gameservice_client_0152_quest_accept
+        0x0153: gameservice_client_0153_quest_submit
+        0x0154: gameservice_client_0154_quest_dismiss
         0x0157: gameservice_client_0157_achievement_status_request
         0x016e: gameservice_client_016e_login_bonus_status_request
         0x016f: gameservice_client_016f_login_bonus_claim

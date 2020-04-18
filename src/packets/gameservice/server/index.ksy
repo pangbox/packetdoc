@@ -69,6 +69,9 @@ meta:
     - '021e'
     - '0220'
     - '0225'
+    - '0226'
+    - '0227'
+    - '0228'
     - '022c'
     - '022d'
     - '022e'
@@ -149,10 +152,13 @@ seq:
         0x0215: gameservice_server_0215_mail_delete_response
         0x0216: gameservice_server_0216_user_status_update
         0x021b: gameservice_server_021b_black_papel_result
-        0x021d: gameservice_server_021d_unknown
-        0x021e: gameservice_server_021e_unknown
+        0x021d: gameservice_server_021d_achievement_progress_report
+        0x021e: gameservice_server_021e_achievement_association_report
         0x0220: gameservice_server_0220_achievement_update
         0x0225: gameservice_server_0225_quest_status_response
+        0x0226: gameservice_server_0226_quest_accept_response
+        0x0227: gameservice_server_0227_quest_submit_response
+        0x0228: gameservice_server_0228_quest_dismiss_response
         0x022c: gameservice_server_022c_unknown_achievement_related_response
         0x022d: gameservice_server_022d_achievement_status_response
         0x022e: gameservice_server_022e_achievement_unlocked

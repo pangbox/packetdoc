@@ -34,11 +34,10 @@ seq:
 types:
   achievement_group:
     seq:
-      - id: unknown_b
-        size: 4
       - id: achievement_group_id
+        size: 4
+      - id: achievement_group_slot
         type: u4
-        doc: From pangya_xx.iff/Achievement.iff.
       - id: achievement_count
         type: u4
       - id: achievements

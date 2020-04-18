@@ -34,7 +34,10 @@ meta:
     - '0096'
     - '009f'
     - '00a1'
+    - '00a7'
+    - '00aa'
     - '00ce'
+    - '00dd'
     - '00e6'
     - '00e7'
     - '00ec'
@@ -55,8 +58,10 @@ meta:
     - '016d'
     - '0170'
     - '0196'
+    - '019d'
     - '01bc'
     - '01d4'
+    - '01eb'
     - '01f7'
     - '0211'
     - '0212'
@@ -122,7 +127,10 @@ seq:
         0x0096: gameservice_server_0096_cookie_balance
         0x009f: gameservice_server_009f_server_list
         0x00a1: gameservice_server_00a1_user_status_response
+        0x00a7: gameservice_server_00a7_lootbox_inventory_update
+        0x00aa: gameservice_server_00aa_inventory_slot_assign
         0x00ce: gameservice_server_00ce_tournament_item_winnings
+        0x00dd: gameservice_server_00dd_scratchy_play_result
         0x00e6: gameservice_server_00e6_user_shop_inventory
         0x00e7: gameservice_server_00e7_user_shop_leave_response
         0x00ec: gameservice_server_00ec_user_shop_buy_item_response
@@ -143,8 +151,10 @@ seq:
         0x016d: gameservice_server_016d_locker_deposit_item_response
         0x0170: gameservice_server_0170_locker_inventory_response
         0x0196: gameservice_server_0196_unknown_lounge_related_response
+        0x019d: gameservice_server_019d_lootbox_open_results
         0x01bc: gameservice_server_01bc_guild_list
         0x01d4: gameservice_server_01d4_new_session_key
+        0x01eb: gameservice_server_01eb_scratchy_menu_open_response
         0x01f7: gameservice_server_01f7_unknown_tourney_related_announce
         0x0211: gameservice_server_0211_mailbox_response
         0x0212: gameservice_server_0212_mail_read_response

@@ -29,13 +29,26 @@ seq:
 types:
   item:
     seq:
-      - id: unknown_b
-        size: 4
+      - id: ball_colour
+        type: u4
+        enum: ball_colour
       - id: item_id
         type: u4
       - id: inventory_slot
         type: u4
+        doc: If new/no slot assigned yet, 0 (0x00000000).
       - id: item_quantity
         type: u4
-      - id: unknown_c
-        size: 4
+      - id: item_rarity
+        type: u4
+        enum: item_rarity
+
+enums:
+  ball_colour:
+    0x00000000: blue
+    0x00000001: teal
+    0x00000002: red
+  item_rarity:
+    0x00000000: black_normal
+    0x00000001: blue_premium
+    0x00000002: red_rare

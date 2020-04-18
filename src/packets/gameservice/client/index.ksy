@@ -31,6 +31,7 @@ meta:
     - '0043'
     - '0048'
     - '0069'
+    - '0070'
     - '0077'
     - '0078'
     - '007d'
@@ -46,8 +47,10 @@ meta:
     - '00cd'
     - '00d3'
     - '00eb'
+    - '00ef'
     - '0108'
     - '0119'
+    - '012a'
     - '0143'
     - '0144'
     - '0145'
@@ -103,6 +106,7 @@ seq:
         0x0043: gameservice_client_0043_server_list_update_request
         0x0048: gameservice_client_0048_unknown_loading_related_counter
         0x0069: gameservice_client_0069_chat_macro_update
+        0x0070: gameservice_client_0070_scratchy_play
         0x0077: gameservice_client_0077_user_shop_inventory_request
         0x0078: gameservice_client_0078_user_shop_leave
         0x007d: gameservice_client_007d_user_shop_buy_item
@@ -118,8 +122,10 @@ seq:
         0x00cd: gameservice_client_00cd_locker_deposit_item
         0x00d3: gameservice_client_00d3_locker_inventory_request
         0x00eb: gameservice_client_00eb_unknown_lounge_related_request
+        0x00ef: gameservice_client_00ef_lootbox_open
         0x0108: gameservice_client_0108_guild_list_request
         0x0119: gameservice_client_0119_new_session_key_request
+        0x012a: gameservice_client_012a_scratchy_menu_open
         0x0143: gameservice_client_0143_mailbox_request
         0x0144: gameservice_client_0144_mail_read_request
         0x0145: gameservice_client_0145_mail_send

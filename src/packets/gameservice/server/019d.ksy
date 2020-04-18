@@ -2,8 +2,8 @@
 #pragma.parseAs GameserviceServerPacket
 ---
 meta:
-  id: gameservice_server_019d_lootbox_open_results
-  title: GameService Server Lootbox Open Results
+  id: gameservice_server_019d_lootbox_open_result
+  title: GameService Server Lootbox Open Result
   encoding: ASCII
   endian: le
   imports:

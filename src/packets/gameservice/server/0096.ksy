@@ -3,7 +3,7 @@
 ---
 meta:
   id: gameservice_server_0096_cookie_balance
-  title: GameService Server 0096 Cookie Balance
+  title: GameService Server Cookie Balance
   encoding: ASCII
   endian: le
   imports:
@@ -11,7 +11,7 @@ meta:
 
 doc: |
   This is the response to [GameService Client 0x0002 Hello](/packets/gameservice/client/0002.ksy)
-  and [GameService Client 0x003D Unknown Cookies Related](/packets/gameservice/client/003d.ksy).
+  and [GameService Client 0x003D Cookie Balance Request](/packets/gameservice/client/003d.ksy).
 
 seq:
   - id: unknown_a

@@ -151,7 +151,7 @@ seq:
         0x016d: gameservice_server_016d_locker_deposit_item_response
         0x0170: gameservice_server_0170_locker_inventory_response
         0x0196: gameservice_server_0196_unknown_lounge_related_response
-        0x019d: gameservice_server_019d_lootbox_open_results
+        0x019d: gameservice_server_019d_lootbox_open_result
         0x01bc: gameservice_server_01bc_guild_list
         0x01d4: gameservice_server_01d4_new_session_key
         0x01eb: gameservice_server_01eb_scratchy_menu_open_response

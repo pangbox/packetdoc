@@ -75,6 +75,7 @@ meta:
     - '022c'
     - '022d'
     - '022e'
+    - '022f'
     - '0248'
     - '0249'
     - '0250'
@@ -162,6 +163,7 @@ seq:
         0x022c: gameservice_server_022c_unknown_achievement_related_response
         0x022d: gameservice_server_022d_achievement_status_response
         0x022e: gameservice_server_022e_achievement_unlocked
+        0x022f: gameservice_server_022f_tiki_shop_convert_item_response
         0x0248: gameservice_server_0248_login_bonus_status_response
         0x0249: gameservice_server_0249_login_bonus_claim_response
         0x0250: gameservice_server_0250_event_mode_join_response

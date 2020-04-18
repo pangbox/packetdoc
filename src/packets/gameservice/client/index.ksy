@@ -59,6 +59,7 @@ meta:
     - '0153'
     - '0154'
     - '0157'
+    - '0158'
     - '016e'
     - '016f'
     - '0176'
@@ -130,6 +131,7 @@ seq:
         0x0153: gameservice_client_0153_quest_submit
         0x0154: gameservice_client_0154_quest_dismiss
         0x0157: gameservice_client_0157_achievement_status_request
+        0x0158: gameservice_client_0158_tiki_shop_convert_item
         0x016e: gameservice_client_016e_login_bonus_status_request
         0x016f: gameservice_client_016f_login_bonus_claim
         0x0176: gameservice_client_0176_event_mode_join

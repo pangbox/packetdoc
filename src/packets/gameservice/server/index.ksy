@@ -118,7 +118,7 @@ seq:
         0x0084: gameservice_server_0084_whisper_data
         0x0086: gameservice_server_0086_room_information_response
         0x0095: gameservice_server_0095_money_update
-        0x0096: gameservice_server_0096_unknown_cookies_related_response
+        0x0096: gameservice_server_0096_cookie_balance
         0x009f: gameservice_server_009f_server_list
         0x00a1: gameservice_server_00a1_user_status_response
         0x00ce: gameservice_server_00ce_tournament_item_winnings

@@ -98,7 +98,7 @@ seq:
         0x002d: gameservice_client_002d_room_information_request
         0x002f: gameservice_client_002f_user_information_request
         0x003c: gameservice_client_003c_note_send
-        0x003d: gameservice_client_003d_unknown_cookies_related
+        0x003d: gameservice_client_003d_cookie_balance_request
         0x0043: gameservice_client_0043_server_list_update_request
         0x0048: gameservice_client_0048_unknown_loading_related_counter
         0x0069: gameservice_client_0069_chat_macro_update

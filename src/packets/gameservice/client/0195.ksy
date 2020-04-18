@@ -17,5 +17,5 @@ doc: |
   The response is [GameService Server 0x027D Unknown Response (Cookies Related)](/packets/gameservice/server/027d.ksy).
   
   **See Also:**
-  * [GameService Client 0x003D Unknown (Cookies Related)](/packets/gameservice/client/003d.ksy)
+  * [GameService Client 0x003D Cookie Balance Request](/packets/gameservice/client/003d.ksy)
   * [GameService Client 0x00A2 Unknown (Cookies Related)](/packets/gameservice/client/00a2.ksy)

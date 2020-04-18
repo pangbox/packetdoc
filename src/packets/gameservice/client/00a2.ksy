@@ -17,5 +17,5 @@ doc: |
   It has no response.
   
   **See Also:**
-  * [GameService Client 0x003D Unknown (Cookies Related)](/packets/gameservice/client/003d.ksy)
+  * [GameService Client 0x003D Cookie Balance Request](/packets/gameservice/client/003d.ksy)
   * [GameService Client 0x0195 Unknown (Cookies Related)](/packets/gameservice/client/0195.ksy)

@@ -30,6 +30,7 @@ meta:
     - '0078'
     - '0084'
     - '0086'
+    - '0089'
     - '0095'
     - '0096'
     - '009f'
@@ -52,7 +53,15 @@ meta:
     - '0133'
     - '0134'
     - '0154'
+    - '0156'
     - '0157'
+    - '0158'
+    - '0159'
+    - '015a'
+    - '015b'
+    - '015c'
+    - '015d'
+    - '015e'
     - '0168'
     - '016c'
     - '016d'
@@ -87,6 +96,7 @@ meta:
     - '0251'
     - '0253'
     - '0254'
+    - '0257'
     - '0264'
     - '026a'
     - '026b'
@@ -123,6 +133,7 @@ seq:
         0x0078: gameservice_server_0078_room_user_ready_state_response
         0x0084: gameservice_server_0084_whisper_data
         0x0086: gameservice_server_0086_room_information_response
+        0x0089: gameservice_server_0089_user_information_response
         0x0095: gameservice_server_0095_money_update
         0x0096: gameservice_server_0096_cookie_balance
         0x009f: gameservice_server_009f_server_list
@@ -145,7 +156,15 @@ seq:
         0x0133: gameservice_server_0133_treasure_point_result
         0x0134: gameservice_server_0134_treasure_point_winnings
         0x0154: gameservice_server_0154_cardholic_pack_open_response
-        0x0157: gameservice_server_0157_user_information_response
+        0x0156: gameservice_server_0156_user_information_consumables
+        0x0157: gameservice_server_0157_unknown_user_related_response
+        0x0158: gameservice_server_0158_unknown_user_related_response
+        0x0159: gameservice_server_0159_unknown_user_related_response
+        0x015a: gameservice_server_015a_unknown_user_related_response
+        0x015b: gameservice_server_015b_unknown_user_related_response
+        0x015c: gameservice_server_015c_user_information_course_records
+        0x015d: gameservice_server_015d_user_information_guild
+        0x015e: gameservice_server_015e_user_information_equipment
         0x0168: gameservice_server_0168_user_information
         0x016c: gameservice_server_016c_locker_combination_response
         0x016d: gameservice_server_016d_locker_deposit_item_response
@@ -180,6 +199,7 @@ seq:
         0x0251: gameservice_server_0251_event_mode_leave_response
         0x0253: gameservice_server_0253_event_room_join_response
         0x0254: gameservice_server_0254_event_room_leave_response
+        0x0257: gameservice_server_0257_unknown_user_related_response
         0x0264: gameservice_server_0264_memorial_coin_result
         0x026a: gameservice_server_026a_shot_assist_toggle_response
         0x026b: gameservice_server_026b_shot_assist_activate_response

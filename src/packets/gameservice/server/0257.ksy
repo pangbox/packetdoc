@@ -38,8 +38,8 @@ types:
       - id: entries
         type: entry
         repeat: expr
-        repear-expr: entry_count
-  entries:
+        repeat-expr: entry_count
+  entry:
     seq:
       - id: unknown_a
         size: 12

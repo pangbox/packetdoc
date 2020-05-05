@@ -19,7 +19,6 @@ seq:
     size: 4
   - id: item_count
     type: u4
-    doc: Unconfirmed.
   - id: items
     type: item
     repeat: expr

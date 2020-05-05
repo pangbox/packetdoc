@@ -12,8 +12,9 @@ meta:
 doc: |
   This packet is sent when the user buys an item from a user shop in a lounge.
   
-  Its responses are [GameService Server 0x00EC User Shop Buy Item Response](/packets/gameservice/server/00ec.ksy),
-  then [GameService Server 0x00ED User Shop Purchase Announce](/packets/gameservice/server/00ed.ksy)
+  Its responses are:
+  * [GameService Server 0x00EC Transact Item](/packets/gameservice/server/00ec.ksy), and
+  * [GameService Server 0x00ED User Shop Purchase Announce](/packets/gameservice/server/00ed.ksy)
 
 seq:
   - id: remote_user_id

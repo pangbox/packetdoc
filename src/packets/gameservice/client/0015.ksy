@@ -14,7 +14,18 @@ doc: |
   
   The response is [GameService Server 0x0058 Shot Power Announce](/packets/gameservice/server/0058.ksy).
   
+  **Aliases:**
+  * `hsreina/pangya-server`: `PLAYER_POWER_SHOT`
+  * `eantoniobr/UGPangya`: `PLAYER_POWER_SHOT`
+
 seq:
   - id: power_level
     type: u1
-    doc: 0x01 for a power shot, and 0x02 for a double power shot. 0x00 is used if power has been set and user reverts to a standard shot.
+    enum: power_level
+    doc: 0x00 is used if power has been set and user reverts to a standard shot.
+
+enums:
+  power_level:
+    0x00: normal
+    0x01: power
+    0x02: double_power

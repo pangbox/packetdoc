@@ -13,6 +13,10 @@ doc: |
   This packet relays that the user has committed to a shot, and supplies some additional information.
   
   The response is [GameService Server 0x0055 Shot Commit Announce](/packets/gameservice/server/0055.ksy).
+  
+  **Aliases:**
+  * `hsreina/pangya-server`: `PLAYER_ACTION_SHOT`
+  * `eantoniobr/UGPangya`: `PLAYER_ACTION_SHOT`
 
 seq:
   - id: shot_subtype

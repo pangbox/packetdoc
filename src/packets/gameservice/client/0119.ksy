@@ -14,6 +14,9 @@ doc: |
   
   The response is [Gameservice Server 0x01D4 New Session Key](/packets/gameservice/server/01d4.ksy).
   
+  **Aliases:**
+  * `eantoniobr/UGPangya`: `PLAYER_CHANGE_SERVER`
+
 seq:
   - id: server_id
     type: u4

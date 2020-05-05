@@ -18,6 +18,9 @@ doc: |
   * [GameService Server 0x0216 User Status Update](/packets/gameservice/server/0216.ksy) for setting tiki shop achievement progress,
   * [GameService Server 0x022E Achievement Unlocked](/packets/gameservice/server/022e.ksy), and
   * [GameService Server 0x0220 Achievement Update](/packets/gameservice/server/0220.ksy).
+  
+  **Aliases:**
+  * `eantoniobr/UGPangya`: `PLAYER_DO_MAGICBOX`
 
 seq:
   - id: recipe_index

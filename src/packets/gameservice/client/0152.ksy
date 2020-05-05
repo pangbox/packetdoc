@@ -13,6 +13,10 @@ doc: |
   This packet accepts the currently offered lineup of daily quests.
   
   Its response is [GameService Server 0x0226 Quest Accept Response](/packets/gameservice/server/0226.ksy).
+  
+  **Aliases:**
+  * `hsreina/pangya-server`: `PLAYER_ACCEPT_DAILY_QUEST`
+  * `eantoniobr/UGPangya`: `PLAYER_ACCEPT_QUEST`
 
 seq:
   - id: quest_count

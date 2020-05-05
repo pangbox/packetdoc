@@ -13,6 +13,10 @@ doc: |
   This packet signals the use of a consumable item during a match.
   
   The response is [GameServer Service 0x005A Shot Item Use Announce](/packets/gameservice/server/005a.ksy)
+  
+  **Aliases:**
+  * `hsreina/pangya-server`: `PLAYER_USE_ITEM`
+  * `eantoniobr/UGPangya`: `PLAYER_USE_ITEM`
 
 seq:
   - id: item_id

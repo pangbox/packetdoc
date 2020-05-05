@@ -15,3 +15,6 @@ doc: |
   This packet has no payload.
 
   The response is [Gameservice Server 0x010E Unknown Response (VS Mode Opponent Related)](/packets/gameservice/server/010e.ksy).
+  
+  **Aliases:**
+  * `eantoniobr/UGPangya`: `PLAYER_MATCH_HISTORY`

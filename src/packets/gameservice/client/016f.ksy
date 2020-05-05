@@ -18,3 +18,6 @@ doc: |
   
   Its responses are [GameService Server 0x0216 User Status Update](/packets/gameservice/server/0216.ksy) (to award the item),
   then [GameService Server 0x0249 Login Bonus Claim Response](/packets/gameservice/server/0249.ksy).
+  
+  **Aliases:**
+  * `eantoniobr/UGPangya`: `PLAYER_REQUEST_ITEM_DAILY`

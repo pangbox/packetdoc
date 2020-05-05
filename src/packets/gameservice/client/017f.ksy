@@ -19,6 +19,9 @@ doc: |
   * [GameService Server 0x022E Achievement Unlocked](/packets/gameservice/server/022e.ksy) to increase achievement progress, and
   * [GameService Server 0x0220 Achievement Update](/packets/gameservice/server/0220.ksy).
 
+  **Aliases:**
+  * `eantoniobr/UGPangya`: `PLAYER_MEMORIAL`
+
 seq:
   - id: item_id
     type: u4

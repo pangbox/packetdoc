@@ -14,6 +14,10 @@ doc: |
   
   The response is [Gameservice Server 0x0215 Mail Delete Response](/packets/gameservice/server/0215.ksy),
   which provides a new mailbox listing to display.
+  
+  **Aliases:**
+  * `hsreina/pangya-server`: `PLAYER_DELETE_MAIL`
+  * `eantoniobr/UGPangya`: `PLAYER_DELETE_MAIL`
 
 seq:
   - id: unknown_a

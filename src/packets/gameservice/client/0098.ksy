@@ -15,3 +15,7 @@ doc: |
   This packet has no payload.
   
   The response is [GameService Server 0x010B Rare Shop Open Response](/packets/gameservice/server/010b.ksy).
+  
+  **Aliases:**
+  * `hsreina/pangya-server`: `PLAYER_OPEN_RARE_SHOP`
+  * `eantoniobr/UGPangya`: `PLAYER_OPEN_PAPEL`

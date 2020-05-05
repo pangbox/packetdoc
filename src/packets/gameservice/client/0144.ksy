@@ -14,6 +14,10 @@ doc: |
   
   The response is [Gameservice Server 0x0212 Mail Read Response](/packets/gameservice/server/0212.ksy).
   
+  **Aliases:**
+  * `hsreina/pangya-server`: `PLAYER_REQUEST_INBOX_DETAILS`
+  * `eantoniobr/UGPangya`: `PLAYER_READ_MAIL`
+
 seq:
   - id: mail_id
     type: u4

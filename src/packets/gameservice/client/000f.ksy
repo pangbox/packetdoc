@@ -13,6 +13,10 @@ doc: |
   This packet signals the user leaving a room and returning to the multiplayer lobby.
   
   The response is [GameService Server 0x004C Room Leave Response](/packets/gameservice/server/004c.ksy).
+  
+  **Aliases:**
+  * `hsreina/pangya-server`: `PLAYER_LEAVE_GAME`
+  * `eantoniobr/UGPangya`: `PLAYER_LEAVE_GAME`
 
 seq:
   - id: unknown_a

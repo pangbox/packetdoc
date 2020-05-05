@@ -14,6 +14,10 @@ doc: |
   
   The response is [Gameservice Server 0x0211 Mailbox Response](/packets/gameservice/server/0211.ksy).
   
+  **Aliases:**
+  * `hsreina/pangya-server`: `PLAYER_REQUEST_INBOX`
+  * `eantoniobr/UGPangya`: `PLAYER_OPEN_MAILBOX`
+
 seq:
   - id: page_number
     type: u4

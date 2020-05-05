@@ -12,6 +12,10 @@ meta:
 doc: |
   This packet sends a message to be displayed through the public chat area of the
   lobby or a game room.
+  
+  **Aliases:**
+  * `hsreina/pangya-server`: `PLAYER_MESSAGE`
+  * `eantoniobr/UGPangya`: `PLAYER_CHAT`
 
 seq:
   - id: padding_a

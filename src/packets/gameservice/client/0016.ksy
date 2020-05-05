@@ -14,6 +14,10 @@ doc: |
   
   The response is [GameService Server 0x0059 Shot Club Change Announce](/packets/gameservice/server/0059.ksy).
   
+  **Aliases:**
+  * `hsreina/pangya-server`: `PLAYER_ACTION_CHANGE_CLUB`
+  * `eantoniobr/UGPangya`: `PLAYER_CHANGE_CLUB`
+
 seq:
   - id: club
     type: u1

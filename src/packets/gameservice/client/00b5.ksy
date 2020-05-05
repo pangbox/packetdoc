@@ -18,7 +18,11 @@ doc: |
   
   The response is [GameService Server 0x012B Inventory Open A Response](/packets/gameservice/server/012b.ksy).
   
-  ** See Also ** [GameService Client 0x00B7 Inventory Open B](/packets/gameservice/client/00b7.ksy).
+  **See Also:**
+  * [GameService Client 0x00B7 Inventory Open B](/packets/gameservice/client/00b7.ksy).
+  
+  **Aliases:**
+  * `eantoniobr/UGPangya`: `PLAYER_ENTER_ROOM`
 
 seq:
   - id: user_id_a

@@ -15,6 +15,10 @@ doc: |
   
   The response is [GameService Server 0x0056 Shot Rotate Announce](/packets/gameservice/server/0056.ksy).
   
+  **Aliases:**
+  * `hsreina/pangya-server`: `PLAYER_ACTION_ROTATE`
+  * `eantoniobr/UGPangya`: `PLAYER_GAME_ROTATE`
+
 seq:
   - id: rotation_angle
     type: f4

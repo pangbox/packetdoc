@@ -15,6 +15,9 @@ doc: |
   Its responses are:
   * [GameService Server 0x00EC Transact Item](/packets/gameservice/server/00ec.ksy), and
   * [GameService Server 0x00ED User Shop Purchase Announce](/packets/gameservice/server/00ed.ksy)
+  
+  **Aliases:**
+  * `hsreina/pangya-server`: `PLAYER_BUY_SHOP_ITEM`
 
 seq:
   - id: remote_user_id

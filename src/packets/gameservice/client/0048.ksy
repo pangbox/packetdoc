@@ -15,6 +15,10 @@ doc: |
   
   There is no known response.
   
+  **Aliases:**
+  * `hsreina/pangya-server`: `PLAYER_LOADING_INFO`
+  * `eantoniobr/UGPangya`: `PLAYER_LOADING_INFO`
+
 seq:
   - id: unknown_a
     type: u1

@@ -31,6 +31,10 @@ doc: |
   The response is, if user_id is 0x00000000 (or potentially if otherwise invalid):
   
   * [GameService Server 0x0089 User Info Response](/packets/gameservice/server/0089.ksy).
+  
+  **Aliases:**
+  * `hsreina/pangya-server`: `PLAYER_REQUEST_INFO`
+  * `eantoniobr/UGPangya`: `PLAYER_REQUEST_PLAYERINFO`
 
 seq:
   - id: user_id

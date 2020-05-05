@@ -18,6 +18,10 @@ doc: |
   
   There is no response.
   
+  **Aliases:**
+  * `hsreina/pangya-server`: `PLAYER_ACTION_HIT`
+  * `eantoniobr/UGPangya`: `PLAYER_MOVE_BAR`
+
 seq:
   - id: input_sequence
     type: u1

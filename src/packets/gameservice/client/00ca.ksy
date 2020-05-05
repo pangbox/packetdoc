@@ -13,6 +13,9 @@ doc: |
   This packet opens a card pack ('Gold Card Ticket', etc.)
   
   The response is [GameService Server 0x0154 Cardholic Pack Open Response](/packets/gameservice/server/0154.ksy).
+  
+  **Aliases:**
+  * `eantoniobr/UGPangya`: `PLAYER_OPEN_CARD`
 
 seq:
   - id: item_id

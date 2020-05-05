@@ -2,20 +2,21 @@
 #pragma.parseAs GameserviceClientPacket
 ---
 meta:
-  id: gameservice_client_00cd_locker_deposit_item
-  title: GameService Client Locker Deposit Item
+  id: gameservice_client_00cd_locker_page_request
+  title: GameService Client Locker Page Request
   encoding: ASCII
   endian: le
   imports:
     - ../../common/pstring
 
 doc: |
-  This packet is used to add an item to the locker.
+  This packet is used to request a page of the locker's inventory.
   
-  Insufficient packets were (as of yet) captured to attempt proper documentation.
-  
-  The response is [GameService Server 0x016D Locker Deposit Item Response](/packets/gameservice/server/016d.ksy).
+  The response is [GameService Server 0x016D Locker Page Response](/packets/gameservice/server/016d.ksy).
 
 seq:
   - id: unknown_a
-    size: 6
+    type: u4
+    doc: Possibly a max items per page?
+  - id: page_value
+    type: u2

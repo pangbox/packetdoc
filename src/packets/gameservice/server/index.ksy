@@ -37,6 +37,7 @@ meta:
     - '00a1'
     - '00a7'
     - '00aa'
+    - '00c8'
     - '00ce'
     - '00dd'
     - '00e6'
@@ -52,6 +53,7 @@ meta:
     - '012d'
     - '0133'
     - '0134'
+    - '0139'
     - '0154'
     - '0156'
     - '0157'
@@ -65,7 +67,11 @@ meta:
     - '0168'
     - '016c'
     - '016d'
+    - '016e'
+    - '016f'
     - '0170'
+    - '0171'
+    - '0172'
     - '0196'
     - '019d'
     - '01bc'
@@ -143,11 +149,12 @@ seq:
         0x00a1: gameservice_server_00a1_user_status_response
         0x00a7: gameservice_server_00a7_lootbox_inventory_update
         0x00aa: gameservice_server_00aa_inventory_slot_assign
+        0x00c8: gameservice_server_00c8_pang_balance
         0x00ce: gameservice_server_00ce_tournament_item_winnings
         0x00dd: gameservice_server_00dd_scratchy_play_result
         0x00e6: gameservice_server_00e6_user_shop_inventory
         0x00e7: gameservice_server_00e7_user_shop_leave_response
-        0x00ec: gameservice_server_00ec_user_shop_buy_item_response
+        0x00ec: gameservice_server_00ec_transact_item
         0x00ed: gameservice_server_00ed_user_shop_purchase_announce
         0x00f5: gameservice_server_00f5_multiplayer_mode_join_response
         0x00f6: gameservice_server_00f6_multiplayer_mode_leave_response
@@ -158,6 +165,7 @@ seq:
         0x012d: gameservice_server_012d_my_room_layout
         0x0133: gameservice_server_0133_treasure_point_result
         0x0134: gameservice_server_0134_treasure_point_winnings
+        0x0139: gameservice_server_0139_locker_deposit_item_response_a
         0x0154: gameservice_server_0154_cardholic_pack_open_response
         0x0156: gameservice_server_0156_user_information_consumables
         0x0157: gameservice_server_0157_unknown_user_related_response
@@ -170,8 +178,12 @@ seq:
         0x015e: gameservice_server_015e_user_information_equipment
         0x0168: gameservice_server_0168_user_information
         0x016c: gameservice_server_016c_locker_combination_response
-        0x016d: gameservice_server_016d_locker_deposit_item_response
+        0x016d: gameservice_server_016d_locker_page_response
+        0x016e: gameservice_server_016e_locker_deposit_item_response_b
+        0x016f: gameservice_server_016f_locker_withdraw_item_response
         0x0170: gameservice_server_0170_locker_inventory_response
+        0x0171: gameservice_server_0171_locker_change_pang_response
+        0x0172: gameservice_server_0172_locker_pang_balance
         0x0196: gameservice_server_0196_unknown_lounge_related_response
         0x019d: gameservice_server_019d_lootbox_open_result
         0x01bc: gameservice_server_01bc_guild_list

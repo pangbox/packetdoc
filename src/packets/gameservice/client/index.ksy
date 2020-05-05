@@ -45,7 +45,11 @@ meta:
     - '00ca'
     - '00cc'
     - '00cd'
+    - '00ce'
+    - '00cf'
     - '00d3'
+    - '00d4'
+    - '00d5'
     - '00eb'
     - '00ef'
     - '0108'
@@ -121,8 +125,12 @@ seq:
         0x00b7: gameservice_client_00b7_inventory_open_b
         0x00ca: gameservice_client_00ca_cardholic_pack_open
         0x00cc: gameservice_client_00cc_locker_combination_attempt
-        0x00cd: gameservice_client_00cd_locker_deposit_item
+        0x00cd: gameservice_client_00cd_locker_page_request
+        0x00ce: gameservice_client_00ce_locker_deposit_item
+        0x00cf: gameservice_client_00cf_locker_withdraw_item
         0x00d3: gameservice_client_00d3_locker_inventory_request
+        0x00d4: gameservice_client_00d4_locker_change_pang
+        0x00d5: gameservice_client_00d5_locker_pang_balance_request
         0x00eb: gameservice_client_00eb_unknown_lounge_related_request
         0x00ef: gameservice_client_00ef_lootbox_open
         0x0108: gameservice_client_0108_guild_list_request

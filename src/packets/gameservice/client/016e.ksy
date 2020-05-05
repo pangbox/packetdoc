@@ -17,3 +17,7 @@ doc: |
   This packet contains no payload.
   
   The response is [GameService Server 0x0248 Login Bonus Status Response](/packets/gameservice/server/0248.ksy).
+  
+  **Aliases:**
+  * `hsreina/pangya-server`: `PLAYER_REQUEST_DAILY_REWARD`
+  * `eantoniobr/UGPangya`: `PLAYER_REQUEST_CHECK_DAILY_ITEM`

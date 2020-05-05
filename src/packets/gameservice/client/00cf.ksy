@@ -15,6 +15,9 @@ doc: |
   The responses are:
   * [GameService Server 0x00EC Transact Item, type 0x00](/packets/gameservice/server/00ec.ksy), and
   * [GameService Server 0x016F Locker Withdraw Item Response](/packets/gameservice/server/016f.ksy).
+  
+  **Aliases:**
+  * `eantoniobr/UGPangya`: `PLAYER_TAKE_ITEMLOCKER`
 
 seq:
   - id: unknown_a

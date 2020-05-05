@@ -17,3 +17,7 @@ doc: |
   The responses are, in order:
   * [GameService Server 0x0216 User Status Update](/packets/gameservice/server/0216.ksy) which removes (enable) or adds (disable) a 'Play Assist' item, and
   * [GameService Server 0x026A Shot Assist Toggle Response](/packets/gameservice/server/026a.ksy).
+
+  **Aliases:**
+  * `hsreina/pangya-server`: `PLAYER_SET_ASSIST_MODE`
+  * `eantoniobr/UGPangya`: `PLAYER_ASSIST_CONTROL`

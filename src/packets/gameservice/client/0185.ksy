@@ -13,6 +13,9 @@ doc: |
   This packet activates shot assist for a given shot during a match.
   
   The response is [GameService Server 0x026B Shot Assist Activate Response](/packets/gameservice/server/026b.ksy).
+  
+  **Aliases:**
+  * `eantoniobr/UGPangya`: `PLAYER_CALL_ASSIST_PUTTING`
 
 seq:
   - id: item_id

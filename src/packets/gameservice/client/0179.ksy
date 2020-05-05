@@ -12,9 +12,14 @@ meta:
 doc: |
   This packet is a request to join a particular event room.
   
-  Its responses are [GameService Server 0x0049 Room Join Response](/packets/gameservice/server/0049.ksy),
-  then [GameService Server 0x0253 Event Room Join Response](/packets/gameservice/server/0253.ksy).
+  Its responses are:
+  * [GameService Server 0x0049 Room Join Response](/packets/gameservice/server/0049.ksy), and
+  * [GameService Server 0x0253 Event Room Join Response](/packets/gameservice/server/0253.ksy).
   
+  **Aliases:**
+  * `hsreina/pangya-server`: `ENTER_GRAND_PRIX_EVENT`
+  * `eantoniobr/UGPangya`: `PLAYER_ENTER_GRANDPRIX`
+
 seq:
   - id: event_number
     type: u4

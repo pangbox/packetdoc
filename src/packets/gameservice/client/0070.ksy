@@ -17,3 +17,6 @@ doc: |
   The responses are:
   * [GameService Server 0x0216 User Status Update](/packets/gameservice/server/0216.ksy) to award prizes and deduct a card, and
   * [GameService Server 0x00DD Scratchy Play Result](/packets/gameservice/server/00dd.ksy) to acknowledge the play.
+  
+  **Aliases:**
+  * `eantoniobr/UGPangya`: `PLAYER_PLAY_SCRATCHCARD`

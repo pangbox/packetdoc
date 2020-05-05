@@ -16,6 +16,10 @@ doc: |
   * [GameService Server 0x0171 Locker Change Pang Response](/packets/gameservice/server/0171.ksy),
   * [GameService Server 0x00C8 Pang Balance](/packets/gameservice/server/00c8.ksy), and
   * [GameService Server 0x0172 Locker Pang Balance](/packets/gameservice/server/0172.ksy).
+  
+  **Aliases:**
+  * `hsreina/pangya-server`: `PLAYER_LOCKER_PANGS_TRANSACTION`
+  * `eantoniobr/UGPangya`: `PLAYER_LOCKERPANG_CONTROL`
 
 seq:
   - id: transaction_type

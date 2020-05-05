@@ -11,3 +11,7 @@ meta:
 
 doc: |
   This is a stub entry.
+  
+  **Aliases:**
+  * `hsreina/pangya-server`: `PLAYER_WHISPER`
+  * `eantoniobr/UGPangya`: `PLAYER_WHISPER`

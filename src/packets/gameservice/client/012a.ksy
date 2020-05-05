@@ -15,3 +15,7 @@ doc: |
   This packet has no payload.
   
   The response is [GameService Server 0x01EB Scratchy Menu Open Response](/packets/gameservice/server/01eb.ksy).
+  
+  **Aliases:**
+  * `hsreina/pangya-server`: `PLAYER_OPEN_SCRATCHY_CARD`
+  * `eantoniobr/UGPangya`: `PLAYER_OPENUP_SCRATCHY`

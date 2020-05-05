@@ -13,6 +13,10 @@ doc: |
   This packet commits any changes to the player's equipment.
   
   The response is [Gameservice Server 0x006B Equipment Response](/packets/gameservice/server/006b.ksy).
+  
+  **Aliases:**
+  * `hsreina/pangya-server`: `PLAYER_CHANGE_EQUIP`
+  * `eantoniobr/UGPangya`: `PLAYER_CHANGE_EQUIPMENTS`
 
 seq:
   - id: subtype

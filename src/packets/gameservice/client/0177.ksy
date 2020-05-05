@@ -18,3 +18,7 @@ doc: |
   * [GameService Client 0x0081 Multiplayer Mode Join](/packets/gameservice/client/0081.ksy)
   * [GameService Client 0x0082 Multiplayer Mode Leave](/packets/gameservice/client/0082.ksy)
   * [GameService Client 0x0176 Event Mode Join](/packets/gameservice/client/0176.ksy)
+  
+  **Aliases:**
+  * `hsreina/pangya-server`: `PLAYER_LEAVE_GRAND_PRIX`
+  * `eantoniobr/UGPangya`: `PLAYER_LEAVE_MULTIGAME_GRANDPRIX`

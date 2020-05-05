@@ -13,6 +13,10 @@ doc: |
   This packet requests status information on a specified user.
   
   The response is [GameService Server 0x00A1 User Status Response](/packets/gameservice/server/00a1.ksy).
+  
+  **Aliases:**
+  * `hsreina/pangya-server`: `PLAYER_REQUEST_OFFLINE_PLAYER_INFO`
+  * `eantoniobr/UGPangya`: `PLAYER_CHECK_USER_FOR_GIFT`
 
 seq:
   - id: unknown_a

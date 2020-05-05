@@ -15,6 +15,9 @@ doc: |
   Its responses are:
   * [GameService Server 0x0216 User Status Update](/packets/gameservice/server/0216.ksy), and
   * [GameService Server 0x0228 Quest Dismiss Response](/packets/gameservice/server/0227.ksy).
+  
+  **Aliases:**
+  * `hsreina/pangya-server`: `PLAYER_GIVEUP_DAILY_QUEST`
 
 seq:
   - id: quest_count

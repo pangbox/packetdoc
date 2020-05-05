@@ -15,3 +15,6 @@ doc: |
   There is no payload.
   
   This is the response to [GameService Server 0x0063 Shot Active User Announce](/packets/gameservice/server/0063.ksy).
+  
+  **Aliases:**
+  * `eantoniobr/UGPangya`: `PLAYER_MY_TURN`

@@ -14,6 +14,9 @@ doc: |
   sending this packet for private rooms.
   
   The response is [Gameservice Server 0x0086 Room Information Response](/packets/gameservice/server/0086.ksy).
+  
+  **Aliases:**
+  * `eantoniobr/UGPangya`: `PLAYER_REQUEST_GAMEINFO`
 
 seq:
   - id: room_number

@@ -13,6 +13,10 @@ doc: |
   This packet purchases an item from the Pangya Shop.
   
   The response is [GameService Server 0x0068 Pangya Shop Buy Item Response](/packets/gameservice/server/0068.ksy).
+  
+  **Aliases:**
+  * `hsreina/pangya-server`: `PLAYER_BUY_ITEM`
+  * `eantoniobr/UGPangya`: `PLAYER_BUY_ITEM_GAME`
 
 seq:
   - id: unknown_a

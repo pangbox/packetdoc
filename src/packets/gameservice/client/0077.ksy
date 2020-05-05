@@ -15,7 +15,11 @@ doc: |
   
   The response is [GameService Server 0x00E6 User Shop Inventory](/packets/gameservice/server/00e6.ksy).
   
-  **See Also:** [GameService Client 0x0078 User Shop Leave](/packets/gameservice/client/0078.ksy), to stop browsing.
+  **See Also:**
+  * [GameService Client 0x0078 User Shop Leave](/packets/gameservice/client/0078.ksy), to stop browsing.
+  
+  **Aliases:**
+  * `hsreina/pangya-server`: `PLAYER_ENTER_SHOP`
 
 seq:
   - id: user_id

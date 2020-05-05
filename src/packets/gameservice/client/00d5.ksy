@@ -15,3 +15,7 @@ doc: |
   It has no payload.
   
   The response is [GameService Server 0x0172 Locker Pang Balance](/packets/gameservice/server/0172.ksy).
+  
+  **Aliases:**
+  * `hsreina/pangya-server`: `PLAYER_REQUEST_LOCKER_PANGS`
+  * `eantoniobr/UGPangya`: `PLAYER_GET_LOCKERPANG`

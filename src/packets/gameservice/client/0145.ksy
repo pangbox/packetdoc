@@ -14,6 +14,9 @@ doc: |
   Attachments can be added at a cost of 500 pang each, with a 100 pang discount for the first.
   
   The response is [GameService Server 0x0213 Mail Send Response](/packets/gameservice/server/0213.ksy).
+  
+  **Aliases:**
+  * `hsreina/pangya-server`: `PLAYER_SEND_MAIL`
 
 seq:
   - id: local_user_id

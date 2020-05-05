@@ -15,7 +15,11 @@ doc: |
   The responses are [GameService Server 0x012D My Room Layout](/packets/gameservice/server/012d.ksy)
   and [GameService Server 0x0168 User Information](/packets/gameservice/server/0168.ksy).
   
-  ** See Also ** [GameService Client 0x00B5 Inventory Open A](/packets/gameservice/client/00b5.ksy).
+  **See Also:**
+  * [GameService Client 0x00B5 Inventory Open A](/packets/gameservice/client/00b5.ksy).
+  
+  **Aliases:**
+  * `eantoniobr/UGPangya`: `PLAYER_ENTER_ROOM_GETINFO`
 
 seq:
   - id: user_id

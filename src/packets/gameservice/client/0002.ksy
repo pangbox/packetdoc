@@ -36,6 +36,10 @@ doc: |
   * GameService Server 0x0158 Undocumented,
   * GameService Server 0x025D Undocumented, and
   * GameService Server 0x0210 Undocumented.
+  
+  **Aliases:**
+  * `hsreina/pangya-server`: `PLAYER_LOGIN`
+  * `eantoniobr/UGPangya`: `PLAYER_LOGIN`
 
 seq:
   - id: user_name

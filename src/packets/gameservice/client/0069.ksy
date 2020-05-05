@@ -18,6 +18,9 @@ doc: |
   
   There is no response.
   
+  **Aliases:**
+  * `eantoniobr/UGPangya`: `PLAYER_SAVE_MACRO`
+
 seq:
   - id: chat_macro
     type: strz

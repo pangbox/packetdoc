@@ -19,3 +19,6 @@ doc: |
   **See Also:**
   * [GameService Client 0x00A2 Unknown (Cookies Related)](/packets/gameservice/client/00a2.ksy)
   * [GameService Client 0x0195 Unknown (Cookies Related)](/packets/gameservice/client/0195.ksy)
+  
+  **Aliases:**
+  * `hsreina/pangya-server`: `PLAYER_REQUEST_COOKIES_COUNT`

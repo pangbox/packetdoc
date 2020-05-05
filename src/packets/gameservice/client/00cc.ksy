@@ -13,6 +13,10 @@ doc: |
   This packet contains a locker combination attempt.
   
   The response is [Gameservice Server 0x016C Locker Combination Response](/packets/gameservice/server/016c.ksy).
+  
+  **Aliases:**
+  * `hsreina/pangya-server`: `PLAYER_REQUEST_LOCKER_ACCESS`
+  * `eantoniobr/UGPangya`: `PLAYER_OPEN_LOCKER`
 
 seq:
   - id: locker_combination

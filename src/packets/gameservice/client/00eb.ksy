@@ -13,6 +13,10 @@ doc: |
   This packet is called for each user in a lounge room in no particular order. It will also be called as new users join the lounge.
 
   The response is [Gameservice Server 0x0196 Unknown Response (Lounge Related)](/packets/gameservice/server/0196.ksy).
+  
+  **Aliases:**
+  * `hsreina/pangya-server`: `PLAYER_UN_00EB`
+  * `eantoniobr/UGPangya`: `PLAYER_ENTER_TO_ROOM`
 
 seq:
   - id: connection_id

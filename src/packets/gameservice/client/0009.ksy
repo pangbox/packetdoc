@@ -15,6 +15,10 @@ doc: |
   
   The response is [GameService Server 0x0049 Room Join Response](/packets/gameservice/server/0049.ksy).
   
+  **Aliases:**
+  * `hsreina/pangya-server`: `PLAYER_JOIN_GAME`
+  * `eantoniobr/UGPangya`: `PLAYER_JOIN_GAME`
+
 seq:
   - id: room_number
     type: u2

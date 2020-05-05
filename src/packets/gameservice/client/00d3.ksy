@@ -18,3 +18,7 @@ doc: |
   The response is [GameService Server 0x0170 Locker Inventory](/packets/gameservice/server/0170.ksy).
   
   **See Also** [GameService Client 0x00CC Locker Combination Attempt](/packets/gameservice/client/00cc.ksy).
+  
+  **Aliases:**
+  * `hsreina/pangya-server`: `PLAYER_REQUEST_LOCKER`
+  * `eantoniobr/UGPangya`: `PLAYER_ENTER_TO_LOCKER`

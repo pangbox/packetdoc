@@ -13,6 +13,10 @@ doc: |
   This packet signals the user leaving a room and returning to the Grand Prix event lobby.
   
   The response is [GameService Server 0x0254 Event Room Leave Response](/packets/gameservice/server/0254.ksy).
+  
+  **Aliases:**
+  * `hsreina/pangya-server`: `LEAVE_GRAND_PRIX_EVENT`
+  * `eantoniobr/UGPangya`: `PLAYER_LEAVE_GRANDPRIX`
 
 seq:
   - id: unknown_a

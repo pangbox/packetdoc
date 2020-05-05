@@ -14,6 +14,10 @@ doc: |
   
   The response is [Gameservice Server 0x0078 Room User Ready State Response](/packets/gameservice/server/0078.ksy).
   
+  **Aliases:**
+  * `hsreina/pangya-server`: `PLAYER_READY`
+  * `eantoniobr/UGPangya`: `PLAYER_PRESS_READY`
+
 seq:
   - id: user_readiness
     type: u1

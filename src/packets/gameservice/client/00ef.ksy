@@ -19,6 +19,9 @@ doc: |
   * [GameService Server 0x0216 User Status Update](/packets/gameservice/server/0216.ksy),
   * [GameService Server 0x022E Achievement Unlocked](/packets/gameservice/server/022e.ksy),
   * [GameService Server 0x0220 Achievement Update](/packets/gameservice/server/0220.ksy).
+  
+  **Aliases:**
+  * `eantoniobr/UGPangya`: `PLAYER_OPEN_BOX`
 
 seq:
   - id: item_id

@@ -61,6 +61,7 @@ meta:
     - '0152'
     - '0153'
     - '0154'
+    - '0155'
     - '0157'
     - '0158'
     - '016e'
@@ -72,6 +73,7 @@ meta:
     - '017f'
     - '0184'
     - '0185'
+    - '018d'
     - '0195'
 
 seq:
@@ -136,6 +138,7 @@ seq:
         0x0152: gameservice_client_0152_quest_accept
         0x0153: gameservice_client_0153_quest_submit
         0x0154: gameservice_client_0154_quest_dismiss
+        0x0155: gameservice_client_0155_tiki_shop_exchange_cards
         0x0157: gameservice_client_0157_achievement_status_request
         0x0158: gameservice_client_0158_tiki_shop_convert_item
         0x016e: gameservice_client_016e_login_bonus_status_request
@@ -147,4 +150,5 @@ seq:
         0x017f: gameservice_client_017f_memorial_coin_play
         0x0184: gameservice_client_0184_shot_assist_toggle
         0x0185: gameservice_client_0185_shot_assist_activate
+        0x018d: gameservice_client_018d_tiki_shop_recycle_items
         0x0195: gameservice_client_0195_unknown_cookies_related

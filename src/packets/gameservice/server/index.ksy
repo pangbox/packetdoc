@@ -86,6 +86,8 @@ meta:
     - '0226'
     - '0227'
     - '0228'
+    - '0229'
+    - '022a'
     - '022c'
     - '022d'
     - '022e'
@@ -100,6 +102,7 @@ meta:
     - '0264'
     - '026a'
     - '026b'
+    - '0274'
     - '027d'
 
 seq:
@@ -189,6 +192,8 @@ seq:
         0x0226: gameservice_server_0226_quest_accept_response
         0x0227: gameservice_server_0227_quest_submit_response
         0x0228: gameservice_server_0228_quest_dismiss_response
+        0x0229: gameservice_server_0229_tiki_shop_exchange_cards_response_a
+        0x022a: gameservice_server_022a_tiki_shop_exchange_cards_response_b
         0x022c: gameservice_server_022c_unknown_achievement_related_response
         0x022d: gameservice_server_022d_achievement_status_response
         0x022e: gameservice_server_022e_achievement_unlocked
@@ -203,4 +208,5 @@ seq:
         0x0264: gameservice_server_0264_memorial_coin_result
         0x026a: gameservice_server_026a_shot_assist_toggle_response
         0x026b: gameservice_server_026b_shot_assist_activate_response
+        0x0274: gameservice_server_0274_tiki_shop_recycle_items_response
         0x027d: gameservice_server_027d_unknown_cookies_related_response

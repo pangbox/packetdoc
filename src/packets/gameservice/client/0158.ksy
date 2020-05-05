@@ -22,7 +22,7 @@ doc: |
 seq:
   - id: recipe_index
     type: u2
-    doc: Unconfirmed.
+    doc: Increments left to right, top to bottom, then continues through all recipe tabs.
   - id: recipe_quantity
     type: u4
     doc: Number of conversions to be done.

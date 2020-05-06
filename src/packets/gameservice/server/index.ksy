@@ -10,6 +10,7 @@ meta:
     - '0044'
     - '0046'
     - '0047'
+    - '0048'
     - '0049'
     - '004a'
     - '004c'
@@ -122,8 +123,9 @@ seq:
         0x0044: gameservice_server_0044_unknown
         0x0046: gameservice_server_0046_user_census
         0x0047: gameservice_server_0047_room_list
+        0x0048: gameservice_server_0048_room_census
         0x0049: gameservice_server_0049_room_join_response
-        0x004a: gameservice_server_004a_room_status_update
+        0x004a: gameservice_server_004a_room_settings_announce
         0x004c: gameservice_server_004c_room_leave_response
         0x004d: gameservice_server_004d_sub_server_list
         0x0055: gameservice_server_0055_shot_commit_announce

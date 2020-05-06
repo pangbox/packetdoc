@@ -10,7 +10,9 @@ meta:
     - '0003'
     - '0004'
     - '0007'
+    - '0008'
     - '0009'
+    - '000a'
     - '000d'
     - '000f'
     - '0012'
@@ -91,7 +93,9 @@ seq:
         0x0003: gameservice_client_0003_message_send
         0x0004: gameservice_client_0004_sub_server_connect
         0x0007: gameservice_client_0007_user_status_request
+        0x0008: gameservice_client_0008_room_create
         0x0009: gameservice_client_0009_room_join
+        0x000a: gameservice_client_000a_room_settings_change
         0x000d: gameservice_client_000d_room_user_ready_state
         0x000f: gameservice_client_000f_room_leave
         0x0012: gameservice_client_0012_shot_commit

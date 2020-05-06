@@ -10,8 +10,11 @@ meta:
     - ../../common/pstring
 
 doc: |
-  This packet is sent upon joining a room, after [Gameservice Client 0x0009 Room Join](/packets/gameservice/client/0009.ksy)
-  and [Gameservice Client 0x0179 Event Room Join](/packets/gameservice/client/0179.ksy).
+  This packet acknowledges joining a room.
+  
+  It is one of the responses to:
+  * [Gameservice Client 0x0009 Room Join](/packets/gameservice/client/0009.ksy), and
+  * [Gameservice Client 0x0179 Event Room Join](/packets/gameservice/client/0179.ksy).
 
 seq:
   - id: unknown_a

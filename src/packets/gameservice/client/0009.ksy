@@ -13,7 +13,9 @@ doc: |
   This packet is a request to join a particular game room. If the room is passworded, the password attempt is sent
   here. If the room is not passworded, the password length is 0.
   
-  The response is [GameService Server 0x0049 Room Join Response](/packets/gameservice/server/0049.ksy).
+  The responses are:
+  * [GameService Server 0x004A Room Settings Announce](/packets/gameservice/server/004a.ksy), and 
+  * [GameService Server 0x0049 Room Join Response](/packets/gameservice/server/0049.ksy).
   
   **Aliases:**
   * `hsreina/pangya-server`: `PLAYER_JOIN_GAME`

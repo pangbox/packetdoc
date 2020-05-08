@@ -1,35 +1,36 @@
-#pragma.examples gameservice/server 01bc
+#pragma.examples gameservice/server 01bd
 #pragma.parseAs GameserviceServerPacket
 ---
 meta:
-  id: gameservice_server_01bc_guild_list
-  title: GameService Server Guild List
+  id: gameservice_server_01bd_guild_search_response
+  title: GameService Server Guild Search Response
   encoding: ASCII
   endian: le
   imports:
     - ../../common/pstring
 
 doc: |
-  This packet contains a page of the guild directory.
+  This packet contains search results from a query against the guild directory.
   
   The number of guilds on a page is set at 15 in PangyaTH.
   
-  This packet is a response to [GameService Client 0x0108 Guild List Request](/packets/gameservice/client/0108.ksy).
+  This packet is a response to [GameService Client 0x0109 Guild Search Request](/packets/gameservice/client/0109.ksy).
   
   **See Also:**
-  * [GameService Server 0x01BD Guild Search Response](/packets/gameservice/server/01bd.ksy)
+  * [GameService Server 0x01BC Guild List](/packets/gameservice/server/01bc.ksy)
 
 seq:
   - id: unknown_a
     size: 4
   - id: page_number
     type: u4
-    doc: Page number requested from the Guild Directory.
-  - id: page_number_max
+    doc: Page number requested from the Search Results.
+  - id: guild_count_total
     type: u4
-    doc: Unconfirmed. Total page count in Guild Directory.
+    doc: Number of guilds matching the search term in total.
   - id: guild_count
     type: u2
+    doc: Number of guilds matching the search term on requested page. Seen maximum of 15 (0x0F).
   - id: guilds
     type: guild
     repeat: expr
@@ -40,6 +41,7 @@ types:
     seq:
       - id: unknown_b
         size: 4
+        doc: Possibly a guild ID?
       - id: guild_name
         type: strz
         size: 21
@@ -62,4 +64,4 @@ types:
       - id: guild_emblem_id
         type: strz
         size: 12
-        doc: If missing, "GUILDMARK"
+        doc: If missing, "guildmark".

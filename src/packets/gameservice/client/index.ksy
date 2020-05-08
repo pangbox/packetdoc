@@ -58,6 +58,7 @@ meta:
     - '00eb'
     - '00ef'
     - '0108'
+    - '0109'
     - '0119'
     - '012a'
     - '0143'
@@ -144,6 +145,7 @@ seq:
         0x00eb: gameservice_client_00eb_unknown_lounge_related_request
         0x00ef: gameservice_client_00ef_lootbox_open
         0x0108: gameservice_client_0108_guild_list_request
+        0x0109: gameservice_client_0109_guild_search_request
         0x0119: gameservice_client_0119_new_session_key_request
         0x012a: gameservice_client_012a_scratchy_menu_open
         0x0143: gameservice_client_0143_mailbox_request

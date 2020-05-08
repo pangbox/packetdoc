@@ -13,8 +13,10 @@ meta:
     - '0008'
     - '0009'
     - '000a'
+    - '000c'
     - '000d'
     - '000f'
+    - '0010'
     - '0012'
     - '0013'
     - '0014'
@@ -32,6 +34,7 @@ meta:
     - '003d'
     - '0043'
     - '0048'
+    - '0063'
     - '0069'
     - '0070'
     - '0077'
@@ -96,8 +99,10 @@ seq:
         0x0008: gameservice_client_0008_room_create
         0x0009: gameservice_client_0009_room_join
         0x000a: gameservice_client_000a_room_settings_change
+        0x000c: gameservice_client_000c_user_equipment_change
         0x000d: gameservice_client_000d_room_user_ready_state
         0x000f: gameservice_client_000f_room_leave
+        0x0010: gameservice_client_0010_user_team_change
         0x0012: gameservice_client_0012_shot_commit
         0x0013: gameservice_client_0013_shot_rotate
         0x0014: gameservice_client_0014_shot_meter_input
@@ -115,6 +120,7 @@ seq:
         0x003d: gameservice_client_003d_cookie_balance_request
         0x0043: gameservice_client_0043_server_list_update_request
         0x0048: gameservice_client_0048_unknown_loading_related_counter
+        0x0063: gameservice_client_0063_user_lounge_action
         0x0069: gameservice_client_0069_chat_macro_update
         0x0070: gameservice_client_0070_scratchy_play
         0x0077: gameservice_client_0077_user_shop_inventory_request

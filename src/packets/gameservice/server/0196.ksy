@@ -19,5 +19,17 @@ seq:
     type: u4
     doc: Targer user's connection ID from [Gameservice Server 0x0046 User Census](/packets/gameservice/server/0046.ksy).
   - id: unknown_a
-    size: 20
-    doc: All known examples show 0x3F800000, 5 times.
+    type: f4
+    doc: All examples show 1 (0x3F800000).
+  - id: unknown_b
+    type: f4
+    doc: All examples show 1 (0x3F800000).
+  - id: unknown_c
+    type: f4
+    doc: All examples show 1 (0x3F800000).
+  - id: unknown_d
+    type: f4
+    doc: All examples show 1 (0x3F800000).
+  - id: unknown_e
+    type: f4
+    doc: All examples show 1 (0x3F800000).

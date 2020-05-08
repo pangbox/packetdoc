@@ -13,6 +13,7 @@ meta:
     - '0048'
     - '0049'
     - '004a'
+    - '004b'
     - '004c'
     - '004d'
     - '0055'
@@ -29,6 +30,7 @@ meta:
     - '0072'
     - '0073'
     - '0078'
+    - '007d'
     - '0084'
     - '0086'
     - '0089'
@@ -38,6 +40,7 @@ meta:
     - '00a1'
     - '00a7'
     - '00aa'
+    - '00c4'
     - '00c8'
     - '00ce'
     - '00dd'
@@ -126,6 +129,7 @@ seq:
         0x0048: gameservice_server_0048_room_census
         0x0049: gameservice_server_0049_room_join_response
         0x004a: gameservice_server_004a_room_settings_announce
+        0x004b: gameservice_server_004b_user_equipment_announce
         0x004c: gameservice_server_004c_room_leave_response
         0x004d: gameservice_server_004d_sub_server_list
         0x0055: gameservice_server_0055_shot_commit_announce
@@ -142,6 +146,7 @@ seq:
         0x0072: gameservice_server_0072_user_equipment
         0x0073: gameservice_server_0073_user_inventory
         0x0078: gameservice_server_0078_room_user_ready_state_response
+        0x007d: gameservice_server_007d_user_team_change_announce
         0x0084: gameservice_server_0084_whisper_data
         0x0086: gameservice_server_0086_room_information_response
         0x0089: gameservice_server_0089_user_information_response
@@ -151,6 +156,7 @@ seq:
         0x00a1: gameservice_server_00a1_user_status_response
         0x00a7: gameservice_server_00a7_lootbox_inventory_update
         0x00aa: gameservice_server_00aa_inventory_slot_assign
+        0x00c4: gameservice_server_00c4_user_lounge_action_announce
         0x00c8: gameservice_server_00c8_pang_balance
         0x00ce: gameservice_server_00ce_tournament_item_winnings
         0x00dd: gameservice_server_00dd_scratchy_play_result

@@ -2,8 +2,8 @@
 #pragma.parseAs GameserviceClientPacket
 ---
 meta:
-  id: gameservice_client_00d4_locker_change_pang
-  title: GameService Client Locker Change Pang
+  id: gameservice_client_00d4_locker_pang_transact
+  title: GameService Client Locker Pang Transact
   encoding: ASCII
   endian: le
   imports:
@@ -13,7 +13,7 @@ doc: |
   This packet either deposits or withdraws some amount of pang from the locker.
   
   The responses are:
-  * [GameService Server 0x0171 Locker Change Pang Response](/packets/gameservice/server/0171.ksy),
+  * [GameService Server 0x0171 Locker Pang Transact Response](/packets/gameservice/server/0171.ksy),
   * [GameService Server 0x00C8 Pang Balance](/packets/gameservice/server/00c8.ksy), and
   * [GameService Server 0x0172 Locker Pang Balance](/packets/gameservice/server/0172.ksy).
   

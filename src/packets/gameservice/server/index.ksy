@@ -139,7 +139,7 @@ seq:
         0x0059: gameservice_server_0059_shot_club_change_announce
         0x005a: gameservice_server_005a_shot_item_use_announce
         0x0063: gameservice_server_0063_shot_active_user_announce
-        0x0068: gameservice_server_0068_pangya_shop_buy_item
+        0x0068: gameservice_server_0068_pangya_shop_purchase_response
         0x006b: gameservice_server_006b_equipment_response
         0x006c: gameservice_server_006c_tournament_user_finish
         0x006d: gameservice_server_006d_tournament_user_update
@@ -163,7 +163,7 @@ seq:
         0x00dd: gameservice_server_00dd_scratchy_play_result
         0x00e6: gameservice_server_00e6_user_shop_inventory
         0x00e7: gameservice_server_00e7_user_shop_leave_response
-        0x00ec: gameservice_server_00ec_transact_item
+        0x00ec: gameservice_server_00ec_item_transact
         0x00ed: gameservice_server_00ed_user_shop_purchase_announce
         0x00f5: gameservice_server_00f5_multiplayer_mode_join_response
         0x00f6: gameservice_server_00f6_multiplayer_mode_leave_response
@@ -174,7 +174,7 @@ seq:
         0x012d: gameservice_server_012d_my_room_layout
         0x0133: gameservice_server_0133_treasure_point_result
         0x0134: gameservice_server_0134_treasure_point_winnings
-        0x0139: gameservice_server_0139_locker_deposit_item_response_a
+        0x0139: gameservice_server_0139_locker_item_deposit_response_a
         0x0154: gameservice_server_0154_cardholic_pack_open_response
         0x0156: gameservice_server_0156_user_information_consumables
         0x0157: gameservice_server_0157_unknown_user_related_response
@@ -188,10 +188,10 @@ seq:
         0x0168: gameservice_server_0168_user_information
         0x016c: gameservice_server_016c_locker_combination_response
         0x016d: gameservice_server_016d_locker_page_response
-        0x016e: gameservice_server_016e_locker_deposit_item_response_b
-        0x016f: gameservice_server_016f_locker_withdraw_item_response
+        0x016e: gameservice_server_016e_locker_item_deposit_response_b
+        0x016f: gameservice_server_016f_locker_item_withdraw_response
         0x0170: gameservice_server_0170_locker_inventory_response
-        0x0171: gameservice_server_0171_locker_change_pang_response
+        0x0171: gameservice_server_0171_locker_pang_transact_response
         0x0172: gameservice_server_0172_locker_pang_balance
         0x0196: gameservice_server_0196_unknown_lounge_related_response
         0x019d: gameservice_server_019d_lootbox_open_result
@@ -203,7 +203,7 @@ seq:
         0x0211: gameservice_server_0211_mailbox_response
         0x0212: gameservice_server_0212_mail_read_response
         0x0213: gameservice_server_0213_mail_send_response
-        0x0214: gameservice_server_0214_mail_take_attachments_response
+        0x0214: gameservice_server_0214_mail_attachments_take_response
         0x0215: gameservice_server_0215_mail_delete_response
         0x0216: gameservice_server_0216_user_status_update
         0x021b: gameservice_server_021b_black_papel_result
@@ -214,12 +214,12 @@ seq:
         0x0226: gameservice_server_0226_quest_accept_response
         0x0227: gameservice_server_0227_quest_submit_response
         0x0228: gameservice_server_0228_quest_dismiss_response
-        0x0229: gameservice_server_0229_tiki_shop_exchange_cards_response_a
-        0x022a: gameservice_server_022a_tiki_shop_exchange_cards_response_b
+        0x0229: gameservice_server_0229_tiki_shop_card_exchange_response_a
+        0x022a: gameservice_server_022a_tiki_shop_card_exchange_response_b
         0x022c: gameservice_server_022c_unknown_achievement_related_response
         0x022d: gameservice_server_022d_achievement_status_response
         0x022e: gameservice_server_022e_achievement_unlocked
-        0x022f: gameservice_server_022f_tiki_shop_convert_item_response
+        0x022f: gameservice_server_022f_tiki_shop_item_convert_response
         0x0248: gameservice_server_0248_login_bonus_status_response
         0x0249: gameservice_server_0249_login_bonus_claim_response
         0x0250: gameservice_server_0250_event_mode_join_response
@@ -230,5 +230,5 @@ seq:
         0x0264: gameservice_server_0264_memorial_coin_result
         0x026a: gameservice_server_026a_shot_assist_toggle_response
         0x026b: gameservice_server_026b_shot_assist_activate_response
-        0x0274: gameservice_server_0274_tiki_shop_recycle_items_response
+        0x0274: gameservice_server_0274_tiki_shop_item_recycle_response
         0x027d: gameservice_server_027d_unknown_cookies_related_response

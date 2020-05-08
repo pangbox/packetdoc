@@ -2,8 +2,8 @@
 #pragma.parseAs GameserviceServerPacket
 ---
 meta:
-  id: gameservice_server_00ec_transact_item
-  title: GameService Server Transact Item
+  id: gameservice_server_00ec_item_transact
+  title: GameService Server Item Transact
   encoding: ASCII
   endian: le
   imports:

@@ -2,8 +2,8 @@
 #pragma.parseAs GameserviceServerPacket
 ---
 meta:
-  id: gameservice_server_016f_locker_withdraw_item_response
-  title: GameService Server Locker Withdraw Item Response
+  id: gameservice_server_016f_locker_item_withdraw_response
+  title: GameService Server Locker Item Withdraw Response
   encoding: ASCII
   endian: le
   imports:
@@ -12,7 +12,7 @@ meta:
 doc: |
   This packet acknowledges an item has been withdrawn from the locker.
 
-  This is one of the responses to [GameService Client 0x00CF Locker Withdraw Item](/packets/gameservice/client/00cf.ksy).
+  This is one of the responses to [GameService Client 0x00CF Locker Item Withdraw](/packets/gameservice/client/00cf.ksy).
 
 seq:
   - id: unknown_a

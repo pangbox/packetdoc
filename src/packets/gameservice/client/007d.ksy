@@ -2,8 +2,8 @@
 #pragma.parseAs GameserviceClientPacket
 ---
 meta:
-  id: gameservice_client_007d_user_shop_buy_item
-  title: GameService Client User Shop Buy Item
+  id: gameservice_client_007d_user_shop_purchase
+  title: GameService Client User Shop Purchase
   encoding: ASCII
   endian: le
   imports:
@@ -13,7 +13,7 @@ doc: |
   This packet is sent when the user buys an item from a user shop in a lounge.
   
   Its responses are:
-  * [GameService Server 0x00EC Transact Item](/packets/gameservice/server/00ec.ksy), and
+  * [GameService Server 0x00EC Item Transact](/packets/gameservice/server/00ec.ksy), and
   * [GameService Server 0x00ED User Shop Purchase Announce](/packets/gameservice/server/00ed.ksy)
   
   **Aliases:**

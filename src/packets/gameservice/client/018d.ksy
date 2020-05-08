@@ -2,8 +2,8 @@
 #pragma.parseAs GameserviceClientPacket
 ---
 meta:
-  id: gameservice_client_018d_tiki_shop_recycle_items
-  title: GameService Client Tiki Shop Recycle Items
+  id: gameservice_client_018d_tiki_shop_item_recycle
+  title: GameService Client Tiki Shop Item Recycle
   encoding: ASCII
   endian: le
   imports:
@@ -14,7 +14,7 @@ doc: |
   
   The responses are:
   * [GameService Server 0x0216 User Status Update](/packets/gameservice/server/0216.ksy) to remove items and add points/crystals,
-  * [GameService Server 0x0274 Tiki Shop Recycle Items Response](/packets/gameservice/server/0274.ksy) to acknowledge recycling,
+  * [GameService Server 0x0274 Tiki Shop Item Recycle Response](/packets/gameservice/server/0274.ksy) to acknowledge recycling,
   * [GameService Server 0x0216 User Status Update](/packets/gameservice/server/0216.ksy) for setting tiki shop achievement progress,
   * [GameService Server 0x022E Achievement Unlocked](/packets/gameservice/server/022e.ksy), and
   * [GameService Server 0x0220 Achievement Update](/packets/gameservice/server/0220.ksy).

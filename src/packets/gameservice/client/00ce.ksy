@@ -2,8 +2,8 @@
 #pragma.parseAs GameserviceClientPacket
 ---
 meta:
-  id: gameservice_client_00ce_locker_deposit_item
-  title: GameService Client Locker Deposit Item
+  id: gameservice_client_00ce_locker_item_deposit
+  title: GameService Client Locker Item Deposit
   encoding: ASCII
   endian: le
   imports:
@@ -13,9 +13,9 @@ doc: |
   This packet deposits an item in the user's locker.
   
   The responses are:
-  * [GameService Server 0x0139 Locker Deposit Item Response A](/packets/gameservice/server/0139.ksy),
-  * [GameService Server 0x00EC Transact Item, type 0x01](/packets/gameservice/server/00ec.ksy), and
-  * [GameService Server 0x016E Locker Deposit Item Response B](/packets/gameservice/server/016e.ksy).
+  * [GameService Server 0x0139 Locker Item Deposit Response A](/packets/gameservice/server/0139.ksy),
+  * [GameService Server 0x00EC Item Transact, type 0x01](/packets/gameservice/server/00ec.ksy), and
+  * [GameService Server 0x016E Locker Item Deposit Response B](/packets/gameservice/server/016e.ksy).
   
   **Aliases:**
   * `eantoniobr/UGPangya`: `PLAYER_PUT_ITEMLOCKER`

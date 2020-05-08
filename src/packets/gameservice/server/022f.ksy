@@ -2,8 +2,8 @@
 #pragma.parseAs GameserviceServerPacket
 ---
 meta:
-  id: gameservice_server_022f_tiki_shop_convert_item_response
-  title: GameService Server Tiki Shop Convert Item Response
+  id: gameservice_server_022f_tiki_shop_item_convert_response
+  title: GameService Server Tiki Shop Item Convert Response
   encoding: ASCII
   endian: le
   imports:
@@ -12,7 +12,7 @@ meta:
 doc: |
   This packet acknowledges converting an item in the Cadie's Magicbox section of Tiki's Shop.
   
-  This is one of the responses to [GameService Client 0x0158 Tiki Shop Convert Item](/packets/gameservice/client/0158.ksy).
+  This is one of the responses to [GameService Client 0x0158 Tiki Shop Item Convert](/packets/gameservice/client/0158.ksy).
 
 seq:
   - id: unknown_a

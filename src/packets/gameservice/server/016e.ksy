@@ -2,8 +2,8 @@
 #pragma.parseAs GameserviceServerPacket
 ---
 meta:
-  id: gameservice_server_016e_locker_deposit_item_response_b
-  title: GameService Server Locker Deposit Item Response B
+  id: gameservice_server_016e_locker_item_deposit_response_b
+  title: GameService Server Locker Item Deposit Response B
   encoding: ASCII
   endian: le
   imports:
@@ -12,7 +12,7 @@ meta:
 doc: |
   This packet acknowledges an item has been deposited in the locker.
 
-  This is one of the responses to [GameService Client 0x00CE Locker Deposit Item](/packets/gameservice/client/00ce.ksy).
+  This is one of the responses to [GameService Client 0x00CE Locker Item Deposit](/packets/gameservice/client/00ce.ksy).
 
 seq:
   - id: unknown_a

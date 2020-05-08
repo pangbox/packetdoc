@@ -2,8 +2,8 @@
 #pragma.parseAs GameserviceServerPacket
 ---
 meta:
-  id: gameservice_server_0068_pangya_shop_buy_item
-  title: GameService Server Pangya Shop Buy Item
+  id: gameservice_server_0068_pangya_shop_purchase_response
+  title: GameService Server Pangya Shop Purchase Response
   encoding: ASCII
   endian: le
   imports:
@@ -12,7 +12,7 @@ meta:
 doc: |
   This packet acknowledges a purchase from the Pangya Shop.
   
-  This is the response to [GameService Client 0x001D Pangya Shop Buy Item](/packets/gameservice/client/001d.ksy).
+  This is the response to [GameService Client 0x001D Pangya Shop Purchase](/packets/gameservice/client/001d.ksy).
 
 seq:
   - id: unknown_a

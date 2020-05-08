@@ -110,7 +110,7 @@ seq:
         0x0015: gameservice_client_0015_shot_power
         0x0016: gameservice_client_0016_shot_club_change
         0x0017: gameservice_client_0017_shot_item_use
-        0x001d: gameservice_client_001d_pangya_shop_buy_item
+        0x001d: gameservice_client_001d_pangya_shop_purchase
         0x001f: gameservice_client_001f_unknown
         0x0020: gameservice_client_0020_equipment_update
         0x0022: gameservice_client_0022_shot_active_user_acknowledge
@@ -119,14 +119,14 @@ seq:
         0x002f: gameservice_client_002f_user_information_request
         0x003c: gameservice_client_003c_note_send
         0x003d: gameservice_client_003d_cookie_balance_request
-        0x0043: gameservice_client_0043_server_list_update_request
+        0x0043: gameservice_client_0043_server_list_request
         0x0048: gameservice_client_0048_unknown_loading_related_counter
         0x0063: gameservice_client_0063_user_lounge_action
         0x0069: gameservice_client_0069_chat_macro_update
         0x0070: gameservice_client_0070_scratchy_play
         0x0077: gameservice_client_0077_user_shop_inventory_request
         0x0078: gameservice_client_0078_user_shop_leave
-        0x007d: gameservice_client_007d_user_shop_buy_item
+        0x007d: gameservice_client_007d_user_shop_purchase
         0x0081: gameservice_client_0081_multiplayer_mode_join
         0x0082: gameservice_client_0082_multiplayer_mode_leave
         0x0098: gameservice_client_0098_rare_shop_open
@@ -137,10 +137,10 @@ seq:
         0x00ca: gameservice_client_00ca_cardholic_pack_open
         0x00cc: gameservice_client_00cc_locker_combination_attempt
         0x00cd: gameservice_client_00cd_locker_page_request
-        0x00ce: gameservice_client_00ce_locker_deposit_item
-        0x00cf: gameservice_client_00cf_locker_withdraw_item
+        0x00ce: gameservice_client_00ce_locker_item_deposit
+        0x00cf: gameservice_client_00cf_locker_item_withdraw
         0x00d3: gameservice_client_00d3_locker_inventory_request
-        0x00d4: gameservice_client_00d4_locker_change_pang
+        0x00d4: gameservice_client_00d4_locker_pang_transact
         0x00d5: gameservice_client_00d5_locker_pang_balance_request
         0x00eb: gameservice_client_00eb_unknown_lounge_related_request
         0x00ef: gameservice_client_00ef_lootbox_open
@@ -151,16 +151,16 @@ seq:
         0x0143: gameservice_client_0143_mailbox_request
         0x0144: gameservice_client_0144_mail_read_request
         0x0145: gameservice_client_0145_mail_send
-        0x0146: gameservice_client_0146_mail_take_attachments
+        0x0146: gameservice_client_0146_mail_attachments_take
         0x0147: gameservice_client_0147_mail_delete
         0x014b: gameservice_client_014b_black_papel_play
         0x0151: gameservice_client_0151_quest_status_request
         0x0152: gameservice_client_0152_quest_accept
         0x0153: gameservice_client_0153_quest_submit
         0x0154: gameservice_client_0154_quest_dismiss
-        0x0155: gameservice_client_0155_tiki_shop_exchange_cards
+        0x0155: gameservice_client_0155_tiki_shop_card_exchange
         0x0157: gameservice_client_0157_achievement_status_request
-        0x0158: gameservice_client_0158_tiki_shop_convert_item
+        0x0158: gameservice_client_0158_tiki_shop_item_convert
         0x016e: gameservice_client_016e_login_bonus_status_request
         0x016f: gameservice_client_016f_login_bonus_claim
         0x0176: gameservice_client_0176_event_mode_join
@@ -170,5 +170,5 @@ seq:
         0x017f: gameservice_client_017f_memorial_coin_play
         0x0184: gameservice_client_0184_shot_assist_toggle
         0x0185: gameservice_client_0185_shot_assist_activate
-        0x018d: gameservice_client_018d_tiki_shop_recycle_items
+        0x018d: gameservice_client_018d_tiki_shop_item_recycle
         0x0195: gameservice_client_0195_unknown_cookies_related

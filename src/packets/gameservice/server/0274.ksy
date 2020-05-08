@@ -2,8 +2,8 @@
 #pragma.parseAs GameserviceServerPacket
 ---
 meta:
-  id: gameservice_server_0274_tiki_shop_recycle_items_response
-  title: GameService Server Tiki Shop Recycle Items Response
+  id: gameservice_server_0274_tiki_shop_item_recycle_response
+  title: GameService Server Tiki Shop Item Recycle Response
   encoding: ASCII
   endian: le
   imports:
@@ -12,7 +12,7 @@ meta:
 doc: |
   This packet acknowledges converting items to Tiki Points (TP) in Tiki's Shop.
   
-  This is one of the responses to [GameService Client 0x018d Tiki Shop Recycle Items](/packets/gameservice/client/018d.ksy).
+  This is one of the responses to [GameService Client 0x018d Tiki Shop Item Recycle](/packets/gameservice/client/018d.ksy).
 
 seq:
   - id: unknown_a

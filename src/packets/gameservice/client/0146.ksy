@@ -2,8 +2,8 @@
 #pragma.parseAs GameserviceClientPacket
 ---
 meta:
-  id: gameservice_client_0146_mail_take_attachments
-  title: GameService Client Mail Take Attachments
+  id: gameservice_client_0146_mail_attachments_take
+  title: GameService Client Mail Attachments Take
   encoding: ASCII
   endian: le
   imports:
@@ -14,7 +14,7 @@ doc: |
   
   The response are:
   * [Gameservice Server 0x0216 User Status Update](/packets/gameservice/server/0216.ksy) (for the items), and
-  * [Gameservice Server 0x0214 Mail Take Attachments Response](/packets/gameservice/server/0214.ksy) (for acknowledgement).
+  * [Gameservice Server 0x0214 Mail Attachments Take Response](/packets/gameservice/server/0214.ksy) (for acknowledgement).
   
   Client will then send [Gameservice Client 0x0143 Mailbox Response](/packets/gameservice/client/0143.ksy) to refresh.
   

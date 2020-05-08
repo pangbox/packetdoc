@@ -2,8 +2,8 @@
 #pragma.parseAs GameserviceClientPacket
 ---
 meta:
-  id: gameservice_client_00cf_locker_withdraw_item
-  title: GameService Client Locker Withdraw Item
+  id: gameservice_client_00cf_locker_item_withdraw
+  title: GameService Client Locker Item Withdraw
   encoding: ASCII
   endian: le
   imports:
@@ -13,8 +13,8 @@ doc: |
   This packet withdraws an item from the user's locker.
   
   The responses are:
-  * [GameService Server 0x00EC Transact Item, type 0x00](/packets/gameservice/server/00ec.ksy), and
-  * [GameService Server 0x016F Locker Withdraw Item Response](/packets/gameservice/server/016f.ksy).
+  * [GameService Server 0x00EC Item Transact, type 0x00](/packets/gameservice/server/00ec.ksy), and
+  * [GameService Server 0x016F Locker Item Withdraw Response](/packets/gameservice/server/016f.ksy).
   
   **Aliases:**
   * `eantoniobr/UGPangya`: `PLAYER_TAKE_ITEMLOCKER`

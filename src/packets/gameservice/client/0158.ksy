@@ -2,8 +2,8 @@
 #pragma.parseAs GameserviceClientPacket
 ---
 meta:
-  id: gameservice_client_0158_tiki_shop_convert_item
-  title: GameService Client Tiki Shop Convert Item
+  id: gameservice_client_0158_tiki_shop_item_convert
+  title: GameService Client Tiki Shop Item Convert
   encoding: ASCII
   endian: le
   imports:
@@ -14,7 +14,7 @@ doc: |
   
   The responses are:
   * [GameService Server 0x0216 User Status Update](/packets/gameservice/server/0216.ksy) to remove ingredients and add created items,
-  * [GameService Server 0x022F Tiki Shop Convert Item Response](/packets/gameservice/server/022f.ksy) to acknowledge conversion,
+  * [GameService Server 0x022F Tiki Shop Item Convert Response](/packets/gameservice/server/022f.ksy) to acknowledge conversion,
   * [GameService Server 0x0216 User Status Update](/packets/gameservice/server/0216.ksy) for setting tiki shop achievement progress,
   * [GameService Server 0x022E Achievement Unlocked](/packets/gameservice/server/022e.ksy), and
   * [GameService Server 0x0220 Achievement Update](/packets/gameservice/server/0220.ksy).

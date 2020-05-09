@@ -3,7 +3,7 @@
 ---
 meta:
   id: gameservice_server_0089_user_information_response
-  title: GameService Server 0089_user_information_response
+  title: GameService Server User Information Response
   encoding: ASCII
   endian: le
   imports:

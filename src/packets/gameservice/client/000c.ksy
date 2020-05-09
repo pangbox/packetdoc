@@ -35,9 +35,9 @@ seq:
 types:
   change_caddie:
     seq:
-      - id: unknown_id_caddie
+      - id: roster_slot_caddie
         type: u4
-        doc: Caddie ID of unknown origin. Requires further investigation.
+        doc: Roster slot of chosen caddie.
   change_ball:
     seq:
       - id: item_id_ball

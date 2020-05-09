@@ -36,15 +36,22 @@ seq:
 
 types:
   change_caddie:
+    doc: Identical to [Gameservice Server 0x0071 User Caddie Roster](/packets/gameservice/server/0071.ksy).
     seq:
-      - id: unknown_id_a_caddie
+      - id: roster_slot_caddie
         type: u4
-        doc: Caddie ID of unknown origin. Requires further investigation.
       - id: item_id_caddie
         type: u4
         doc: From pangya_xx.iff/Caddie.iff. Item ID of the chosen caddie.
+      - id: unknown_a_caddie
+        size: 4
       - id: unknown_b_caddie
-        size: 17
+        type: u1
+      - id: unknown_c_caddie
+        type: u4
+        doc: Might be some sort of XP amount.
+      - id: unknown_d_caddie
+        size: 8
   change_ball:
     seq:
       - id: item_id_ball

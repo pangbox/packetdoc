@@ -8,6 +8,7 @@ meta:
   endian: le
   imports:
     - ../../common/pstring
+    - ../../common/pangyachar
 
 doc: |
   This packet includes a large amount of information about the local user. It's possible that, since the other
@@ -55,43 +56,6 @@ seq:
     type: strz
     size: 128
   - id: unknown_e
-    size: 12
-  - id: unknown_id_d
-    type: u4
-  - id: unknown_f
-    size: 4
-  - id: equipment_id_head
-    type: u4
-    doc: From pangya_xx.iff/Part.iff
-  - id: equipment_id_face
-    type: u4
-    doc: From pangya_xx.iff/Part.iff
-  - id: equipment_id_shirt
-    type: u4
-    doc: From pangya_xx.iff/Part.iff
-  - id: equipment_id_hands
-    type: u4
-    doc: From pangya_xx.iff/Part.iff
-  - id: equipment_id_pants
-    type: u4
-    doc: From pangya_xx.iff/Part.iff
-  - id: equipment_id_shoes
-    type: u4
-    doc: From pangya_xx.iff/Part.iff
-  - id: unknown_g
-    size: 72
-  - id: inventory_id_head
-    type: u4
-    doc: Inventory ID for equipment_id_head. 0x00000000 if nothing equipped.
-  - id: inventory_id_face
-    type: u4
-  - id: inventory_id_shirt
-    type: u4
-  - id: inventory_id_hands
-    type: u4
-  - id: inventory_id_pants
-    type: u4
-  - id: inventory_id_shoes
-    type: u4
-  - id: unknown_h
-    size: 381
+    size: 8
+  - id: character_data
+    type: pangyachar

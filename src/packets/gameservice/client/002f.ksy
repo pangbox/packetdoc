@@ -15,7 +15,7 @@ doc: |
   The responses are, if a (valid) user_id has been specified:
   
   * [GameService Server 0x0157 Unknown Response (User Related)](/packets/gameservice/server/0157.ksy) (if request_type 0x05),
-  * [GameService Server 0x015E User Information Equipment](/packets/gameservice/server/015e.ksy) (if request_type 0x05),
+  * [GameService Server 0x015E User Information Character](/packets/gameservice/server/015e.ksy) (if request_type 0x05),
   * [GameService Server 0x0156 User Information Consumables](/packets/gameservice/server/0156.ksy) (if request_type 0x05),
   * [GameService Server 0x0158 Unknown Response (User-Related)](/packets/gameservice/server/0158.ksy),
   * [GameService Server 0x015D User Information Guild](/packets/gameservice/server/015d.ksy) (if request_type 0x05),

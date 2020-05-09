@@ -27,6 +27,8 @@ meta:
     - '006c'
     - '006d'
     - '006e'
+    - '0070'
+    - '0071'
     - '0072'
     - '0073'
     - '0078'
@@ -55,8 +57,10 @@ meta:
     - '010e'
     - '012b'
     - '012d'
+    - '0131'
     - '0133'
     - '0134'
+    - '0138'
     - '0139'
     - '0154'
     - '0156'
@@ -83,6 +87,7 @@ meta:
     - '01d4'
     - '01eb'
     - '01f7'
+    - '0210'
     - '0211'
     - '0212'
     - '0213'
@@ -144,6 +149,8 @@ seq:
         0x006c: gameservice_server_006c_tournament_user_finish
         0x006d: gameservice_server_006d_tournament_user_update
         0x006e: gameservice_server_006e_unknown_tourney_related_announce
+        0x0070: gameservice_server_0070_user_character_roster
+        0x0071: gameservice_server_0071_user_caddie_roster
         0x0072: gameservice_server_0072_user_equipment
         0x0073: gameservice_server_0073_user_inventory
         0x0078: gameservice_server_0078_room_user_ready_state_response
@@ -172,8 +179,10 @@ seq:
         0x010c: gameservice_server_010e_unknown_opponent_related_response
         0x012b: gameservice_server_012b_inventory_open_a_response
         0x012d: gameservice_server_012d_my_room_layout
+        0x0131: gameservice_server_0131_unknown
         0x0133: gameservice_server_0133_treasure_point_result
         0x0134: gameservice_server_0134_treasure_point_winnings
+        0x0138: gameservice_server_0138_user_cardholic_inventory
         0x0139: gameservice_server_0139_locker_item_deposit_response_a
         0x0154: gameservice_server_0154_cardholic_pack_open_response
         0x0156: gameservice_server_0156_user_information_consumables
@@ -200,6 +209,7 @@ seq:
         0x01d4: gameservice_server_01d4_new_session_key
         0x01eb: gameservice_server_01eb_scratchy_menu_open_response
         0x01f7: gameservice_server_01f7_unknown_tourney_related_announce
+        0x0210: gameservice_server_0210_mail_unread_list
         0x0211: gameservice_server_0211_mailbox_response
         0x0212: gameservice_server_0212_mail_read_response
         0x0213: gameservice_server_0213_mail_send_response

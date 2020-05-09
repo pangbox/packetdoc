@@ -44,15 +44,15 @@ types:
         repeat: expr
         repeat-expr: user_count
       - id: user_additional_initial
-        type: user_additional
-        doc: Is either 1 byte (0x00) or 514 bytes long.
+        type: pangyachar
+        doc: Is either 1 byte (0x00) or 513 bytes long.
   census_addition:
     seq:
       - id: user_addition
         type: user
       - id: user_additional_addition
-        type: user_additional
-        doc: Is either 0 bytes or 514 bytes long.
+        type: pangyachar
+        doc: Is either 0 bytes or 513 bytes long.
   census_removal:
     seq:
       - id: connection_id_removal
@@ -75,8 +75,8 @@ types:
       - id: user_lounge
         type: user
       - id: user_additional_lounge
-        type: user_additional
-        doc: Is always present at 514 bytes.
+        type: pangyachar
+        doc: Is always present at 513 bytes.
   user:
     seq:
       - id: connection_id
@@ -173,54 +173,6 @@ types:
       - id: unknown_t
         type: u4
         doc: All examples 66 (0x00000042).
-  user_additional:
-    doc: |
-      Strongly resembles structure seen elsewhere, e.g. [Gameservice Server 0x0168 User Information](/packets/gameservice/server/0168.ksy).
-    seq:
-      - id: addl_character_id
-        type: u4
-        doc: From pangya_xx.iff/Character.iff
-      - id: addl_unknown_id_a
-        type: u4
-      - id: addl_unknown_b
-        size: 4
-      - id: part_id_array
-        type: u4
-        repeat: expr
-        repeat-expr: 24
-        doc: From pangya_xx.iff/Part.iff. IDs for 24 part slots.
-      - id: inventory_slot_array
-        type: u4
-        repeat: expr
-        repeat-expr: 24
-        doc: Inventory slots for 24 parts. Corresponds with previous.
-      - id: addl_unknown_c
-        size: 216
-        doc: All 0x00.
-      - id: addl_unknown_id_d
-        type: u4
-        doc: In 0x70xxxxxx range.
-      - id: addl_unknown_id_e
-        type: u4
-        doc: In 0x70xxxxxx range.
-      - id: addl_unknown_f
-        size: 12
-        doc: All 0x00.
-      - id: addl_unknown_g
-        type: f4
-      - id: addl_unknown_h
-        size: 12
-        doc: All 0x00.
-      - id: addl_unknown_i
-        size: 9
-      - id: card_id_array
-        type: u4
-        repeat: expr
-        repeat-expr: 10
-        doc: From pangya_xx.iff/Card.iff. IDs for 10 card slots.
-      - id: addl_unknown_j  
-        size: 8
-        doc: All 0x00.
 
 enums:
   list_type:

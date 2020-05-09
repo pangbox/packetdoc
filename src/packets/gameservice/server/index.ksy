@@ -184,7 +184,7 @@ seq:
         0x015b: gameservice_server_015b_unknown_user_related_response
         0x015c: gameservice_server_015c_user_information_course_records
         0x015d: gameservice_server_015d_user_information_guild
-        0x015e: gameservice_server_015e_user_information_equipment
+        0x015e: gameservice_server_015e_user_information_character
         0x0168: gameservice_server_0168_user_information
         0x016c: gameservice_server_016c_locker_combination_response
         0x016d: gameservice_server_016d_locker_page_response

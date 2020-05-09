@@ -29,7 +29,7 @@ seq:
         equipment_type::equipped_caddie: change_caddie
         equipment_type::equipped_ball: change_ball
         equipment_type::equipped_clubs: change_clubs
-        equipment_type::equipped_04_unknown: change_04_unknown
+        equipment_type::equipped_character: change_character
         equipment_type::equipped_07_unknown: change_07_unknown
 
 types:
@@ -48,28 +48,27 @@ types:
       - id: inventory_slot_clubs
         type: u4
         doc: Inventory slot of the chosen clubset.
-  change_04_unknown:
-    doc: Believed to be change character.
+  change_character:
     seq:
-      - id: unknown_id_04
+      - id: roster_slot_character
         type: u4
-        doc: Unknown ID of unknown origin. Has been seen elsewhere. Possibly character inventory slot?
+        doc: Roster slot of the chosen character.
   change_07_unknown:
     seq:
-      - id: unknown_id_07_04
+      - id: roster_slot_character_type07
         type: u4
-        doc: Same as unknown_id_04.
-      - id: unknown_id_07_caddie
+        doc: Same as in type 0x04.
+      - id: unknown_id_caddie_type07
         type: u4
-        doc: Same as unknown_id_caddie.
-      - id: item_id_07_ball
+        doc: Same as in type 0x01.
+      - id: item_id_ball_type07
         type: u4
-        doc: Same as item_id_ball.
+        doc: Same as in type 0x02.
 
 enums:
   equipment_type:
     0x01: equipped_caddie
     0x02: equipped_ball
     0x03: equipped_clubs
-    0x04: equipped_04_unknown
+    0x04: equipped_character
     0x07: equipped_07_unknown

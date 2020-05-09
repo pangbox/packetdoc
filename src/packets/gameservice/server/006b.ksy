@@ -8,6 +8,7 @@ meta:
   endian: le
   imports:
     - ../../common/pstring
+    - ../../common/pangyachar
 
 doc: |
   This packet acknowledges changes to equipment from [GameService Client 0x0020 Equipment Update](/packets/gameservice/client/0020.ksy).
@@ -15,48 +16,23 @@ doc: |
 seq:
   - id: unknown_a
     size: 1
-  - id: subtype
+  - id: equipment_type
     type: u1
-  - id: payload
+    enum: equipment_type
+  - id: equipment_data
     type:
-      switch-on: subtype
+      switch-on: equipment_type
       cases:
-        0x00: equipment_response_00_character
-        0x01: equipment_response_01_unknown
-        0x02: equipment_response_02_consumables
-        0x03: equipment_response_03_comet
-        0x04: equipment_response_04_card_decoration
-        0x05: equipment_response_05_unknown
-        0x08: equipment_response_08_unknown
-        0x09: equipment_response_09_unknown
+        equipment_type::character: pangyachar
+        equipment_type::unknown_01: equipment_response_01_unknown
+        equipment_type::consumables: equipment_response_02_consumables
+        equipment_type::ball: equipment_response_03_comet
+        equipment_type::card_decoration: equipment_response_04_card_decoration
+        equipment_type::unknown_05: equipment_response_05_unknown
+        equipment_type::unknown_08: equipment_response_08_unknown
+        equipment_type::unknown_09: equipment_response_09_unknown
 
 types:
-  equipment_response_00_character:
-    doc: This is the equipped character and clothing.
-    seq:
-      - id: character_id
-        type: u4
-        doc: From pangya_xx.iff/Character.iff
-      - id: unknown_e
-        size: 4
-        doc: Same as 05_unknown?
-      - id: unknown_h
-        size: 4
-      - id: clothing_id
-        type: u4
-        doc: From pangya_xx.iff/Part.iff. Equipped clothing, in order of Hat, Mask, Shirt, Gloves, Pants, Shoes.
-        repeat: expr
-        repeat-expr: 6
-      - id: unknown_i
-        size: 72
-        doc: Likely padding, reserved for future clothing slots.
-      - id: inventory_slot
-        type: u4
-        repeat: expr
-        repeat-expr: 6
-        doc: From Server 0x0073. Same order as clothing_id. 0 = no slot (placeholder item)
-      - id: unknown_j
-        size: 381
   equipment_response_01_unknown:
     seq:
       - id: unknown_b
@@ -105,3 +81,14 @@ types:
     seq:
       - id: unknown_g
         size: 20
+
+enums:
+  equipment_type:
+    0x00: character
+    0x01: unknown_01
+    0x02: consumables
+    0x03: ball
+    0x04: card_decoration
+    0x05: unknown_05
+    0x08: unknown_08
+    0x09: unknown_09

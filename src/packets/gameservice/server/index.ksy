@@ -44,6 +44,7 @@ meta:
     - '00aa'
     - '00c4'
     - '00c8'
+    - '00c9'
     - '00ce'
     - '00d7'
     - '00dd'
@@ -85,6 +86,7 @@ meta:
     - '019d'
     - '01bc'
     - '01bd'
+    - '01d3'
     - '01d4'
     - '01eb'
     - '01f7'
@@ -167,6 +169,7 @@ seq:
         0x00aa: gameservice_server_00aa_inventory_slot_assign
         0x00c4: gameservice_server_00c4_user_lounge_action_announce
         0x00c8: gameservice_server_00c8_pang_balance
+        0x00c9: gameservice_server_00c9_notice_data
         0x00ce: gameservice_server_00ce_tournament_item_winnings
         0x00d7: gameservice_server_00d7_authentication_keepalive_challenge
         0x00dd: gameservice_server_00dd_scratchy_play_result
@@ -208,6 +211,7 @@ seq:
         0x019d: gameservice_server_019d_lootbox_open_result
         0x01bc: gameservice_server_01bc_guild_list
         0x01bd: gameservice_server_01bd_guild_search_response
+        0x01d3: gameservice_server_01d3_lootbox_jackpot_announce
         0x01d4: gameservice_server_01d4_new_session_key
         0x01eb: gameservice_server_01eb_scratchy_menu_open_response
         0x01f7: gameservice_server_01f7_unknown_tourney_related_announce

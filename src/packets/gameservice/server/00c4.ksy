@@ -27,17 +27,19 @@ seq:
     type:
       switch-on: action_type
       cases:
-        action_type::unknown_type00: action_unknown_type00
+        action_type::rotation_unknown: action_rotation_unknown
         action_type::position_absolute: action_position_absolute
         action_type::position_relative: action_position_relative
         action_type::emote: action_emote
         action_type::departure: action_departure
 
 types:
-  action_unknown_type00:
+  action_rotation_unknown:
+    doc: Used in VS pre-game loadout screen.
     seq:
-      - id: unknown_a_type00
+      - id: axis_z_rotation_unknown
         type: f4
+        doc: Default is 195 (0x43430000). Values are all positive integers, but seem arbitrary.
   action_position_absolute:
     doc: Sent when initially joining a room.
     seq:

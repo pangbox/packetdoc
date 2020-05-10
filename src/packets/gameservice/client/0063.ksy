@@ -26,17 +26,19 @@ seq:
     type:
       switch-on: action_type
       cases:
-        action_type::unknown_type00: action_unknown_type00
+        action_type::rotation_absolute: action_rotation_absolute
         action_type::position_absolute: action_position_absolute
         action_type::position_relative: action_position_relative
         action_type::emote: action_emote
         action_type::departure: action_departure
 
 types:
-  action_unknown_type00:
+  action_rotation_absolute:
+    doc: Used in VS pre-game loadout screen.
     seq:
-      - id: unknown_a_type00
+      - id: axis_z_rotation_absolute_radians
         type: f4
+        doc: Unconfirmed. Default is 0.33 (0x3EA8F5C3). Counterclockwise range about -2.81 (0.33-3.14) to +3.47 (0.33+3.14).
   action_position_absolute:
     doc: Sent when initially joining a room.
     seq:
@@ -71,7 +73,7 @@ types:
 
 enums:
   action_type:
-    0x00: unknown_type00
+    0x00: rotation_absolute
     0x04: position_absolute
     0x06: position_relative
     0x07: emote

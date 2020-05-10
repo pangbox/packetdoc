@@ -45,6 +45,7 @@ meta:
     - '00c4'
     - '00c8'
     - '00ce'
+    - '00d7'
     - '00dd'
     - '00e6'
     - '00e7'
@@ -167,6 +168,7 @@ seq:
         0x00c4: gameservice_server_00c4_user_lounge_action_announce
         0x00c8: gameservice_server_00c8_pang_balance
         0x00ce: gameservice_server_00ce_tournament_item_winnings
+        0x00d7: gameservice_server_00d7_authentication_keepalive_challenge
         0x00dd: gameservice_server_00dd_scratchy_play_result
         0x00e6: gameservice_server_00e6_user_shop_inventory
         0x00e7: gameservice_server_00e7_user_shop_leave_response

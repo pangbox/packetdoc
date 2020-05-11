@@ -33,6 +33,7 @@ meta:
     - '0073'
     - '0078'
     - '007d'
+    - '0083'
     - '0084'
     - '0086'
     - '0089'
@@ -59,6 +60,8 @@ meta:
     - '010e'
     - '012b'
     - '012d'
+    - '012f'
+    - '0130'
     - '0131'
     - '0133'
     - '0134'
@@ -158,6 +161,7 @@ seq:
         0x0073: gameservice_server_0073_user_inventory
         0x0078: gameservice_server_0078_room_user_ready_state_response
         0x007d: gameservice_server_007d_user_team_change_announce
+        0x0083: gameservice_server_0083_room_invite
         0x0084: gameservice_server_0084_whisper_data
         0x0086: gameservice_server_0086_room_information_response
         0x0089: gameservice_server_0089_user_information_response
@@ -184,6 +188,8 @@ seq:
         0x010c: gameservice_server_010e_unknown_opponent_related_response
         0x012b: gameservice_server_012b_inventory_open_a_response
         0x012d: gameservice_server_012d_my_room_layout
+        0x012f: gameservice_server_012f_room_invite_send_response
+        0x0130: gameservice_server_0130_room_invite_send_response
         0x0131: gameservice_server_0131_unknown
         0x0133: gameservice_server_0133_treasure_point_result
         0x0134: gameservice_server_0134_treasure_point_winnings

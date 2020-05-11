@@ -27,6 +27,7 @@ meta:
     - '001f'
     - '0020'
     - '0022'
+    - '0029'
     - '002a'
     - '002d'
     - '002f'
@@ -48,6 +49,7 @@ meta:
     - '00a2'
     - '00b5'
     - '00b7'
+    - '00ba'
     - '00ca'
     - '00cc'
     - '00cd'
@@ -115,6 +117,7 @@ seq:
         0x001f: gameservice_client_001f_unknown
         0x0020: gameservice_client_0020_equipment_update
         0x0022: gameservice_client_0022_shot_active_user_acknowledge
+        0x0029: gameservice_client_0029_room_invite_send
         0x002a: gameservice_client_002a_whisper_send
         0x002d: gameservice_client_002d_room_information_request
         0x002f: gameservice_client_002f_user_information_request
@@ -136,6 +139,7 @@ seq:
         0x00a2: gameservice_client_00a2_unknown_cookies_related
         0x00b5: gameservice_client_00b5_inventory_open_a
         0x00b7: gameservice_client_00b7_inventory_open_b
+        0x00ba: gameservice_client_00ba_room_invite_send
         0x00ca: gameservice_client_00ca_cardholic_pack_open
         0x00cc: gameservice_client_00cc_locker_combination_attempt
         0x00cd: gameservice_client_00cd_locker_page_request

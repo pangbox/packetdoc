@@ -21,7 +21,10 @@ meta:
     - '0058'
     - '0059'
     - '005a'
+    - '005b'
     - '0063'
+    - '0065'
+    - '0066'
     - '0068'
     - '006b'
     - '006c'
@@ -46,6 +49,7 @@ meta:
     - '00c4'
     - '00c8'
     - '00c9'
+    - '00cc'
     - '00ce'
     - '00d7'
     - '00dd'
@@ -55,6 +59,7 @@ meta:
     - '00ed'
     - '00f5'
     - '00f6'
+    - '00fa'
     - '00fb'
     - '010b'
     - '010e'
@@ -63,6 +68,7 @@ meta:
     - '012f'
     - '0130'
     - '0131'
+    - '0132'
     - '0133'
     - '0134'
     - '0138'
@@ -86,6 +92,7 @@ meta:
     - '0171'
     - '0172'
     - '0196'
+    - '0199'
     - '019d'
     - '01bc'
     - '01bd'
@@ -149,7 +156,10 @@ seq:
         0x0058: gameservice_server_0058_shot_power_announce
         0x0059: gameservice_server_0059_shot_club_change_announce
         0x005a: gameservice_server_005a_shot_item_use_announce
+        0x005b: gameservice_server_005b_room_resync_unknown
         0x0063: gameservice_server_0063_shot_active_user_announce
+        0x0065: gameservice_server_0065_room_resync_unknown
+        0x0066: gameservice_server_0066_room_match_results
         0x0068: gameservice_server_0068_pangya_shop_purchase_response
         0x006b: gameservice_server_006b_equipment_response
         0x006c: gameservice_server_006c_tournament_user_finish
@@ -174,6 +184,7 @@ seq:
         0x00c4: gameservice_server_00c4_user_lounge_action_announce
         0x00c8: gameservice_server_00c8_pang_balance
         0x00c9: gameservice_server_00c9_notice_data
+        0x00cc: gameservice_server_00cc_shot_resync_collectables
         0x00ce: gameservice_server_00ce_tournament_item_winnings
         0x00d7: gameservice_server_00d7_authentication_keepalive_challenge
         0x00dd: gameservice_server_00dd_scratchy_play_result
@@ -183,6 +194,7 @@ seq:
         0x00ed: gameservice_server_00ed_user_shop_purchase_announce
         0x00f5: gameservice_server_00f5_multiplayer_mode_join_response
         0x00f6: gameservice_server_00f6_multiplayer_mode_leave_response
+        0x00fa: gameservice_server_00fa_room_bonus_collectables_result
         0x00fb: gameservice_server_00fb_unknown_black_papel_related
         0x010b: gameservice_server_010b_rare_shop_open_response
         0x010c: gameservice_server_010e_unknown_opponent_related_response
@@ -191,6 +203,7 @@ seq:
         0x012f: gameservice_server_012f_room_invite_send_response
         0x0130: gameservice_server_0130_room_invite_send_response
         0x0131: gameservice_server_0131_unknown
+        0x0132: gameservice_server_0132_treasure_point_status
         0x0133: gameservice_server_0133_treasure_point_result
         0x0134: gameservice_server_0134_treasure_point_winnings
         0x0138: gameservice_server_0138_user_cardholic_inventory
@@ -214,6 +227,7 @@ seq:
         0x0171: gameservice_server_0171_locker_pang_transact_response
         0x0172: gameservice_server_0172_locker_pang_balance
         0x0196: gameservice_server_0196_unknown_lounge_related_response
+        0x0199: gameservice_server_0199_room_resync_user_finish
         0x019d: gameservice_server_019d_lootbox_open_result
         0x01bc: gameservice_server_01bc_guild_list
         0x01bd: gameservice_server_01bd_guild_search_response

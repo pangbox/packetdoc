@@ -12,7 +12,7 @@ meta:
 doc: |
   This packet is an invitation to another player to join a particular gameroom.
   
-  It is sent in tandem with [GameService Client 0x00BA Room Invite Send](/packets/gameservice/server/00ba.ksy).
+  It is sent in tandem with [GameService Client 0x00BA Room Invite Send](/packets/gameservice/client/00ba.ksy).
   
   The response is [GameService Server 0x0130 Room Invite Send Response](/packets/gameservice/server/0130.ksy).
 

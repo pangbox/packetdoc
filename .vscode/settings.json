@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "*.ksy": "yaml"
+    },
+    "yaml.schemas": {
+        "https://raw.githubusercontent.com/kaitai-io/ksy_schema/master/ksy_schema.json": ["*.ksy"]
+    }
+}

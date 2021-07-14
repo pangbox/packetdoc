@@ -1,4 +1,4 @@
-# PacketDoc [![Netlify Status](https://api.netlify.com/api/v1/badges/f7e36de0-d78f-413c-af2f-61b6ab51700b/deploy-status)](https://app.netlify.com/sites/suspicious-kirch-7ba6e6/deploys) [![Gitpod Ready-to-Code](https://img.shields.io/badge/Gitpod-Ready--to--Code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/pangbox/packetdoc)
+# PacketDoc [![Netlify Status](https://api.netlify.com/api/v1/badges/f7e36de0-d78f-413c-af2f-61b6ab51700b/deploy-status)](https://app.netlify.com/sites/suspicious-kirch-7ba6e6/deploys) [![Gitpod Ready-to-Code](https://img.shields.io/badge/Gitpod-Ready--to--Code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/pangbox/packetdoc) [![Lint YAML](https://github.com/pangbox/packetdoc/actions/workflows/yaml-lint.yml/badge.svg)](https://github.com/pangbox/packetdoc/actions/workflows/yaml-lint.yml)
 
 **[Click here to view the browsable documentation!](https://packets.pangdox.com/)**
 

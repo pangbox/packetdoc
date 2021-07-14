@@ -12,4 +12,4 @@ jobs:
     - name: yaml-lint
       uses: ibiqlik/action-yamllint@v3
       with:
-        file_or_dir: src/packets/**/*.ksy
+        file_or_dir: "**/*.ksy"

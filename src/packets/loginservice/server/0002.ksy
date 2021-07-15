@@ -54,6 +54,10 @@ types:
         doc: |
           This field contains server flags. The meaning of each bit differs
           per region.
+          In the case of US 852, the following flags apply:
+          0x10: Hides the server from the listing
+          0x80: Indicates that the server should have sort priority in the listing
+          0x20000: Indicates that this is a Grand Prix server
       - id: unknown3
         size: 14
         doc: More unknown bytes.

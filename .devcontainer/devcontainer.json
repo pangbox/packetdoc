@@ -1,0 +1,15 @@
+{
+	"name": "Node.js",
+	"build": {
+		"dockerfile": "Dockerfile",
+		"args": { "VARIANT": "16" }
+	},
+	"settings": {},
+	"extensions": [
+		"redhat.vscode-yaml"
+	],
+	"forwardPorts": [],
+	"postCreateCommand": "npm install",
+	"postStartCommand": "npm run serve",
+	"remoteUser": "node"
+}

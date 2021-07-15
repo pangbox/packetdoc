@@ -59,7 +59,20 @@ types:
           0x80: Indicates that the server should have sort priority in the listing
           0x20000: Indicates that this is a Grand Prix server
       - id: unknown3
-        size: 14
+        size: 6
+        doc: More unknown bytes.
+      - id: boosts
+        type: u2
+        doc: |
+          This field contains the active server boosts.
+          In the case of US 852, the following bits apply:
+          0x1: Double Pang
+          0x4: Double Exp
+          0x8: Angel Event
+          0x10: Triple Exp
+          0x80: Club Mastery
+      - id: unknown4
+        size: 6
         doc: More unknown bytes.
       - id: char_icon
         type: u2

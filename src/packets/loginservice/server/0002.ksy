@@ -68,7 +68,7 @@ types:
           0x10: Triple Exp
           0x80: Club Mastery
       - id: unknown4
-        size: 7
+        size: 6
         doc: More unknown bytes.
       - id: char_icon
         type: u2

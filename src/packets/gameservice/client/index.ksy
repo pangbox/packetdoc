@@ -6,6 +6,7 @@ meta:
   encoding: ASCII
   endian: le
   imports:
+    - '../../common/version'
     - '0002'
     - '0003'
     - '0004'
@@ -89,6 +90,11 @@ meta:
     - '0185'
     - '018d'
     - '0195'
+
+params:
+  - id: version
+    type: u1
+    enum: version
 
 seq:
   - id: packet_id

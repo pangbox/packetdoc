@@ -9,6 +9,7 @@ meta:
     - 'gameservice/index'
     - 'messageservice/index'
     - 'common/origin'
+    - 'common/version'
 
 doc: |
   This is the root definition of all PangYa packets.
@@ -20,15 +21,18 @@ params:
   - id: origin
     type: u1
     enum: origin
+  - id: version
+    type: u1
+    enum: version
 
 seq:
   - id: packet
     type:
       switch-on: type
       cases:
-        0: loginservice_packet(origin)
-        1: gameservice_packet(origin)
-        2: messageservice_packet(origin)
+        0: loginservice_packet(origin, version)
+        1: gameservice_packet(origin, version)
+        2: messageservice_packet(origin, version)
 
 enums:
   service:

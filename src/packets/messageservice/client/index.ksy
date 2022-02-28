@@ -13,6 +13,7 @@ meta:
     - '0017'
     - '0018'
     - '001d'
+    - '001e'
     - '0023'
 
 params:
@@ -33,4 +34,5 @@ seq:
         0x0017: messageservice_client_0017_user_id_lookup
         0x0018: messageservice_client_0018_unk_friend_request
         0x001d: messageservice_client_001d_status_declaration
+        0x001e: messageservice_client_001e_send_message
         0x0023: messageservice_client_0023_server_declaration

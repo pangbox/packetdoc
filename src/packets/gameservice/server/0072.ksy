@@ -15,40 +15,50 @@ doc: |
   This packet is sent during the response to [GameService Client 0x0002 Hello](/packets/gameservice/client/0002.ksy).
 
 seq:
-  - id: unknown_user_id
+  - id: roster_slot_caddie
     type: u4
-    doc: Looks like a user ID, but doesn't correspond to local user. 0x00000000 and 0x004519DE seen.
-  - id: unknown_b
-    size: 4
-    doc: 0x00946599 seen.
-  - id: comet_inventory_slot
+    doc: From GameService Server 0x0071 User Caddie Roster. Equipped Caddie. 0 if unused.
+  - id: roster_slot_character
     type: u4
-    doc: From [GameService Server 0x0073 User Inventory](/packets/gameservice/server/0073.ksy). Currently equipped comet.
-  - id: comet_item_id
+    doc: From GameService Server 0x0070 User Character Roster. Equipped Character.
+  - id: inventory_slot_comet
+    type: u4
+    doc: From GameService Server 0x0073 User Inventory. Equipped Comet
+  - id: item_id_comet
     type: u4
     doc: From pangya_xx.iff/Ball.iff.
-  - id: consumable_item_id
+  - id: item_id_consumable
     type: u4
     repeat: expr
     repeat-expr: 10
-    doc: From pangya_xx.iff/Item.iff. Corresponds with the 10 slots available to the user.
-  - id: unknown_c
+    doc: From pangya_xx.iff/Item.iff. Corresponds with the 10 slots available to the user. 0 if unused.
+  - id: inventory_slot_portrait_background
+    type: u4
+    doc: From GameService Server 0x0073 User Inventory. Equipped Portrait Background. 0 if unused.
+  - id: inventory_slot_portrait_frame
+    type: u4
+    doc: Unconfirmed. From GameService Server 0x0073 User Inventory. Equipped Portrait Frame. 0 if unused.
+  - id: inventory_slot_portrait_sticker
+    type: u4
+    doc: From GameService Server 0x0073 User Inventory. Equipped Portrait Sticker. 0 if unused.
+  - id: inventory_slot_portrait_slot
+    type: u4
+    doc: From GameService Server 0x0073 User Inventory. Equipped Portrait Slot. 0 if unused.
+  - id: unknown_gss0072_a
     size: 8
-  - id: unknown_inv_slot_d
+    doc: All 0?
+  - id: item_id_portrait_background
     type: u4
-    doc: Looks like an inventory slot ID.
-  - id: unknown_e
-    size: 4
-  - id: unknown_inv_slot_f
+    doc: From pangya_xx.iff/Skin.iff. 0 if unused.
+  - id: item_id_portrait_frame
     type: u4
-  - id: unknown_g
-    size: 12
-  - id: unknown_asset_id_h
+    doc: Unconfirmed. From pangya_xx.iff/Skin.iff. 0 if unused.
+  - id: item_id_portrait_sticker
     type: u4
-    doc: Looks like some sort of asset ID (item_id, etc.)
-  - id: unknown_i
-    size: 4
-  - id: unknown_asset_id_j
+    doc: From pangya_xx.iff/Skin.iff. 0 if unused.
+  - id: item_id_portrait_slot
     type: u4
-  - id: unknown_k
-    size: 24
+    doc: From pangya_xx.iff/Skin.iff. 0 if unused.
+  - id: unknown_gss0072_b
+    size: 20
+    doc: All 0?

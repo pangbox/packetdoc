@@ -8,6 +8,7 @@ meta:
   endian: le
   imports:
     - ../../common/pstring
+    - ../../common/pangyachar
 
 doc: |
   This packet maintains the list of all users in the currently joined room.

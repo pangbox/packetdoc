@@ -27,7 +27,7 @@ seq:
     type: u4
     repeat: expr
     repeat-expr: 24
-    doc: From pangya_xx.iff/Part.iff. Item IDs for 24 parts.
+    doc: From pangya_xx.iff/Part.iff. Item IDs for 24 parts. Estimated order - Head, Face, Top, Hand/Arm, Hand?, Bottoms, Legs, Feet, Unk x5, Hat, Unk x10.
   - id: inventory_slot_array_part
     type: u4
     repeat: expr

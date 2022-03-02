@@ -14,6 +14,7 @@ meta:
     - '0008'
     - '0009'
     - '000a'
+    - '000b'
     - '000c'
     - '000d'
     - '000f'
@@ -111,6 +112,7 @@ seq:
         0x0008: gameservice_client_0008_room_create
         0x0009: gameservice_client_0009_room_join
         0x000a: gameservice_client_000a_room_settings_change
+        0x000b: gameservice_client_000b_user_equipment_change
         0x000c: gameservice_client_000c_user_equipment_change
         0x000d: gameservice_client_000d_room_user_ready_state
         0x000f: gameservice_client_000f_room_leave

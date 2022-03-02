@@ -13,7 +13,7 @@ meta:
 doc: |
   This packet announces changes to a user's loadout to all other users in the same room.
   
-  It is the response to [GameService Client 0x000C User Equipment Change](/packets/gameservice/client/000c.ksy).
+  It is the response to [GameService Client 0x000B User Equipment Change](/packets/gameservice/client/000b.ksy) and [GameService Client 0x000C User Equipment Change](/packets/gameservice/client/000c.ksy).
 
 seq:
   - id: unknown_a

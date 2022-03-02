@@ -10,10 +10,10 @@ meta:
     - ../../common/pstring
 
 doc: |
-  This packet is sent 19 times after connecting to the server.
-  
-  First is an instance of subtype 0xD3, then 17 instances of subtype 0xD2, and
-  finally an instance of subtype 0x00.
+  This packet is sent 19 times after connecting to the server. In order (PangyaTH),
+  * 1 instance of subtype 0xD3, value 00.
+  * 17 instances of subtype 0xD2, values 01, 03, 1C, 1E, 20, 05, 08, 0B, 10, 12, 15, 0E, 14, 16, 18, 1A, 22.
+  * 1 instance of subtype 0x00.
   
   This packet is sent during the response to [GameService Client 0x0002 Hello](/packets/gameservice/client/0002.ksy).
   
@@ -37,7 +37,8 @@ types:
         type: pstring
         doc: e.g., "829.01"
       - id: unknown_c
-        size: 2
+        type: s2
+        doc: Always 0xFFFF (-1)?
       - id: username
         type: strz
         size: 22
@@ -49,7 +50,7 @@ types:
       - id: guild_emblem_id
         type: strz
         size: 24
-        doc: Local user's guild's emblem ID
+        doc: Local user's guild's emblem ID. If present, for instance "13579ace", PNG image is downloaded over HTTP from (PangyaTH) 203.107.140.35:50008/_Files/GuildEmblem/13579ace.png
       - id: connection_id
         type: u4
         doc: Connection ID, seen elsewhere in places like [GameService Server 0x0086 Room Information Response](/packets/gameservice/server/0086.ksy).
@@ -84,8 +85,8 @@ types:
   unknown_0044_d2_unknown:
     seq:
       - id: unknown_b
-        size: 4
+        type: u4
   unknown_0044_d3_unknown:
     seq:
       - id: unknown_a
-        size: 1
+        type: u1

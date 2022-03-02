@@ -24,6 +24,7 @@ meta:
     - '0015'
     - '0016'
     - '0017'
+    - '0018'
     - '001c'
     - '001d'
     - '001f'
@@ -120,6 +121,7 @@ seq:
         0x0015: gameservice_client_0015_shot_power
         0x0016: gameservice_client_0016_shot_club_change
         0x0017: gameservice_client_0017_shot_item_use
+        0x0018: gameservice_client_0018_user_typing_indicator_status
         0x001c: gameservice_client_001c_room_resync
         0x001d: gameservice_client_001d_pangya_shop_purchase
         0x001f: gameservice_client_001f_unknown

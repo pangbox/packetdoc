@@ -8,7 +8,7 @@ meta:
   endian: le
   imports:
     - ../../common/pstring
-    - ../../common/pangyachar
+    - ../../common/user_character_data
 
 doc: |
   This packet includes a large amount of information about the local user. It's possible that, since the other
@@ -57,5 +57,5 @@ seq:
     size: 128
   - id: unknown_e
     size: 8
-  - id: character_data
-    type: pangyachar
+  - id: user_character
+    type: user_character_data

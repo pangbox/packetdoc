@@ -1,9 +1,11 @@
 ---
 meta:
-  id: pangyachar
-  title: Pangya Character Data
+  id: user_character_data
+  title: User Character Data
   encoding: ASCII
   endian: le
+  imports:
+  - id_bank
 
 doc: |
   Oft-recurring format for communicating a user's character data to clients, including:
@@ -14,14 +16,19 @@ doc: |
   * [Gameservice Server 0x015E User Information Equipment](/packets/gameservice/server/015e.ksy)
   * [Gameservice Server 0x0168 User Information](/packets/gameservice/server/0168.ksy)
 
+  **See Also**:
+  * [User Equipment Data](/packets/common/user_equipment_data.ksy)
+  * [User Statistic Data](/packets/common/user_statistic_data.ksy)
+
 seq:
   - id: item_id_character
     type: u4
     doc: From pangya_xx.iff/Character.iff.
+    enum: id_bank::item_id_character
   - id: roster_slot_character
     type: u4
     doc: Unconfirmed. Roster slot for the character.
-  - id: unknown_b
+  - id: unknown_user_character_data_a
     size: 4
   - id: item_id_array_part
     type: u4
@@ -33,24 +40,24 @@ seq:
     repeat: expr
     repeat-expr: 24
     doc: Inventory slots for 24 parts. Corresponds with above.
-  - id: unknown_c
+  - id: unknown_user_character_data_b
     size: 216
     doc: All 0x00.
-  - id: unknown_id_d
+  - id: unknown_user_character_data_c
     type: u4
     doc: In 0x70xxxxxx range.
-  - id: unknown_id_e
+  - id: unknown_user_character_data_d
     type: u4
     doc: In 0x70xxxxxx range.
-  - id: unknown_f
+  - id: unknown_user_character_data_e
     size: 12
     doc: All 0x00.
-  - id: unknown_g
+  - id: unknown_user_character_data_f
     type: f4
-  - id: unknown_h
+  - id: unknown_user_character_data_g
     size: 12
     doc: All 0x00.
-  - id: unknown_i
+  - id: unknown_user_character_data_h
     size: 9
     doc: Believed to be character mastery, need more testing.
   - id: item_id_array_card
@@ -58,6 +65,6 @@ seq:
     repeat: expr
     repeat-expr: 10
     doc: From pangya_xx.iff/Card.iff. Item IDs for 10 cards.
-  - id: unknown_j
+  - id: unknown_user_character_data_i
     size: 8
     doc: All 0x00.

@@ -8,6 +8,8 @@ meta:
   endian: le
   imports:
     - ../../common/pstring
+    - ../../common/user_equipment_data
+    - ../../common/user_statistic_data
 
 doc: |
   This packet is sent 19 times after connecting to the server. In order (PangyaTH),
@@ -36,7 +38,7 @@ types:
       - id: game_version
         type: pstring
         doc: e.g., "829.01"
-      - id: unknown_c
+      - id: unknown_gss0044_00_a
         type: s2
         doc: Always 0xFFFF (-1)?
       - id: username
@@ -54,7 +56,7 @@ types:
       - id: connection_id
         type: u4
         doc: Connection ID, seen elsewhere in places like [GameService Server 0x0086 Room Information Response](/packets/gameservice/server/0086.ksy).
-      - id: unknown_d
+      - id: unknown_gss0044_00_b
         size: 44
       - id: username_atnt
         type: strz
@@ -67,26 +69,20 @@ types:
           Login-via-Facebook functionality.
       - id: user_id
         type: u4
-      - id: unknown_e
-        size: 74
-      - id: stat_xp_amount
-        type: u2
-        doc: The currently held amount of experience points.
-      - id: unknown_f
-        size: 3
-      - id: stat_pang_amount
-        type: u4
-        doc: The currently held amount of pang.
-      - id: unknown_g
-        size: 351
+      - id: user_equipment
+        type: user_equipment_data
+        doc: More details can be found in type definition file.
+      - id: user_statistics
+        type: user_statistic_data
+        doc: More details can be found in type definition file.
       - id: server_ram_leaking
-        size: 11789
+        size: 11788
         doc: Presumed to be just garbage data.
   unknown_0044_d2_unknown:
     seq:
-      - id: unknown_b
+      - id: unknown_gss0044_d2
         type: u4
   unknown_0044_d3_unknown:
     seq:
-      - id: unknown_a
+      - id: unknown_gss0044_d3
         type: u1

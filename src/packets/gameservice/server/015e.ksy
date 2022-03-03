@@ -8,7 +8,7 @@ meta:
   endian: le
   imports:
     - ../../common/pstring
-    - ../../common/pangyachar
+    - ../../common/user_character_data
 
 doc: |
   This packet details a user's character and equipment.
@@ -18,5 +18,5 @@ doc: |
 seq:
   - id: user_id
     type: u4
-  - id: character_data
-    type: pangyachar
+  - id: user_character
+    type: user_character_data

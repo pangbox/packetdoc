@@ -7,8 +7,9 @@ meta:
   encoding: ASCII
   endian: le
   imports:
+    - ../../common/id_bank
     - ../../common/pstring
-    - ../../common/pangyachar
+    - ../../common/user_character_data
 
 doc: |
   This packet maintains the list of all users in the currently joined room.
@@ -45,14 +46,14 @@ types:
         repeat: expr
         repeat-expr: user_count
       - id: user_additional_initial
-        type: pangyachar
+        type: user_character_data
         doc: Is either 1 byte (0x00) or 513 bytes long.
   census_addition:
     seq:
       - id: user_addition
         type: user
       - id: user_additional_addition
-        type: pangyachar
+        type: user_character_data
         doc: Is either 0 bytes or 513 bytes long.
   census_removal:
     seq:
@@ -76,7 +77,7 @@ types:
       - id: user_lounge
         type: user
       - id: user_additional_lounge
-        type: pangyachar
+        type: user_character_data
         doc: Is always present at 513 bytes.
   user:
     seq:
@@ -97,35 +98,36 @@ types:
       - id: unknown_c
         size: 4
         doc: All 0x00.
-      - id: skin_id_title
+      - id: item_id_title
         type: u4
         doc: From pangya_xx.iff/Skin.iff. ID of the custom title badge.
-      - id: character_id
+      - id: item_id_character
         type: u4
         doc: From pangya_xx.iff/Character.iff. ID of the character used.
-      - id: skin_id_background
+      - id: item_id_portrait_background
         type: u4
-        doc: From pangya_xx.iff/Skin.iff. ID of the portrait background.
-      - id: skin_id_frame
+        doc: From pangya_xx.iff/Skin.iff. ID of the portrait background. 0 if unused.
+      - id: item_id_portrait_frame
         type: u4
-        doc: From pangya_xx.iff/Skin.iff. ID of the portrait frame.
-      - id: skin_id_sticker
+        doc: From pangya_xx.iff/Skin.iff. ID of the portrait frame. 0 if unused.
+      - id: item_id_portrait_sticker
         type: u4
-        doc: From pangya_xx.iff/Skin.iff. ID of the portrait sticker.
-      - id: skin_id_slot
+        doc: From pangya_xx.iff/Skin.iff. ID of the portrait sticker. 0 if unused.
+      - id: item_id_portrait_slot
         type: u4
-        doc: From pangya_xx.iff/Skin.iff. ID of the portrait 'slot'.
+        doc: From pangya_xx.iff/Skin.iff. ID of the portrait slot. 0 if unused.
       - id: unknown_d
         size: 4
         doc: All 0x00.
-      - id: skin_id_title_b
+      - id: item_id_title_b
         type: u4
-        doc: Duplicate of skin_id_title
+        doc: Duplicate of item_id_title
       - id: unknown_e
         size: 2
       - id: user_rank
         type: u1
         doc: Unconfirmed. From 0x00 ('Rookie F') through 0x46 ('Infinity Legend I').
+        enum: id_bank::rank
       - id: unknown_f
         type: u1
         doc: All examples either 0 (0x00) or 40 (0x28).
@@ -163,9 +165,10 @@ types:
       - id: garbage_r
         size: 64
         doc: Likely garbage data; contains local user's data.
-      - id: mascot_id
+      - id: item_id_mascot
         type: u4
         doc: From pangya_xx.iff/Mascot.iff. ID for user's mascot.
+        enum: id_bank::item_id_mascot
       - id: username_atnt
         type: strz
         size: 128

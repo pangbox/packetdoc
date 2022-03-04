@@ -8,7 +8,7 @@ meta:
   endian: le
   imports:
     - ../../common/pstring
-    - ../../common/pangyachar
+    - ../../common/user_character_data
 
 doc: |
   This packet contains the character roster for the user.
@@ -23,6 +23,6 @@ seq:
     type: u2
     doc: Unconfirmed. May be count or max.
   - id: characters
-    type: pangyachar
+    type: user_character_data
     repeat: expr
     repeat-expr: character_count_b

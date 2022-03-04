@@ -14,15 +14,15 @@ meta:
 params:
   - id: origin
     type: u1
-    enum: origin
+    enum: packet_origin::origin
   - id: version
     type: u1
-    enum: version
+    enum: packet_version::version
 
 seq:
   - id: game_packet
     type:
       switch-on: origin
       cases:
-        0: gameservice_client_packet(version)
-        1: gameservice_server_packet(version)
+        packet_origin::origin::client: gameservice_client_packet(version)
+        packet_origin::origin::server: gameservice_server_packet(version)

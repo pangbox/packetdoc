@@ -8,7 +8,6 @@ meta:
   endian: le
   imports:
     - ../../common/pstring
-    - ../../common/pangyachar
 
 doc: |
   This packet is of unknown use.

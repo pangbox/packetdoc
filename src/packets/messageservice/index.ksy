@@ -14,15 +14,15 @@ meta:
 params:
   - id: origin
     type: u1
-    enum: origin
+    enum: packet_origin::origin
   - id: version
     type: u1
-    enum: version
+    enum: packet_version::version
 
 seq:
   - id: message_packet
     type:
       switch-on: origin
       cases:
-        0: messageservice_client_packet(version)
-        1: messageservice_server_packet(version)
+        packet_origin::origin::client: messageservice_client_packet(version)
+        packet_origin::origin::server: messageservice_server_packet(version)

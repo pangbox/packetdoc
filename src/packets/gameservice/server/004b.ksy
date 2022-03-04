@@ -8,12 +8,12 @@ meta:
   endian: le
   imports:
     - ../../common/pstring
-    - ../../common/pangyachar
+    - ../../common/user_character_data
 
 doc: |
   This packet announces changes to a user's loadout to all other users in the same room.
   
-  It is the response to [GameService Client 0x000C User Equipment Change](/packets/gameservice/client/000c.ksy).
+  It is the response to [GameService Client 0x000B User Equipment Change](/packets/gameservice/client/000b.ksy) and [GameService Client 0x000C User Equipment Change](/packets/gameservice/client/000c.ksy).
 
 seq:
   - id: unknown_a
@@ -32,7 +32,7 @@ seq:
         equipment_type::equipped_caddie: change_caddie
         equipment_type::equipped_ball: change_ball
         equipment_type::equipped_clubs: change_clubs
-        equipment_type::equipped_character: pangyachar
+        equipment_type::equipped_character: user_character_data
 
 types:
   change_caddie:

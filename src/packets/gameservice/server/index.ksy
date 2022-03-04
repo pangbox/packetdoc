@@ -9,6 +9,7 @@ meta:
     - '../../common/version'
     - '0040'
     - '0044'
+    - '0045'
     - '0046'
     - '0047'
     - '0048'
@@ -139,7 +140,7 @@ meta:
 params:
   - id: version
     type: u1
-    enum: version
+    enum: packet_version::version
 
 seq:
   - id: packet_id
@@ -150,6 +151,7 @@ seq:
       cases:
         0x0040: gameservice_server_0040_message_data
         0x0044: gameservice_server_0044_unknown
+        0x0045: gameservice_server_0045_user_statistics
         0x0046: gameservice_server_0046_user_census
         0x0047: gameservice_server_0047_room_list
         0x0048: gameservice_server_0048_room_census

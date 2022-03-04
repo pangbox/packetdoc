@@ -8,13 +8,13 @@ meta:
   endian: le
   imports:
     - ../../common/pstring
-    - ../../common/pangyachar
+    - ../../common/user_character_data
 
 doc: |
   This packet acknowledges changes to equipment from [GameService Client 0x0020 Equipment Update](/packets/gameservice/client/0020.ksy).
 
 seq:
-  - id: unknown_a
+  - id: unknown_gss006b_a
     size: 1
   - id: equipment_type
     type: u1
@@ -23,7 +23,7 @@ seq:
     type:
       switch-on: equipment_type
       cases:
-        equipment_type::character: pangyachar
+        equipment_type::character: user_character_data
         equipment_type::unknown_01: equipment_response_01_unknown
         equipment_type::consumables: equipment_response_02_consumables
         equipment_type::ball: equipment_response_03_comet
@@ -35,7 +35,7 @@ seq:
 types:
   equipment_response_01_unknown:
     seq:
-      - id: unknown_b
+      - id: unknown_gss006b_01
         size: 4
   equipment_response_02_consumables:
     doc: These are the 8-10 items available for use in matches.
@@ -48,10 +48,10 @@ types:
   equipment_response_03_comet:
     doc: This is the equipped comet (ball).
     seq:
-      - id: ball_id
+      - id: item_id_comet
         type: u4
         doc: From pangya_xx.iff/Ball.iff
-      - id: inventory_slot
+      - id: inventory_slot_comet
         type: u4
         doc: From Server 0x0073.
   equipment_response_04_card_decoration:
@@ -59,27 +59,31 @@ types:
       This is the decoration on the gamercard that appears in the user profile
       and on inter-hole tournament standings screens.
     seq:
-      - id: card_background_id
+      - id: item_id_portrait_background
         type: u4
-        doc: From pangya_xx.iff/Skin.iff.
-      - id: unknown_1
-        size: 4
-      - id: card_sticker_id
+        doc: From pangya_xx.iff/Skin.iff. 0 if unused.
+      - id: item_id_portrait_frame
         type: u4
-        doc: From pangya_xx.iff/Skin.iff.
-      - id: unknown_2
-        size: 12
+        doc: From pangya_xx.iff/Skin.iff. 0 if unused.
+      - id: item_id_portrait_sticker
+        type: u4
+        doc: From pangya_xx.iff/Skin.iff. 0 if unused.
+      - id: item_id_portrait_slot
+        type: u4
+        doc: From pangya_xx.iff/Skin.iff. 0 if unused.
+      - id: unknown_gss006b_04
+        size: 8
   equipment_response_05_unknown:
     seq:
-      - id: unknown_e
+      - id: unknown_gss006b_05
         size: 4
   equipment_response_08_unknown:
     seq:
-      - id: unknown_f
+      - id: unknown_gss006b_08
         size: 62
   equipment_response_09_unknown:
     seq:
-      - id: unknown_g
+      - id: unknown_gss006b_09
         size: 20
 
 enums:

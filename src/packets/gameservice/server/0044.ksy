@@ -8,12 +8,14 @@ meta:
   endian: le
   imports:
     - ../../common/pstring
+    - ../../common/user_equipment_data
+    - ../../common/user_statistic_data
 
 doc: |
-  This packet is sent 19 times after connecting to the server.
-  
-  First is an instance of subtype 0xD3, then 17 instances of subtype 0xD2, and
-  finally an instance of subtype 0x00.
+  This packet is sent 19 times after connecting to the server. In order (PangyaTH),
+  * 1 instance of subtype 0xD3, value 00.
+  * 17 instances of subtype 0xD2, values 01, 03, 1C, 1E, 20, 05, 08, 0B, 10, 12, 15, 0E, 14, 16, 18, 1A, 22.
+  * 1 instance of subtype 0x00.
   
   This packet is sent during the response to [GameService Client 0x0002 Hello](/packets/gameservice/client/0002.ksy).
   
@@ -36,8 +38,9 @@ types:
       - id: game_version
         type: pstring
         doc: e.g., "829.01"
-      - id: unknown_c
-        size: 2
+      - id: unknown_gss0044_00_a
+        type: s2
+        doc: Always 0xFFFF (-1)?
       - id: username
         type: strz
         size: 22
@@ -49,11 +52,11 @@ types:
       - id: guild_emblem_id
         type: strz
         size: 24
-        doc: Local user's guild's emblem ID
+        doc: Local user's guild's emblem ID. If present, for instance "13579ace", PNG image is downloaded over HTTP from (PangyaTH) 203.107.140.35:50008/_Files/GuildEmblem/13579ace.png
       - id: connection_id
         type: u4
         doc: Connection ID, seen elsewhere in places like [GameService Server 0x0086 Room Information Response](/packets/gameservice/server/0086.ksy).
-      - id: unknown_d
+      - id: unknown_gss0044_00_b
         size: 44
       - id: username_atnt
         type: strz
@@ -66,26 +69,20 @@ types:
           Login-via-Facebook functionality.
       - id: user_id
         type: u4
-      - id: unknown_e
-        size: 74
-      - id: stat_xp_amount
-        type: u2
-        doc: The currently held amount of experience points.
-      - id: unknown_f
-        size: 3
-      - id: stat_pang_amount
-        type: u4
-        doc: The currently held amount of pang.
-      - id: unknown_g
-        size: 351
+      - id: user_statistics
+        type: user_statistic_data
+        doc: More details can be found in type definition file.
+      - id: user_equipment
+        type: user_equipment_data
+        doc: More details can be found in type definition file.
       - id: server_ram_leaking
-        size: 11789
+        size: 11790
         doc: Presumed to be just garbage data.
   unknown_0044_d2_unknown:
     seq:
-      - id: unknown_b
-        size: 4
+      - id: unknown_gss0044_d2
+        type: u4
   unknown_0044_d3_unknown:
     seq:
-      - id: unknown_a
-        size: 1
+      - id: unknown_gss0044_d3
+        type: u1

@@ -14,6 +14,9 @@ doc: |
   
   The response is [GameService Server 0x004B User Equipment Change Announce](/packets/gameservice/server/004b.ksy).
   
+  **See Also:**
+  * [GameService Client 0x000B User Equipment Change](/packets/gameservice/client/000b.ksy)
+  
   **Aliases:**
   * `hsreina/pangya-server`: `PLAYER_CHANGE_EQUPMENT_B`
   * `eantoniobr/UGPangya`: `PLAYER_CHANGE_EQUIPMENT`
@@ -57,13 +60,16 @@ types:
     seq:
       - id: roster_slot_character_type07
         type: u4
-        doc: Same as in type 0x04.
-      - id: unknown_id_caddie_type07
+        doc: Same as in subtype 0x04.
+      - id: roster_slot_caddie_type07
         type: u4
-        doc: Same as in type 0x01.
+        doc: Same as in subtype 0x01.
+      - id: inventory_slot_clubs_type07
+        type: u4
+        doc: Same as in subtype 0x03.
       - id: item_id_ball_type07
         type: u4
-        doc: Same as in type 0x02.
+        doc: Same as in subtype 0x02.
 
 enums:
   equipment_type:

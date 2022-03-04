@@ -69,14 +69,14 @@ types:
           Login-via-Facebook functionality.
       - id: user_id
         type: u4
-      - id: user_equipment
-        type: user_equipment_data
-        doc: More details can be found in type definition file.
       - id: user_statistics
         type: user_statistic_data
         doc: More details can be found in type definition file.
+      - id: user_equipment
+        type: user_equipment_data
+        doc: More details can be found in type definition file.
       - id: server_ram_leaking
-        size: 11788
+        size: 11790
         doc: Presumed to be just garbage data.
   unknown_0044_d2_unknown:
     seq:

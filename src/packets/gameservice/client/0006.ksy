@@ -58,7 +58,7 @@ seq:
     type: f4
     doc: Unconfirmed. User's longest successful putt of the match. 0 if no successful putts.
   - id: match_stat_longest_chip
-    size: f4
+    type: f4
     doc: Unconfirmed. User's longest successful chip-in of the match. 0 if no successful chip-ins.
   - id: unknown_gsc0006_q
     type: s4

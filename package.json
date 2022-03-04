@@ -6,7 +6,7 @@
   "author": "John Chadwick <johnwchadwick@gmail.com>",
   "license": "ISC",
   "dependencies": {
-    "kaitai-struct-compiler": "^0.8.0-SNAPSHOT.20180205.11616",
+    "kaitai-struct-compiler": "^0.9.0",
     "parcel-bundler": "^1.12.4",
     "parcel-plugin-pangdox": "git+https://git@github.com/pangbox/parcel-plugin-pangdox.git",
     "sass": "^1.26.3"

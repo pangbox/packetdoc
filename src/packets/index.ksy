@@ -20,19 +20,19 @@ params:
     enum: service
   - id: origin
     type: u1
-    enum: origin
+    enum: packet_origin::origin
   - id: version
     type: u1
-    enum: version
+    enum: packet_version::version
 
 seq:
   - id: packet
     type:
       switch-on: type
       cases:
-        0: loginservice_packet(origin, version)
-        1: gameservice_packet(origin, version)
-        2: messageservice_packet(origin, version)
+        service::loginservice: loginservice_packet(origin, version)
+        service::gameservice: gameservice_packet(origin, version)
+        service::messageservice: messageservice_packet(origin, version)
 
 enums:
   service:

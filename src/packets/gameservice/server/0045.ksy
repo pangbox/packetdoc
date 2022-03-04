@@ -38,7 +38,7 @@ types:
         type: s1
       - id: course_stat_data
         type: course_stat_data
-        if: course_id_a != course_id::empty
+        if: course_id_a != id_bank::course_id::empty
 
   course_stat_data:
     seq:

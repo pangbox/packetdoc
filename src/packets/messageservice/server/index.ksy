@@ -13,7 +13,7 @@ meta:
 params:
   - id: version
     type: u1
-    enum: version
+    enum: packet_version::version
 
 seq:
   - id: packet_id

@@ -3,7 +3,7 @@
 ---
 meta:
   id: gameservice_server_0045_user_statistics
-  title: GameService Server 0045 User Statistics
+  title: GameService Server User Statistics
   encoding: ASCII
   endian: le
   imports:

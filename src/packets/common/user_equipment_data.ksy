@@ -11,6 +11,7 @@ doc: |
   * [GameService Server 0x0072 User Equipment](/packets/gameservice/server/0072.ksy)
   
   **See Also**:
+  * [User Caddie Data](/packets/common/user_caddie_data.ksy)
   * [User Character Data](/packets/common/user_character_data.ksy)
   * [User Statistic Data](/packets/common/user_statistic_data.ksy)
 

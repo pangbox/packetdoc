@@ -17,6 +17,7 @@ doc: |
   * [Gameservice Server 0x0168 User Information](/packets/gameservice/server/0168.ksy)
 
   **See Also**:
+  * [User Caddie Data](/packets/common/user_caddie_data.ksy)
   * [User Equipment Data](/packets/common/user_equipment_data.ksy)
   * [User Statistic Data](/packets/common/user_statistic_data.ksy)
 

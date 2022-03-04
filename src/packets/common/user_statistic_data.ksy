@@ -13,6 +13,7 @@ doc: |
   * [GameService Server 0x0045 User Statistics](/packets/gameservice/server/0045.ksy)
   
   **See Also**:
+  * [User Caddie Data](/packets/common/user_caddie_data.ksy)
   * [User Character Data](/packets/common/user_character_data.ksy)
   * [User Equipment Data](/packets/common/user_equipment_data.ksy)
 

@@ -8,6 +8,7 @@ meta:
   endian: le
   imports:
     - ../../common/pstring
+    - ../../common/user_caddie_data
     - ../../common/user_character_data
 
 doc: |
@@ -29,29 +30,12 @@ seq:
     type:
       switch-on: equipment_type
       cases:
-        equipment_type::equipped_caddie: change_caddie
+        equipment_type::equipped_caddie: user_caddie_data
         equipment_type::equipped_ball: change_ball
         equipment_type::equipped_clubs: change_clubs
         equipment_type::equipped_character: user_character_data
 
 types:
-  change_caddie:
-    doc: Identical to [Gameservice Server 0x0071 User Caddie Roster](/packets/gameservice/server/0071.ksy).
-    seq:
-      - id: roster_slot_caddie
-        type: u4
-      - id: item_id_caddie
-        type: u4
-        doc: From pangya_xx.iff/Caddie.iff. Item ID of the chosen caddie.
-      - id: unknown_a_caddie
-        size: 4
-      - id: unknown_b_caddie
-        type: u1
-      - id: unknown_c_caddie
-        type: u4
-        doc: Might be some sort of XP amount.
-      - id: unknown_d_caddie
-        size: 8
   change_ball:
     seq:
       - id: item_id_ball

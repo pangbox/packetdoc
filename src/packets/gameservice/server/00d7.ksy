@@ -19,8 +19,11 @@ doc: |
 
 seq:
   - id: unknown_token
-    type: u4
+    type: u2
     doc: Unchanging over the course of a single session. Identical in response. Might be some sort of key.
+  - id: server_id
+    type: u2
+    doc: ID of the server currently connected to.
   - id: challenge_length
     type: u4
     doc: Seen lengths of 52 (0x34), 60 (0x3C), and 68 (0x44) bytes.

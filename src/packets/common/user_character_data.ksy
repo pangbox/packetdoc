@@ -18,6 +18,8 @@ doc: |
 
   **See Also**:
   * [User Caddie Data](/packets/common/user_caddie_data.ksy)
+  * [User Character Data](/packets/common/user_character_data.ksy)
+  * [User Course Record Data](/packets/common/user_course_record_data.ksy)
   * [User Equipment Data](/packets/common/user_equipment_data.ksy)
   * [User Statistic Data](/packets/common/user_statistic_data.ksy)
 

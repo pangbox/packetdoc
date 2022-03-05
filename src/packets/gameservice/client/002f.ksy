@@ -19,12 +19,12 @@ doc: |
   * [GameService Server 0x0156 User Information Consumables](/packets/gameservice/server/0156.ksy) (if request_type 0x05),
   * [GameService Server 0x0158 User Statistics Response](/packets/gameservice/server/0158.ksy),
   * [GameService Server 0x015D User Information Guild](/packets/gameservice/server/015d.ksy) (if request_type 0x05),
-  * [GameService Server 0x015C User Information Course Records](/packets/gameservice/server/015c.ksy) (request_type 0x00 > type 0x0A; request_type 0x05 > type 0x33),
-  * [GameService Server 0x015C User Information Course Records](/packets/gameservice/server/015c.ksy) (request_type 0x00 > type 0x0B; request_type 0x05 > type 0x34),
+  * [GameService Server 0x015C User Course Records Response](/packets/gameservice/server/015c.ksy) (Natural Wind mode records),
+  * [GameService Server 0x015C User Course Records Response](/packets/gameservice/server/015c.ksy) (Grand Prix mode records),
   * [GameService Server 0x015B Unknown Response (User Related)](/packets/gameservice/server/015b.ksy),
   * [GameService Server 0x015A Unknown Response (User Related)](/packets/gameservice/server/015a.ksy),
   * [GameService Server 0x0159 Unknown Response (User Related)](/packets/gameservice/server/0159.ksy),
-  * [GameService Server 0x015C User Information Course Records](/packets/gameservice/server/015c.ksy) (request_type 0x00 > type 0x00; request_type 0x05 > type 0x05),
+  * [GameService Server 0x015C User Course Records Response](/packets/gameservice/server/015c.ksy) (Original mode records),
   * [GameService Server 0x0257 Unknown Response (User Related)](/packets/gameservice/server/0257.ksy), and
   * [GameService Server 0x0089 User Information Response](/packets/gameservice/server/0089.ksy).
   

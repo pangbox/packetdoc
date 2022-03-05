@@ -225,7 +225,7 @@ seq:
         0x0159: gameservice_server_0159_unknown_user_related_response
         0x015a: gameservice_server_015a_unknown_user_related_response
         0x015b: gameservice_server_015b_unknown_user_related_response
-        0x015c: gameservice_server_015c_user_information_course_records
+        0x015c: gameservice_server_015c_user_course_records_response
         0x015d: gameservice_server_015d_user_information_guild
         0x015e: gameservice_server_015e_user_information_character
         0x0168: gameservice_server_0168_user_information

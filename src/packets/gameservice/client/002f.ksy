@@ -17,7 +17,7 @@ doc: |
   * [GameService Server 0x0157 Unknown Response (User Related)](/packets/gameservice/server/0157.ksy) (if request_type 0x05),
   * [GameService Server 0x015E User Information Character](/packets/gameservice/server/015e.ksy) (if request_type 0x05),
   * [GameService Server 0x0156 User Information Consumables](/packets/gameservice/server/0156.ksy) (if request_type 0x05),
-  * [GameService Server 0x0158 Unknown Response (User-Related)](/packets/gameservice/server/0158.ksy),
+  * [GameService Server 0x0158 User Statistics Response](/packets/gameservice/server/0158.ksy),
   * [GameService Server 0x015D User Information Guild](/packets/gameservice/server/015d.ksy) (if request_type 0x05),
   * [GameService Server 0x015C User Information Course Records](/packets/gameservice/server/015c.ksy) (request_type 0x00 > type 0x0A; request_type 0x05 > type 0x33),
   * [GameService Server 0x015C User Information Course Records](/packets/gameservice/server/015c.ksy) (request_type 0x00 > type 0x0B; request_type 0x05 > type 0x34),
@@ -46,5 +46,5 @@ seq:
 
 enums:
   request_type:
-    0x00: blank
-    0x05: full
+    0x00: total
+    0x05: season

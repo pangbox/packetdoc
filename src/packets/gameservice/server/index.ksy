@@ -221,7 +221,7 @@ seq:
         0x0154: gameservice_server_0154_cardholic_pack_open_response
         0x0156: gameservice_server_0156_user_information_consumables
         0x0157: gameservice_server_0157_unknown_user_related_response
-        0x0158: gameservice_server_0158_unknown_user_related_response
+        0x0158: gameservice_server_0158_user_statistics_response
         0x0159: gameservice_server_0159_unknown_user_related_response
         0x015a: gameservice_server_015a_unknown_user_related_response
         0x015b: gameservice_server_015b_unknown_user_related_response

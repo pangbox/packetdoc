@@ -10,6 +10,7 @@ meta:
     - ../../common/id_bank
     - ../../common/pstring
     - ../../common/user_statistic_data
+    - ../../common/user_statistic_data_ext
 
 doc: |
   This packet contains statistics for the current user, which are relayed before and after every match.
@@ -22,6 +23,9 @@ doc: |
 seq:
   - id: user_statistics
     type: user_statistic_data
+    doc: More details can be found in type definition file.
+  - id: user_statistics_ext
+    type: user_statistic_data_ext
     doc: More details can be found in type definition file.
   - id: course_stat_slots
     doc: 12 extra data slots. Typically used in response to GSC-0006 only.

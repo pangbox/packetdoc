@@ -11,6 +11,9 @@ doc: |
   Oft-recurring format for communicating a user's in-game statistics to clients, including:
   * [GameService Server 0x0044 Unknown](/packets/gameservice/server/0044.ksy)
   * [GameService Server 0x0045 User Statistics](/packets/gameservice/server/0045.ksy)
+  * [GameService Server 0x0158 User Statistics Response](/packets/gameservice/server/0158.ksy)
+  
+  Occasionally followed by [User Statistic Data Extension](/packets/common/user_statistic_data_ext.ksy)
   
   **See Also**:
   * [User Caddie Data](/packets/common/user_caddie_data.ksy)
@@ -44,16 +47,17 @@ seq:
     type: u4
     doc: User's total holes played, across all courses and matches.
   - id: unknown_user_statistic_data_k
-    size: 4
-    doc: Always 0x00?
-  - id: unknown_user_statistic_data_l
     type: u4
+  - id: user_stat_hio
+    type: u4
+    doc: User's total number of holes-in-one.
   - id: unknown_user_statistic_data_m
     type: u2
   - id: unknown_user_statistic_data_n
     type: u4
-  - id: unknown_user_statistic_data_o
+  - id: user_stat_albatross
     type: u4
+    doc: User's total number of albatrosses.
   - id: unknown_user_statistic_data_p
     size: 4
     doc: Always 0x00?
@@ -92,8 +96,7 @@ seq:
   - id: unknown_user_statistic_data_ab
     type: u4
   - id: unknown_user_statistic_data_ac
-    size: 4
-    doc: All 0x00?
+    type: u4
   - id: unknown_user_statistic_data_ad
     type: u4
   - id: unknown_user_statistic_data_ae
@@ -101,36 +104,33 @@ seq:
   - id: unknown_user_statistic_data_af
     size: 16
     doc: All 0x00?
-  - id: user_stat_quit_rate_unknown_a
+  - id: user_stat_combo_unknown_a
     type: u4
-    doc: Unconfirmed. Possibly quit rate or total matches played.
-  - id: user_stat_quit_rate_unknown_b
+    doc: User's combo, numerator?
+  - id: user_stat_combo_unknown_b
     type: u4
-    doc: Unconfirmed. Possibly quit rate or total matches played.
+    doc: User's combo, denominator?
   - id: unknown_user_statistic_data_al
-    size: 4
+    type: u4
     doc: All 0x00?
-  - id: unknown_user_statistic_data_am
+  - id: user_stat_pang_battle
     type: s4
+    doc: Total earnt or lost in Pang Battle mode.
   - id: unknown_user_statistic_data_an
     type: s4
     doc: Always -1?
   - id: unknown_user_statistic_data_ao
-    size: 4
-    doc: All 0x00?
+    type: u4
   - id: unknown_user_statistic_data_ap
     type: u4
   - id: unknown_user_statistic_data_aq
     type: u4
+  - id: unknown_user_statistic_data_at
+    type: u4
   - id: unknown_user_statistic_data_ai
-    size: 14
+    size: 10
     doc: All 0x00?
   - id: unknown_user_statistic_data_aj
     type: u4
   - id: unknown_user_statistic_data_ak
-    size: 64
-    doc: All 0x00?
-  - id: unknown_user_statistic_data_ar
-    type: u4
-  - id: unknown_user_statistic_data_as
-    size: 18
+    size: 8

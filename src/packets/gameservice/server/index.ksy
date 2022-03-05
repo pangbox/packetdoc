@@ -171,7 +171,7 @@ seq:
         0x0065: gameservice_server_0065_room_resync_unknown
         0x0066: gameservice_server_0066_room_match_results
         0x0068: gameservice_server_0068_pangya_shop_purchase_response
-        0x006b: gameservice_server_006b_equipment_response
+        0x006b: gameservice_server_006b_equipment_update_response
         0x006c: gameservice_server_006c_tournament_user_finish
         0x006d: gameservice_server_006d_tournament_user_update
         0x006e: gameservice_server_006e_unknown_tourney_related_announce

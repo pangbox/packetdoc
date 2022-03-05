@@ -11,7 +11,7 @@ doc: |
   Oft-recurring format for communicating a user's character data to clients, including:
   * [Gameservice Server 0x0048 Room Census](/packets/gameservice/server/0048.ksy)
   * [Gameservice Server 0x004B User Equipment Announce](/packets/gameservice/server/004b.ksy)
-  * [Gameservice Server 0x006B Equipment Response](/packets/gameservice/server/006b.ksy)
+  * [Gameservice Server 0x006B Equipment Update Response](/packets/gameservice/server/006b.ksy)
   * [Gameservice Server 0x0070 User Character Roster](/packets/gameservice/server/0070.ksy)
   * [Gameservice Server 0x015E User Information Equipment](/packets/gameservice/server/015e.ksy)
   * [Gameservice Server 0x0168 User Information](/packets/gameservice/server/0168.ksy)

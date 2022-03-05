@@ -219,15 +219,15 @@ seq:
         0x0138: gameservice_server_0138_user_cardholic_inventory
         0x0139: gameservice_server_0139_locker_item_deposit_response_a
         0x0154: gameservice_server_0154_cardholic_pack_open_response
-        0x0156: gameservice_server_0156_user_information_consumables
-        0x0157: gameservice_server_0157_unknown_user_related_response
+        0x0156: gameservice_server_0156_user_equipment_response
+        0x0157: gameservice_server_0157_user_name_response
         0x0158: gameservice_server_0158_user_statistics_response
-        0x0159: gameservice_server_0159_unknown_user_related_response
+        0x0159: gameservice_server_0159_user_trophies_response
         0x015a: gameservice_server_015a_unknown_user_related_response
         0x015b: gameservice_server_015b_unknown_user_related_response
         0x015c: gameservice_server_015c_user_course_records_response
-        0x015d: gameservice_server_015d_user_information_guild
-        0x015e: gameservice_server_015e_user_information_character
+        0x015d: gameservice_server_015d_user_guild_response
+        0x015e: gameservice_server_015e_user_character_response
         0x0168: gameservice_server_0168_user_information
         0x016c: gameservice_server_016c_locker_combination_response
         0x016d: gameservice_server_016d_locker_page_response
@@ -272,7 +272,7 @@ seq:
         0x0251: gameservice_server_0251_event_mode_leave_response
         0x0253: gameservice_server_0253_event_room_join_response
         0x0254: gameservice_server_0254_event_room_leave_response
-        0x0257: gameservice_server_0257_unknown_user_related_response
+        0x0257: gameservice_server_0257_user_gp_trophy_response
         0x0264: gameservice_server_0264_memorial_coin_result
         0x026a: gameservice_server_026a_shot_assist_toggle_response
         0x026b: gameservice_server_026b_shot_assist_activate_response

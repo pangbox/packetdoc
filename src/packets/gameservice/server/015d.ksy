@@ -2,8 +2,8 @@
 #pragma.parseAs GameserviceServerPacket
 ---
 meta:
-  id: gameservice_server_015d_user_information_guild
-  title: GameService Server User Information Guild
+  id: gameservice_server_015d_user_guild_response
+  title: GameService Server User Guild Response
   encoding: ASCII
   endian: le
   imports:

@@ -2,84 +2,49 @@
 #pragma.parseAs GameserviceServerPacket
 ---
 meta:
-  id: gameservice_server_0159_unknown_user_related_response
-  title: GameService Server 0159 Unknown Response (User Related)
+  id: gameservice_server_0159_user_trophies_response
+  title: GameService Server User Trophies Response
   encoding: ASCII
   endian: le
   imports:
     - ../../common/pstring
 
 doc: |
+  This packet contains a count of the user's tournament trophies. This does not include Grand Prix trophies.
+
   This is one of the responses to [GameService Client 0x002F User Information Request](/packets/gameservice/client/002f.ksy).
+  
+  **See Also:**
+  * [GameService Client 0x0257 User Grand Prix Trophies Response](/packets/gameservice/server/0257.ksy).
 
 seq:
   - id: request_type
     type: u1
-    doc: Matches [GameService Client 0x002F User Information Request](/packets/gameservice/client/002f.ksy).
+    doc: Matches request packet.
+    enum: request_type
   - id: user_id
     type: u4
-  - id: payload
-    type:
-      switch-on: request_type
-      cases:
-        0x00: user_response_0159_00_blank
-        0x05: user_response_0159_05_full
+    doc: Matches request packet.
+  - id: user_trophy_data
+    type: user_trophy_data
+    repeat: expr
+    repeat-expr: 13
+    doc: 13 classes, in order - 5x Unk, AmaLv1, ProLv1, ProLv2, ProLv3, ProLv4, 3x Unk.
 
 types:
-  user_response_0159_00_blank:
+  user_trophy_data:
     seq:
-      - id: padding_a
-        size: 78
-        doc: All 0x00.
-  user_response_0159_05_full:
-    seq:
-      - id: unknown_a
-        size: 24
-        doc: All 0x00.
-      - id: unknown_b
+      - id: user_trophy_gold
         type: u2
-      - id: unknown_c
+        doc: Number of gold trophies in a given tournament class.
+      - id: user_trophy_silver
         type: u2
-      - id: unknown_d
+        doc: Number of silver trophies in a given tournament class.
+      - id: user_trophy_bronze
         type: u2
-        doc: All 0x00?
-      - id: unknown_e
-        type: u2
-      - id: unknown_f
-        type: u2
-      - id: unknown_g
-        type: u2
-      - id: unknown_h
-        type: u2
-      - id: unknown_i
-        type: u2
-      - id: unknown_j
-        type: u2
-      - id: unknown_k
-        type: u2
-      - id: unknown_l
-        type: u2
-      - id: unknown_m
-        type: u2
-      - id: unknown_n
-        type: u2
-      - id: unknown_o
-        type: u2
-      - id: unknown_p
-        type: u2
-      - id: unknown_q
-        type: u2
-      - id: unknown_r
-        type: u2
-      - id: unknown_s
-        type: u2
-      - id: unknown_t
-        type: u2
-        doc: All 0x00?
-      - id: unknown_u
-        type: u2
-      - id: unknown_v
-        type: u2
-      - id: unknown_w
-        size: 12
-        doc: All 0x00.
+        doc: Number of bronze trophies in a given tournament class.
+
+enums:
+  request_type:
+    0x00: total
+    0x05: season

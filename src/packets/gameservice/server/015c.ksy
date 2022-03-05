@@ -18,34 +18,28 @@ doc: |
 seq:
   - id: request_type
     type: u1
-    enum: request_types
+    enum: request_type
     doc: Total/Season matches request packet.
   - id: user_id
     type: u4
     doc: Matches request packet.
-  - id: user_course_records
-    type: user_course_records
-
-types:
-  user_course_records:
-    seq:
-      - id: user_course_record_count_standard
-        type: u4
-      - id: user_course_record_data_standard
-        type: user_course_record_data
-        repeat: expr
-        repeat-expr: user_course_record_count_standard
-        doc: Standard records.
-      - id: user_course_record_count_assist
-        type: u4
-      - id: user_course_record_data_assist
-        type: user_course_record_data
-        repeat: expr
-        repeat-expr: user_course_record_count_assist
-        doc: Assist-mode records.
+  - id: user_course_record_count_standard
+    type: u4
+  - id: user_course_record_data_standard
+    type: user_course_record_data
+    repeat: expr
+    repeat-expr: user_course_record_count_standard
+    doc: Standard records.
+  - id: user_course_record_count_assist
+    type: u4
+  - id: user_course_record_data_assist
+    type: user_course_record_data
+    repeat: expr
+    repeat-expr: user_course_record_count_assist
+    doc: Assist-mode records.
 
 enums:
-  request_types:
+  request_type:
     0x00: total_original
     0x05: season_original
     0x0a: total_natural

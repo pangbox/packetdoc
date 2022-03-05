@@ -3,7 +3,7 @@
 ---
 meta:
   id: gameservice_server_015b_unknown_user_related_response
-  title: GameService Server 015B Unknown Response (User Related)
+  title: GameService Server 015B Unknown Response (User Information Related)
   encoding: ASCII
   endian: le
   imports:
@@ -15,24 +15,16 @@ doc: |
 seq:
   - id: request_type
     type: u1
-    doc: Matches [GameService Client 0x002F User Information Request](/packets/gameservice/client/002f.ksy).
+    doc: Matches request packet.
+    enum: request_type
   - id: user_id
     type: u4
-  - id: payload
-    type:
-      switch-on: request_type
-      cases:
-        0x00: user_response_015b_00_blank
-        0x05: user_response_015b_05_full
+    doc: Matches request packet.
+  - id: unknown_gss015b_a
+    type: u2
+    doc: All 0x00? Probably a count for entries.
 
-types:
-  user_response_015b_00_blank:
-    seq:
-      - id: padding_a
-        size: 2
-        doc: All 0x00.
-  user_response_015b_05_full:
-    seq:
-      - id: unknown_a
-        type: u2
-        doc: All 0x00.
+enums:
+  request_type:
+    0x00: total
+    0x05: season

@@ -19,7 +19,11 @@ doc: |
   
   It is only sent when there is at least one item to award to someone.
   
-  It is paired with [GameService Server 0x0134 Treasure Point Winnings](/packets/gameservice/server/0134.ksy).
+  It is part of the response to:
+  * [Event - Tournament / Match End](/events/match_end.md)
+
+  **See Also:**
+  * [GameService Server 0x0134 Treasure Point Winnings](/packets/gameservice/server/0134.ksy).
 
 seq:
   - id: treasure_count

@@ -19,6 +19,7 @@ doc: |
   This is a response to:
   * [GameService Client 0x0006 Match Statistics Submit](/packets/gameservice/client/0006.ksy),
   * GameService Client 0x000E Game Start,
+  * [GameService Client 0x00AA Match Statistics Submit (Tiki Report)](/packets/gameservice/client/00aa.ksy),
   * and possibly others.
 
 seq:

@@ -10,8 +10,10 @@ meta:
     - ../../common/pstring
 
 doc: |
-  This packet is an abridged list of achievements, usually appearing after
-  [GameService Server 0x022E Achievement Unlocked](/packets/gameservice/server/022e.ksy).
+  This packet is an abridged list of achievements, usually appearing after [GameService Server 0x022E Achievement Unlocked](/packets/gameservice/server/022e.ksy).
+  
+  It is part of the response to:
+  * [Event - Tournament / Match End](/events/match_end.md)
 
 seq:
   - id: unknown_a

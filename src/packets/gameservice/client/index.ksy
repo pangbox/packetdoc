@@ -36,6 +36,7 @@ meta:
     - '002a'
     - '002d'
     - '002f'
+    - '0031'
     - '003c'
     - '003d'
     - '0043'
@@ -52,6 +53,7 @@ meta:
     - '0098'
     - '009c'
     - '00a2'
+    - '00aa'
     - '00b5'
     - '00b7'
     - '00ba'
@@ -135,6 +137,7 @@ seq:
         0x002a: gameservice_client_002a_whisper_send
         0x002d: gameservice_client_002d_room_information_request
         0x002f: gameservice_client_002f_user_information_request
+        0x0031: gameservice_client_0031_hole_statistics_submit
         0x003c: gameservice_client_003c_note_send
         0x003d: gameservice_client_003d_cookie_balance_request
         0x0043: gameservice_client_0043_server_list_request
@@ -151,6 +154,7 @@ seq:
         0x0098: gameservice_client_0098_rare_shop_open
         0x009c: gameservice_client_009c_unknown_opponent_related_request
         0x00a2: gameservice_client_00a2_unknown_cookies_related
+        0x00aa: gameservice_client_00aa_match_statistics_submit_tiki_report
         0x00b5: gameservice_client_00b5_inventory_open_a
         0x00b7: gameservice_client_00b7_inventory_open_b
         0x00ba: gameservice_client_00ba_room_invite_send

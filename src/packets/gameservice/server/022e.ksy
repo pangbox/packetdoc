@@ -10,9 +10,10 @@ meta:
     - ../../common/pstring
     
 doc: |
-  This packet is sent when the user earns an achievement. It is usually paired
-  with
-  [GameService Server 0x0220 Achievement List](/packets/gameservice/server/0220.ksy).
+  This packet is sent when the user earns an achievement. It is usually paired with [GameService Server 0x0220 Achievement List](/packets/gameservice/server/0220.ksy).
+  
+  It is part of the response to:
+  * [Event - Tournament / Match End](/events/match_end.md)
 
 seq:
   - id: achievement_count

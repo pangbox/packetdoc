@@ -12,7 +12,8 @@ meta:
 doc: |
   This packet details the collectables (coins, spin cubes, tickets, etc.) that were obtained throughout a VS round.
   
-  It is sent at the end of the match.
+  It is part of the response to:
+  * [Event - Tournament / Match End](/events/match_end.md)
 
 seq:
   - id: user_count

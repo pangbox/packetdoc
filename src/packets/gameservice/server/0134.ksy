@@ -19,7 +19,11 @@ doc: |
   From the result packet, the items have been sorted by item_id, instead of staying in the same order,
   although this may not be necessary.
   
-  It is paired with [GameService Server 0x0133 Treasure Point Result](/packets/gameservice/server/0133.ksy).
+  It is part of the response to:
+  * [Event - Tournament / Match End](/events/match_end.md)
+  
+  **See Also:**
+  * [GameService Server 0x0133 Treasure Point Result](/packets/gameservice/server/0133.ksy).
 
 seq:
   - id: treasure_count

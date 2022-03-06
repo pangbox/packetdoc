@@ -66,6 +66,7 @@ meta:
     - '00fb'
     - '010b'
     - '010e'
+    - '012a'
     - '012b'
     - '012d'
     - '012f'
@@ -208,6 +209,7 @@ seq:
         0x00fb: gameservice_server_00fb_unknown_black_papel_related
         0x010b: gameservice_server_010b_rare_shop_open_response
         0x010c: gameservice_server_010e_unknown_opponent_related_response
+        0x012a: gameservice_server_012a_tiki_report_use_response
         0x012b: gameservice_server_012b_inventory_open_a_response
         0x012d: gameservice_server_012d_my_room_layout
         0x012f: gameservice_server_012f_room_invite_send_response

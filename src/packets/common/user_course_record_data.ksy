@@ -12,10 +12,13 @@ doc: |
   * [GameService Server 0x0045 User Statistics](/packets/gameservice/server/0045.ksy)
   * [GameService Server 0x015C User Course Records Response](/packets/gameservice/server/015c.ksy)
   
+  Its client-side counterpart is [User Course Result Data](/packets/common/user_course_result_data.ksy).
+  
   **See Also**:
   * [User Caddie Data](/packets/common/user_caddie_data.ksy)
   * [User Character Data](/packets/common/user_character_data.ksy)
   * [User Course Record Data](/packets/common/user_course_record_data.ksy)
+  * [User Course Result Data](/packets/common/user_course_result_data.ksy)
   * [User Equipment Data](/packets/common/user_equipment_data.ksy)
   * [User Name Data](/packets/common/user_name_data.ksy)
   * [User Statistic Data](/packets/common/user_statistic_data.ksy)

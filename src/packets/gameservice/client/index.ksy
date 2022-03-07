@@ -49,6 +49,7 @@ meta:
     - '007d'
     - '0081'
     - '0082'
+    - '0083'
     - '0088'
     - '0098'
     - '009c'
@@ -150,6 +151,7 @@ seq:
         0x007d: gameservice_client_007d_user_shop_purchase
         0x0081: gameservice_client_0081_multiplayer_mode_join
         0x0082: gameservice_client_0082_multiplayer_mode_leave
+        0x0083: gameservice_client_0083_sub_server_connect_multiplayer_mode
         0x0088: gameservice_client_0088_authentication_keepalive_response
         0x0098: gameservice_client_0098_rare_shop_open
         0x009c: gameservice_client_009c_unknown_opponent_related_request

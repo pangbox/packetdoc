@@ -18,6 +18,7 @@ meta:
     - '004b'
     - '004c'
     - '004d'
+    - '004e'
     - '0055'
     - '0056'
     - '0058'
@@ -161,6 +162,7 @@ seq:
         0x004b: gameservice_server_004b_user_equipment_announce
         0x004c: gameservice_server_004c_room_leave_response
         0x004d: gameservice_server_004d_sub_server_list
+        0x004e: gameservice_server_004e_sub_server_connect_response
         0x0055: gameservice_server_0055_shot_commit_announce
         0x0056: gameservice_server_0056_shot_rotate_announce
         0x0058: gameservice_server_0058_shot_power_announce

@@ -26,6 +26,7 @@ meta:
     - '005a'
     - '005b'
     - '005d'
+    - '0060'
     - '0063'
     - '0065'
     - '0066'
@@ -171,6 +172,7 @@ seq:
         0x005a: gameservice_server_005a_shot_item_use_announce
         0x005b: gameservice_server_005b_room_resync_unknown
         0x005d: gameservice_server_005d_user_typing_indicator_announce
+        0x0060: gameservice_server_0060_shot_comet_relief_announce
         0x0063: gameservice_server_0063_shot_active_user_announce
         0x0065: gameservice_server_0065_room_resync_unknown
         0x0066: gameservice_server_0066_room_match_results

@@ -70,6 +70,7 @@ meta:
     - '012a'
     - '012b'
     - '012d'
+    - '012e'
     - '012f'
     - '0130'
     - '0131'
@@ -214,6 +215,7 @@ seq:
         0x012a: gameservice_server_012a_tiki_report_use_response
         0x012b: gameservice_server_012b_inventory_open_a_response
         0x012d: gameservice_server_012d_my_room_layout
+        0x012e: gameservice_server_012e_custom_asset_response
         0x012f: gameservice_server_012f_room_invite_send_response
         0x0130: gameservice_server_0130_room_invite_send_response
         0x0131: gameservice_server_0131_unknown

@@ -57,6 +57,7 @@ meta:
     - '00aa'
     - '00b5'
     - '00b7'
+    - '00b9'
     - '00ba'
     - '00ca'
     - '00cc'
@@ -159,6 +160,7 @@ seq:
         0x00aa: gameservice_client_00aa_match_statistics_submit_tiki_report
         0x00b5: gameservice_client_00b5_inventory_open_a
         0x00b7: gameservice_client_00b7_inventory_open_b
+        0x00b9: gameservice_client_00b9_custom_asset_request
         0x00ba: gameservice_client_00ba_room_invite_send
         0x00ca: gameservice_client_00ca_cardholic_pack_open
         0x00cc: gameservice_client_00cc_locker_combination_attempt

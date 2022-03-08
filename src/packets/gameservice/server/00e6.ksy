@@ -10,14 +10,18 @@ meta:
     - ../../common/pstring
 
 doc: |
-  This packet is sent after being requested by [GameService Client 0x0077 User Shop Inventory Request](/packets/gameservice/client/0077.ksy).
-  It contains the inventory of a user's shop set up within a lounge room.
-
+  This packet contains the inventory of a user's shop set up within a lounge room.
+  
+  It is a response to:
+  * [GameService Client 0x0077 User Shop Inventory Request](/packets/gameservice/client/0077.ksy).
+  
 seq:
-  - id: unknown_a
+  - id: unknown_gss00e6_a
     type: u4
-  - id: unknown_b
+    doc: Always 1? Possibly a page count of some sort for a hypothetical multi-page user inventory?
+  - id: unknown_gss00e6_b
     type: u4
+    doc: Always 1? Possibly a page number of some sort for a hypothetical multi-page user inventory?
   - id: user_nickname
     type: strz
     size: 22
@@ -43,18 +47,25 @@ types:
       - id: item_id
         type: u4
         doc: From pangya_xx.iff/Item.iff, /Card.iff, etc.
-      - id: unknown_c
+      - id: inventory_slot
         type: u4
+        doc: Unconfirmed.
       - id: shop_item_quantity
         type: u4
-      - id: unknown_e
+      - id: unknown_gss00e6_c
         size: 3
+        doc: All 0x00?
       - id: shop_item_cost
         type: u4
-      - id: unknown_f
+      - id: unknown_gss00e6_d
         size: 20
-      - id: unknown_g
+        doc: All 0x00?
+      - id: item_asset_id
         size: 9
-        doc: Some sort of user ID perhaps?
-      - id: unknown_h
-        size: 121
+        doc: Associated with downloading custom assets, such as user designed clothing.
+      - id: unknown_gss00e6_f
+        type: u2
+      - id: unknown_gss00e6_g
+        type: u2
+      - id: unknown_gss00e6_h
+        size: 116

@@ -52,6 +52,7 @@ meta:
     - '00a7'
     - '00aa'
     - '00c4'
+    - '00c7'
     - '00c8'
     - '00c9'
     - '00cc'
@@ -198,6 +199,7 @@ seq:
         0x00a7: gameservice_server_00a7_lootbox_inventory_update
         0x00aa: gameservice_server_00aa_inventory_slot_assign
         0x00c4: gameservice_server_00c4_user_lounge_action_announce
+        0x00c7: gameservice_server_00c7_time_booster_announce
         0x00c8: gameservice_server_00c8_pang_balance
         0x00c9: gameservice_server_00c9_notice_data
         0x00cc: gameservice_server_00cc_shot_resync_collectables

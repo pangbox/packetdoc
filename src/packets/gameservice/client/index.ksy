@@ -43,6 +43,7 @@ meta:
     - '0043'
     - '0048'
     - '0063'
+    - '0065'
     - '0069'
     - '0070'
     - '0077'
@@ -147,6 +148,7 @@ seq:
         0x0043: gameservice_client_0043_server_list_request
         0x0048: gameservice_client_0048_unknown_loading_related_counter
         0x0063: gameservice_client_0063_user_lounge_action
+        0x0065: gameservice_client_0065_time_booster_activate
         0x0069: gameservice_client_0069_chat_macro_update
         0x0070: gameservice_client_0070_scratchy_play
         0x0077: gameservice_client_0077_user_shop_inventory_request

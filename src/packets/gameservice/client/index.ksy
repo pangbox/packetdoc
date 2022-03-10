@@ -97,6 +97,10 @@ meta:
     - '017f'
     - '0184'
     - '0185'
+    - '0187'
+    - '0188'
+    - '0189'
+    - '018a'
     - '018d'
     - '0195'
 
@@ -202,5 +206,9 @@ seq:
         0x017f: gameservice_client_017f_memorial_coin_play
         0x0184: gameservice_client_0184_shot_assist_toggle
         0x0185: gameservice_client_0185_shot_assist_activate
+        0x0187: gameservice_client_0187_character_mastery_slot_unlock
+        0x0188: gameservice_client_0188_character_mastery_upgrade
+        0x0189: gameservice_client_0189_character_mastery_downgrade
+        0x018a: gameservice_client_018a_character_mastery_card_apply
         0x018d: gameservice_client_018d_tiki_shop_item_recycle
         0x0195: gameservice_client_0195_unknown_cookies_related

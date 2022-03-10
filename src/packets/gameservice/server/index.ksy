@@ -139,6 +139,10 @@ meta:
     - '0264'
     - '026a'
     - '026b'
+    - '026e'
+    - '026f'
+    - '0270'
+    - '0271'
     - '0274'
     - '027d'
 
@@ -286,5 +290,9 @@ seq:
         0x0264: gameservice_server_0264_memorial_coin_result
         0x026a: gameservice_server_026a_shot_assist_toggle_response
         0x026b: gameservice_server_026b_shot_assist_activate_response
+        0x026e: gameservice_server_026e_character_mastery_slot_unlock_response
+        0x026f: gameservice_server_026f_character_mastery_upgrade_response
+        0x0270: gameservice_server_0270_character_mastery_downgrade_response
+        0x0271: gameservice_server_0271_character_mastery_card_apply_response
         0x0274: gameservice_server_0274_tiki_shop_item_recycle_response
         0x027d: gameservice_server_027d_unknown_cookies_related_response

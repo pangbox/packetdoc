@@ -97,6 +97,7 @@ meta:
     - '017f'
     - '0184'
     - '0185'
+    - '0186'
     - '0187'
     - '0188'
     - '0189'
@@ -206,6 +207,7 @@ seq:
         0x017f: gameservice_client_017f_memorial_coin_play
         0x0184: gameservice_client_0184_shot_assist_toggle
         0x0185: gameservice_client_0185_shot_assist_activate
+        0x0186: gameservice_client_0186_big_black_papel_play
         0x0187: gameservice_client_0187_character_mastery_slot_unlock
         0x0188: gameservice_client_0188_character_mastery_upgrade
         0x0189: gameservice_client_0189_character_mastery_downgrade

@@ -139,6 +139,7 @@ meta:
     - '0264'
     - '026a'
     - '026b'
+    - '026c'
     - '026e'
     - '026f'
     - '0270'
@@ -290,6 +291,7 @@ seq:
         0x0264: gameservice_server_0264_memorial_coin_result
         0x026a: gameservice_server_026a_shot_assist_toggle_response
         0x026b: gameservice_server_026b_shot_assist_activate_response
+        0x026c: gameservice_server_026c_big_black_papel_result
         0x026e: gameservice_server_026e_character_mastery_slot_unlock_response
         0x026f: gameservice_server_026f_character_mastery_upgrade_response
         0x0270: gameservice_server_0270_character_mastery_downgrade_response

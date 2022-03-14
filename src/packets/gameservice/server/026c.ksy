@@ -1,31 +1,29 @@
-#pragma.examples gameservice/server 021b
+#pragma.examples gameservice/server 026c
 #pragma.parseAs GameserviceServerPacket
 ---
 meta:
-  id: gameservice_server_021b_black_papel_result
-  title: GameService Server Black Papel Result
+  id: gameservice_server_026c_big_black_papel_result
+  title: GameService Server Big Black Papel Result
   encoding: ASCII
   endian: le
   imports:
     - ../../common/pstring
 
 doc: |
-  This packet contains the results of a Black Papel play.
+  This packet acknowledges playing the Big Black Papel gacha game.
   
-  Structurally, it is identical to the results of a Big Black Papel play.
+  Structurally, it is identical to the results for a standard Black Papel play.
   
-  This packet is a response to:
-  * [GameService Client 0x014B Black Papel Play](/packets/gameservice/client/014b.ksy).
+  It is a response to:
+  * [GameService Client 0x0186 Big Black Papel Play](/packets/gameservice/client/0186.ksy).
   
   **See Also:**
-  * [GameService Server 0x022c Big Black Papel Result](/packets/gameservice/server/026c.ksy).
+  * [GameService Server 0x021b Black Papel Result](/packets/gameservice/server/021b.ksy).
 
 seq:
-  - id: unknown_gss021b_a
-    size: 4
-  - id: inventory_slot_ticket
-    type: u4
-    doc: Unconfirmed. Inventory slot for Black Papel tickets?
+  - id: unknown_gss026c_a
+    size: 8
+    doc: All 0x00?
   - id: item_count
     type: u4
   - id: items
@@ -35,15 +33,16 @@ seq:
   - id: pang_balance
     type: u4
     doc: New pang balance after play.
-  - id: unknown_gss021b_b
+  - id: unknown_gss026c_b
     size: 12
     doc: All 0x00?
-
+  
 types:
   item:
     seq:
       - id: ball_colour
         type: u4
+        doc: This value is moot, as Big Black Papel plays always produce a single giant black ball.
         enum: ball_colour
       - id: item_id
         type: u4
@@ -55,6 +54,7 @@ types:
         type: u4
       - id: item_rarity
         type: u4
+        doc: This value is moot, as Big Black Papel plays immediately proceed to results screen.
         enum: item_rarity
 
 enums:

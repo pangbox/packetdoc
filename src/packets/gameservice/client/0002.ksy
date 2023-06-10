@@ -33,7 +33,7 @@ doc: |
   * [Gameservice Server 0x0096 Cookie Balance](/packets/gameservice/server/0096.ksy),
   * Gameservice Server 0x0169 Undocumented,
   * Gameservice Server 0x00B4 Undocumented,
-  * Gameservice Server 0x0158 Undocumented,
+  * [Gameservice Server 0x0158 User Statistics Response](/packets/gameservice/server/0158.ksy) (albeit mostly zeroed out),
   * Gameservice Server 0x025D Undocumented, and
   * [Gameservice Server 0x0210 Mail Unread List](/packets/gameservice/server/0210.ksy).
   

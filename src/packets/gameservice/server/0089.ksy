@@ -16,9 +16,10 @@ doc: |
   and the only one to always send regardless of input.
 
 seq:
-  - id: unknown_a
+  - id: request_status
     type: u4
-    doc: Possibly a count? All examples show 1 (0x00000001).
+    doc: Valid lookups return 1. A lookup for `user_id == 0x00000000` returns 2.
+    enum: request_status
   - id: request_type
     type: u1
     enum: request_types
@@ -27,6 +28,9 @@ seq:
     type: u4
 
 enums:
+  request_status:
+    0x00000001: valid
+    0x00000002: error
   request_types:
-    0x00: blank
-    0x05: full
+    0x00: total
+    0x05: season

@@ -16,11 +16,14 @@ doc: |
 
 seq:
   - id: unknown_token
-    type: u4
+    type: u2
     doc: Unchanging over the course of a single session. Identical in challenge. Might be some sort of key.
+  - id: server_id
+    type: u2
+    doc: ID of the server currently connected to.
   - id: response_length
     type: u4
-    doc: There is no correlation between challenge length and response length.
+    doc: Seen lengths of multiples of 8, from 0x3C (60) to 0x5C (92) inclusive. There is no known correlation between challenge length and response length.
   - id: response_data
     size: response_length
     doc: Unlike in the challenge, there are no obvious similar bits.

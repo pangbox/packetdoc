@@ -11,13 +11,18 @@ doc: |
   Oft-recurring format for communicating a user's character data to clients, including:
   * [Gameservice Server 0x0048 Room Census](/packets/gameservice/server/0048.ksy)
   * [Gameservice Server 0x004B User Equipment Announce](/packets/gameservice/server/004b.ksy)
-  * [Gameservice Server 0x006B Equipment Response](/packets/gameservice/server/006b.ksy)
+  * [Gameservice Server 0x006B Equipment Update Response](/packets/gameservice/server/006b.ksy)
   * [Gameservice Server 0x0070 User Character Roster](/packets/gameservice/server/0070.ksy)
   * [Gameservice Server 0x015E User Information Equipment](/packets/gameservice/server/015e.ksy)
   * [Gameservice Server 0x0168 User Information](/packets/gameservice/server/0168.ksy)
 
   **See Also**:
+  * [User Caddie Data](/packets/common/user_caddie_data.ksy)
+  * [User Character Data](/packets/common/user_character_data.ksy)
+  * [User Course Record Data](/packets/common/user_course_record_data.ksy)
+  * [User Course Result Data](/packets/common/user_course_result_data.ksy)
   * [User Equipment Data](/packets/common/user_equipment_data.ksy)
+  * [User Name Data](/packets/common/user_name_data.ksy)
   * [User Statistic Data](/packets/common/user_statistic_data.ksy)
 
 seq:

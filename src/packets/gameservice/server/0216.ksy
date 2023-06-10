@@ -15,6 +15,9 @@ doc: |
   
   This packet is a complete mess.
   
+  It is part of the response to:
+  * [Event - Tournament / Match End](/events/match_end.md)
+
 seq:
   - id: status_date_unix_time
     size: 4

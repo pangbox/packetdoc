@@ -12,7 +12,9 @@ meta:
 doc: |
   This packet contains the user's pang balance.
   
-  It is a response to many, many packets.
+  It is part of the response to:
+  * [Event - Tournament / Match End](/events/match_end.md), and
+  * many other events and packets.
 
 seq:
   - id: pang_balance

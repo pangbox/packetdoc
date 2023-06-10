@@ -27,6 +27,7 @@ meta:
     - '0016'
     - '0017'
     - '0018'
+    - '0019'
     - '001c'
     - '001d'
     - '001f'
@@ -36,11 +37,13 @@ meta:
     - '002a'
     - '002d'
     - '002f'
+    - '0031'
     - '003c'
     - '003d'
     - '0043'
     - '0048'
     - '0063'
+    - '0065'
     - '0069'
     - '0070'
     - '0077'
@@ -48,12 +51,15 @@ meta:
     - '007d'
     - '0081'
     - '0082'
+    - '0083'
     - '0088'
     - '0098'
     - '009c'
     - '00a2'
+    - '00aa'
     - '00b5'
     - '00b7'
+    - '00b9'
     - '00ba'
     - '00ca'
     - '00cc'
@@ -91,6 +97,11 @@ meta:
     - '017f'
     - '0184'
     - '0185'
+    - '0186'
+    - '0187'
+    - '0188'
+    - '0189'
+    - '018a'
     - '018d'
     - '0195'
 
@@ -126,6 +137,7 @@ seq:
         0x0016: gameservice_client_0016_shot_club_change
         0x0017: gameservice_client_0017_shot_item_use
         0x0018: gameservice_client_0018_user_typing_indicator_status
+        0x0019: gameservice_client_0019_shot_comet_relief
         0x001c: gameservice_client_001c_room_resync
         0x001d: gameservice_client_001d_pangya_shop_purchase
         0x001f: gameservice_client_001f_unknown
@@ -135,11 +147,13 @@ seq:
         0x002a: gameservice_client_002a_whisper_send
         0x002d: gameservice_client_002d_room_information_request
         0x002f: gameservice_client_002f_user_information_request
+        0x0031: gameservice_client_0031_hole_statistics_submit
         0x003c: gameservice_client_003c_note_send
         0x003d: gameservice_client_003d_cookie_balance_request
         0x0043: gameservice_client_0043_server_list_request
         0x0048: gameservice_client_0048_unknown_loading_related_counter
         0x0063: gameservice_client_0063_user_lounge_action
+        0x0065: gameservice_client_0065_time_booster_activate
         0x0069: gameservice_client_0069_chat_macro_update
         0x0070: gameservice_client_0070_scratchy_play
         0x0077: gameservice_client_0077_user_shop_inventory_request
@@ -147,12 +161,15 @@ seq:
         0x007d: gameservice_client_007d_user_shop_purchase
         0x0081: gameservice_client_0081_multiplayer_mode_join
         0x0082: gameservice_client_0082_multiplayer_mode_leave
+        0x0083: gameservice_client_0083_sub_server_connect_multiplayer_mode
         0x0088: gameservice_client_0088_authentication_keepalive_response
         0x0098: gameservice_client_0098_rare_shop_open
         0x009c: gameservice_client_009c_unknown_opponent_related_request
         0x00a2: gameservice_client_00a2_unknown_cookies_related
+        0x00aa: gameservice_client_00aa_match_statistics_submit_tiki_report
         0x00b5: gameservice_client_00b5_inventory_open_a
         0x00b7: gameservice_client_00b7_inventory_open_b
+        0x00b9: gameservice_client_00b9_custom_asset_request
         0x00ba: gameservice_client_00ba_room_invite_send
         0x00ca: gameservice_client_00ca_cardholic_pack_open
         0x00cc: gameservice_client_00cc_locker_combination_attempt
@@ -190,5 +207,10 @@ seq:
         0x017f: gameservice_client_017f_memorial_coin_play
         0x0184: gameservice_client_0184_shot_assist_toggle
         0x0185: gameservice_client_0185_shot_assist_activate
+        0x0186: gameservice_client_0186_big_black_papel_play
+        0x0187: gameservice_client_0187_character_mastery_slot_unlock
+        0x0188: gameservice_client_0188_character_mastery_upgrade
+        0x0189: gameservice_client_0189_character_mastery_downgrade
+        0x018a: gameservice_client_018a_character_mastery_card_apply
         0x018d: gameservice_client_018d_tiki_shop_item_recycle
         0x0195: gameservice_client_0195_unknown_cookies_related

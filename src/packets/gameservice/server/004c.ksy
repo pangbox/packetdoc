@@ -12,7 +12,9 @@ meta:
 doc: |
   This packet acknowledges the user has left a room and returned to the multiplayer lobby.
   
-  It is the response to [GameService Client 0x000F Room Leave](/packets/gameservice/client/000f.ksy).
+  It is a response to:
+  * [GameService Client 0x000F Room Leave](/packets/gameservice/client/000f.ksy).
+  * [GameService Client 0x00AA Match Statistics Submit (Tiki Report)](/packets/gameservice/client/00aa.ksy).
 
 seq:
   - id: room_number

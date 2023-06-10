@@ -15,6 +15,9 @@ doc: |
   
   If a user has won multiple of the same item, duplicates are used to match the number won.
   
+  It is part of the response to:
+  * [Event - Tournament / Match End](/events/match_end.md)
+
 seq:
   - id: unknown_a
     type: u1

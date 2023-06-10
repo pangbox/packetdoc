@@ -2,8 +2,8 @@
 #pragma.parseAs GameserviceServerPacket
 ---
 meta:
-  id: gameservice_server_015e_user_information_character
-  title: GameService Server User Information Character
+  id: gameservice_server_015e_user_character_response
+  title: GameService Server User Character Response
   encoding: ASCII
   endian: le
   imports:

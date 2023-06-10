@@ -12,25 +12,25 @@ meta:
 doc: |
   This packet requests information on another user, typically when the 'User Info' screen is opened.
   
-  The responses are, if a (valid) user_id has been specified:
+  The responses are, if a (valid) `user_id` has been specified:
   
-  * [GameService Server 0x0157 Unknown Response (User Related)](/packets/gameservice/server/0157.ksy) (if request_type 0x05),
-  * [GameService Server 0x015E User Information Character](/packets/gameservice/server/015e.ksy) (if request_type 0x05),
-  * [GameService Server 0x0156 User Information Consumables](/packets/gameservice/server/0156.ksy) (if request_type 0x05),
-  * [GameService Server 0x0158 Unknown Response (User-Related)](/packets/gameservice/server/0158.ksy),
-  * [GameService Server 0x015D User Information Guild](/packets/gameservice/server/015d.ksy) (if request_type 0x05),
-  * [GameService Server 0x015C User Information Course Records](/packets/gameservice/server/015c.ksy) (request_type 0x00 > type 0x0A; request_type 0x05 > type 0x33),
-  * [GameService Server 0x015C User Information Course Records](/packets/gameservice/server/015c.ksy) (request_type 0x00 > type 0x0B; request_type 0x05 > type 0x34),
-  * [GameService Server 0x015B Unknown Response (User Related)](/packets/gameservice/server/015b.ksy),
-  * [GameService Server 0x015A Unknown Response (User Related)](/packets/gameservice/server/015a.ksy),
-  * [GameService Server 0x0159 Unknown Response (User Related)](/packets/gameservice/server/0159.ksy),
-  * [GameService Server 0x015C User Information Course Records](/packets/gameservice/server/015c.ksy) (request_type 0x00 > type 0x00; request_type 0x05 > type 0x05),
-  * [GameService Server 0x0257 Unknown Response (User Related)](/packets/gameservice/server/0257.ksy), and
+  * [GameService Server 0x0157 User Name Response](/packets/gameservice/server/0157.ksy) (if `request_type == 0x05`),
+  * [GameService Server 0x015E User Character Response](/packets/gameservice/server/015e.ksy) (if `request_type == 0x05`),
+  * [GameService Server 0x0156 User Equipment Response](/packets/gameservice/server/0156.ksy) (if `request_type == 0x05`),
+  * [GameService Server 0x0158 User Statistics Response](/packets/gameservice/server/0158.ksy),
+  * [GameService Server 0x015D User Guild Response](/packets/gameservice/server/015d.ksy) (if `request_type == 0x05`),
+  * [GameService Server 0x015C User Course Records Response](/packets/gameservice/server/015c.ksy) (Natural Wind mode records),
+  * [GameService Server 0x015C User Course Records Response](/packets/gameservice/server/015c.ksy) (Grand Prix mode records),
+  * [GameService Server 0x015B Unknown Response (User Information Related)](/packets/gameservice/server/015b.ksy),
+  * [GameService Server 0x015A Unknown Response (User Information Related)](/packets/gameservice/server/015a.ksy),
+  * [GameService Server 0x0159 User Trophies Response](/packets/gameservice/server/0159.ksy),
+  * [GameService Server 0x015C User Course Records Response](/packets/gameservice/server/015c.ksy) (Original mode records),
+  * [GameService Server 0x0257 User Grand Prix Trophy Response](/packets/gameservice/server/0257.ksy), and
   * [GameService Server 0x0089 User Information Response](/packets/gameservice/server/0089.ksy).
   
-  The response is, if user_id is 0x00000000 (or potentially if otherwise invalid):
+  The response is, if `user_id == 0x00000000` (or potentially if otherwise invalid):
   
-  * [GameService Server 0x0089 User Info Response](/packets/gameservice/server/0089.ksy).
+  * [GameService Server 0x0089 User Information Response](/packets/gameservice/server/0089.ksy).
   
   **Aliases:**
   * `hsreina/pangya-server`: `PLAYER_REQUEST_INFO`
@@ -46,5 +46,5 @@ seq:
 
 enums:
   request_type:
-    0x00: blank
-    0x05: full
+    0x00: total
+    0x05: season

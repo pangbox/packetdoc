@@ -18,6 +18,7 @@ meta:
     - '004b'
     - '004c'
     - '004d'
+    - '004e'
     - '0055'
     - '0056'
     - '0058'
@@ -25,6 +26,7 @@ meta:
     - '005a'
     - '005b'
     - '005d'
+    - '0060'
     - '0063'
     - '0065'
     - '0066'
@@ -50,6 +52,7 @@ meta:
     - '00a7'
     - '00aa'
     - '00c4'
+    - '00c7'
     - '00c8'
     - '00c9'
     - '00cc'
@@ -66,8 +69,10 @@ meta:
     - '00fb'
     - '010b'
     - '010e'
+    - '012a'
     - '012b'
     - '012d'
+    - '012e'
     - '012f'
     - '0130'
     - '0131'
@@ -134,6 +139,11 @@ meta:
     - '0264'
     - '026a'
     - '026b'
+    - '026c'
+    - '026e'
+    - '026f'
+    - '0270'
+    - '0271'
     - '0274'
     - '027d'
 
@@ -160,6 +170,7 @@ seq:
         0x004b: gameservice_server_004b_user_equipment_announce
         0x004c: gameservice_server_004c_room_leave_response
         0x004d: gameservice_server_004d_sub_server_list
+        0x004e: gameservice_server_004e_sub_server_connect_response
         0x0055: gameservice_server_0055_shot_commit_announce
         0x0056: gameservice_server_0056_shot_rotate_announce
         0x0058: gameservice_server_0058_shot_power_announce
@@ -167,11 +178,12 @@ seq:
         0x005a: gameservice_server_005a_shot_item_use_announce
         0x005b: gameservice_server_005b_room_resync_unknown
         0x005d: gameservice_server_005d_user_typing_indicator_announce
+        0x0060: gameservice_server_0060_shot_comet_relief_announce
         0x0063: gameservice_server_0063_shot_active_user_announce
         0x0065: gameservice_server_0065_room_resync_unknown
         0x0066: gameservice_server_0066_room_match_results
         0x0068: gameservice_server_0068_pangya_shop_purchase_response
-        0x006b: gameservice_server_006b_equipment_response
+        0x006b: gameservice_server_006b_equipment_update_response
         0x006c: gameservice_server_006c_tournament_user_finish
         0x006d: gameservice_server_006d_tournament_user_update
         0x006e: gameservice_server_006e_unknown_tourney_related_announce
@@ -192,6 +204,7 @@ seq:
         0x00a7: gameservice_server_00a7_lootbox_inventory_update
         0x00aa: gameservice_server_00aa_inventory_slot_assign
         0x00c4: gameservice_server_00c4_user_lounge_action_announce
+        0x00c7: gameservice_server_00c7_time_booster_announce
         0x00c8: gameservice_server_00c8_pang_balance
         0x00c9: gameservice_server_00c9_notice_data
         0x00cc: gameservice_server_00cc_shot_resync_collectables
@@ -208,8 +221,10 @@ seq:
         0x00fb: gameservice_server_00fb_unknown_black_papel_related
         0x010b: gameservice_server_010b_rare_shop_open_response
         0x010c: gameservice_server_010e_unknown_opponent_related_response
+        0x012a: gameservice_server_012a_tiki_report_use_response
         0x012b: gameservice_server_012b_inventory_open_a_response
         0x012d: gameservice_server_012d_my_room_layout
+        0x012e: gameservice_server_012e_custom_asset_response
         0x012f: gameservice_server_012f_room_invite_send_response
         0x0130: gameservice_server_0130_room_invite_send_response
         0x0131: gameservice_server_0131_unknown
@@ -219,15 +234,15 @@ seq:
         0x0138: gameservice_server_0138_user_cardholic_inventory
         0x0139: gameservice_server_0139_locker_item_deposit_response_a
         0x0154: gameservice_server_0154_cardholic_pack_open_response
-        0x0156: gameservice_server_0156_user_information_consumables
-        0x0157: gameservice_server_0157_unknown_user_related_response
-        0x0158: gameservice_server_0158_unknown_user_related_response
-        0x0159: gameservice_server_0159_unknown_user_related_response
+        0x0156: gameservice_server_0156_user_equipment_response
+        0x0157: gameservice_server_0157_user_name_response
+        0x0158: gameservice_server_0158_user_statistics_response
+        0x0159: gameservice_server_0159_user_trophies_response
         0x015a: gameservice_server_015a_unknown_user_related_response
         0x015b: gameservice_server_015b_unknown_user_related_response
-        0x015c: gameservice_server_015c_user_information_course_records
-        0x015d: gameservice_server_015d_user_information_guild
-        0x015e: gameservice_server_015e_user_information_character
+        0x015c: gameservice_server_015c_user_course_records_response
+        0x015d: gameservice_server_015d_user_guild_response
+        0x015e: gameservice_server_015e_user_character_response
         0x0168: gameservice_server_0168_user_information
         0x016c: gameservice_server_016c_locker_combination_response
         0x016d: gameservice_server_016d_locker_page_response
@@ -272,9 +287,14 @@ seq:
         0x0251: gameservice_server_0251_event_mode_leave_response
         0x0253: gameservice_server_0253_event_room_join_response
         0x0254: gameservice_server_0254_event_room_leave_response
-        0x0257: gameservice_server_0257_unknown_user_related_response
+        0x0257: gameservice_server_0257_user_gp_trophy_response
         0x0264: gameservice_server_0264_memorial_coin_result
         0x026a: gameservice_server_026a_shot_assist_toggle_response
         0x026b: gameservice_server_026b_shot_assist_activate_response
+        0x026c: gameservice_server_026c_big_black_papel_result
+        0x026e: gameservice_server_026e_character_mastery_slot_unlock_response
+        0x026f: gameservice_server_026f_character_mastery_upgrade_response
+        0x0270: gameservice_server_0270_character_mastery_downgrade_response
+        0x0271: gameservice_server_0271_character_mastery_card_apply_response
         0x0274: gameservice_server_0274_tiki_shop_item_recycle_response
         0x027d: gameservice_server_027d_unknown_cookies_related_response

@@ -12,8 +12,10 @@ meta:
 doc: |
   This packet details some particulars of the room currently joined.
   
-  It is one of the responses to [GameService Client 0x0009 Join Room](/packets/gameservice/client/0009.ksy),
-  and periodically thereafter as changes occur with [GameService Client 0x000A Room Settings Change](/packets/gameservice/client/000a.ksy).
+  It is part of the response to:
+  * [GameService Client 0x0009 Join Room](/packets/gameservice/client/0009.ksy),
+  * [GameService Client 0x000A Room Settings Change](/packets/gameservice/client/000a.ksy) (originating from the room host), and
+  * [Event - Tournament / Match End](/events/match_end.md)
 
 seq:
   - id: unknown_a

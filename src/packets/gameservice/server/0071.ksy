@@ -8,6 +8,7 @@ meta:
   endian: le
   imports:
     - ../../common/pstring
+    - ../../common/user_caddie_data
 
 doc: |
   This packet contains the caddie roster for the user.
@@ -22,26 +23,6 @@ seq:
     type: u2
     doc: Unconfirmed. May be count or max.
   - id: caddies
-    type: caddie
+    type: user_caddie_data
     repeat: expr
     repeat-expr: caddie_count_b
-
-types:
-  caddie:
-    seq:
-      - id: roster_slot_caddie
-        type: u4
-      - id: item_id_caddie
-        type: u4
-        doc: From pangya_xx.iff/Caddie.iff
-      - id: unknown_a
-        size: 4
-        doc: All 0x00.
-      - id: unknown_b
-        type: u1
-      - id: unknown_c
-        type: u4
-        doc: Increments over gameplay. Might be some sort of XP amount?
-      - id: unknown_d
-        size: 8
-        doc: All 0x00.

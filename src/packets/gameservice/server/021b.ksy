@@ -12,19 +12,32 @@ meta:
 doc: |
   This packet contains the results of a Black Papel play.
   
-  This packet is part of the response to [GameService Client 0x014B Black Papel Play](/packets/gameservice/client/014b.ksy).
+  Structurally, it is identical to the results of a Big Black Papel play.
+  
+  This packet is a response to:
+  * [GameService Client 0x014B Black Papel Play](/packets/gameservice/client/014b.ksy).
+  
+  **See Also:**
+  * [GameService Server 0x022c Big Black Papel Result](/packets/gameservice/server/026c.ksy).
 
 seq:
-  - id: unknown_a
-    size: 8
+  - id: unknown_gss021b_a
+    size: 4
+  - id: inventory_slot_ticket
+    type: u4
+    doc: Unconfirmed. Inventory slot for Black Papel tickets?
   - id: item_count
     type: u4
   - id: items
     type: item
     repeat: expr
     repeat-expr: item_count
-  - id: unknown_d
-    size: 16
+  - id: pang_balance
+    type: u4
+    doc: New pang balance after play.
+  - id: unknown_gss021b_b
+    size: 12
+    doc: All 0x00?
 
 types:
   item:
@@ -34,6 +47,7 @@ types:
         enum: ball_colour
       - id: item_id
         type: u4
+        doc: From pangya_xx.iff/Item.iff, Part.iff, etc.
       - id: inventory_slot
         type: u4
         doc: If new/no slot assigned yet, 0 (0x00000000).

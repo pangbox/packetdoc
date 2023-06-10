@@ -12,8 +12,11 @@ meta:
 doc: |
   This packet signals the user leaving a room and returning to the multiplayer lobby.
   
-  The response is [GameService Server 0x004C Room Leave Response](/packets/gameservice/server/004c.ksy);
-  however, in lounges, this will also trigger, for all other users in the lounge, a [GameService Server 0x00C4 Player Lounge Action, type 0x08 Departure](/packets/gameservice/server/00c4.ksy).
+  The response is:
+  * [GameService Server 0x004C Room Leave Response](/packets/gameservice/server/004c.ksy);
+  
+  However, in lounges, this will *also* trigger, for all other users in the lounge, a response of:
+  * [GameService Server 0x00C4 Player Lounge Action, subtype 0x08 Departure](/packets/gameservice/server/00c4.ksy).
   
   **Aliases:**
   * `hsreina/pangya-server`: `PLAYER_LEAVE_GAME`

@@ -11,17 +11,12 @@ doc: |
   Oft-recurring format for communicating a user's in-game statistics to clients, including:
   * [GameService Server 0x004B User Equipment Change Announce](/packets/gameservice/server/004b.ksy)
   * [GameService Server 0x0071 User Caddie Roster](/packets/gameservice/server/0071.ksy)
+  * [GameService Server 0x0076 Room User Data](/packets/gameservice/server/0076.ksy)
   
   If no caddie is specified (`roster_slot_caddie` and `item_id_caddie` are both 0), the remaining fields may contain garbage data.
   
   **See Also**:
-  * [User Caddie Data](/packets/common/user_caddie_data.ksy)
-  * [User Character Data](/packets/common/user_character_data.ksy)
-  * [User Course Record Data](/packets/common/user_course_record_data.ksy)
-  * [User Course Result Data](/packets/common/user_course_result_data.ksy)
-  * [User Equipment Data](/packets/common/user_equipment_data.ksy)
-  * [User Name Data](/packets/common/user_name_data.ksy)
-  * [User Statistic Data](/packets/common/user_statistic_data.ksy)
+  * [Common Data Structures](/packets/common/index.md)
 
 seq:
   - id: roster_slot_caddie

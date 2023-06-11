@@ -10,16 +10,11 @@ meta:
 doc: |
   Oft-recurring format for communicating a user's display name and guild to clients, including:
   * [Gameservice Server 0x0044 Unknown](/packets/gameservice/server/0044.ksy)
+  * [GameService Server 0x0076 Room User Data](/packets/gameservice/server/0076.ksy)
   * [Gameservice Server 0x0157 User Name Response](/packets/gameservice/server/0157.ksy)
 
   **See Also**:
-  * [User Caddie Data](/packets/common/user_caddie_data.ksy)
-  * [User Character Data](/packets/common/user_character_data.ksy)
-  * [User Course Record Data](/packets/common/user_course_record_data.ksy)
-  * [User Course Result Data](/packets/common/user_course_result_data.ksy)
-  * [User Equipment Data](/packets/common/user_equipment_data.ksy)
-  * [User Name Data](/packets/common/user_name_data.ksy)
-  * [User Statistic Data](/packets/common/user_statistic_data.ksy)
+  * [Common Data Structures](/packets/common/index.md)
 
 seq:
   - id: room_id

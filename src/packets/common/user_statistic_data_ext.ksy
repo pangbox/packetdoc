@@ -11,7 +11,7 @@ doc: |
   Additional data that comes after some instances of `user_statistic_data`.
   
   **See Also**:
-  * [User Statistic Data](/packets/common/user_statistic_data.ksy)
+  * [Common Data Structures](/packets/common/index.md)
 
 seq:
   - id: unknown_user_statistic_data_ak

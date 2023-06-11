@@ -39,6 +39,7 @@ meta:
     - '0071'
     - '0072'
     - '0073'
+    - '0076'
     - '0078'
     - '007d'
     - '0083'
@@ -191,6 +192,7 @@ seq:
         0x0071: gameservice_server_0071_user_caddie_roster
         0x0072: gameservice_server_0072_user_equipment
         0x0073: gameservice_server_0073_user_inventory
+        0x0076: gameservice_server_0076_room_user_data
         0x0078: gameservice_server_0078_room_user_ready_state_response
         0x007d: gameservice_server_007d_user_team_change_announce
         0x0083: gameservice_server_0083_room_invite

@@ -32,8 +32,8 @@ seq:
         equipment_update_type::comet: equipment_response_03_comet
         equipment_update_type::decoration: equipment_response_04_decoration
         equipment_update_type::character: equipment_response_05_character
-        equipment_update_type::unknown_08: equipment_response_08_unknown
-        equipment_update_type::unknown_09: equipment_response_09_unknown
+        equipment_update_type::gsc0020_08_unknown: equipment_response_08_unknown
+        equipment_update_type::gsc0020_09_unknown: equipment_response_09_unknown
 
 types:
   equipment_response_01_caddie:

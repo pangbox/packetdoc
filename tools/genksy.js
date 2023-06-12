@@ -23,7 +23,7 @@ function importToFullPath(imp) {
 kaitaiImporter = {
   importYaml: name => {
     var importKsyYaml = fs.readFileSync(importToFullPath(name));
-    var importKsy = yaml.safeLoad(importKsyYaml);
+    var importKsy = yaml.load(importKsyYaml);
     return Promise.resolve(importKsy);
   }
 };

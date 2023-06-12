@@ -77,8 +77,8 @@ types:
 
 enums:
   action_type:
-    0x00: unknown_type00
-    0x04: position_initial
-    0x06: position_update
+    0x00: rotation_unknown
+    0x04: position_absolute
+    0x06: position_relative
     0x07: emote
     0x08: departure

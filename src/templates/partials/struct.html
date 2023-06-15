@@ -27,9 +27,9 @@
             <tr>
                 <td><code class="nowrap">{{ field.id }}</code></td>
                 {% if field.struct %}
-                <td><code class="nowrap">{% include 'partials/type_link.html' with type: field.struct %}</code></td>
+                <td><code class="nowrap">{% include 'partials/type_link.html' with type: field.struct -%}{%- if field.repeat == "expr" %}[{{ field.repeatExpr }}]{% endif %}</code></td>
                 {% else %}
-                <td><code class="nowrap">{{ field.type | default: "bytes" }}</code></td>
+                <td><code class="nowrap">{{ field.type | default: "bytes" }}{% if field.size %}[{{ field.size }}]{% endif %}</code></td>
                 {% endif %}
                 <td>{{ field.doc | default: "" }}</td>
             </tr>

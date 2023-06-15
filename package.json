@@ -6,6 +6,7 @@
   "author": "John Chadwick <johnwchadwick@gmail.com>",
   "license": "ISC",
   "dependencies": {
+    "highlight.js": "^11.8.0",
     "js-yaml": "^4.1.0",
     "kaitai-struct-compiler": "^0.10.0",
     "parcel-bundler": "^1.12.5",

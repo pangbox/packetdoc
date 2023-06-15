@@ -17,4 +17,4 @@ doc: |
   **See Also**: [Game Server 0x00fc Message Server List](/packets/gameservice/server/00fc.ksy)
   
   This Packet has no payload.
-  
+

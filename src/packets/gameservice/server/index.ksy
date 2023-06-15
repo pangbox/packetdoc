@@ -68,6 +68,7 @@ meta:
     - '00f6'
     - '00fa'
     - '00fb'
+    - '00fc'
     - '010b'
     - '010e'
     - '012a'
@@ -221,6 +222,7 @@ seq:
         0x00f6: gameservice_server_00f6_multiplayer_mode_leave_response
         0x00fa: gameservice_server_00fa_room_bonus_collectables_result
         0x00fb: gameservice_server_00fb_unknown_black_papel_related
+        0x00fc: gameservice_server_00fc_message_server_list
         0x010b: gameservice_server_010b_rare_shop_open_response
         0x010c: gameservice_server_010e_unknown_opponent_related_response
         0x012a: gameservice_server_012a_tiki_report_use_response

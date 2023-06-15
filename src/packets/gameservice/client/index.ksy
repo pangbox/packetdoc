@@ -53,6 +53,7 @@ meta:
     - '0082'
     - '0083'
     - '0088'
+    - '008b'
     - '0098'
     - '009c'
     - '00a2'
@@ -163,6 +164,7 @@ seq:
         0x0082: gameservice_client_0082_multiplayer_mode_leave
         0x0083: gameservice_client_0083_sub_server_connect_multiplayer_mode
         0x0088: gameservice_client_0088_authentication_keepalive_response
+        0x008b: gameservice_client_008b_request_message_server_list
         0x0098: gameservice_client_0098_rare_shop_open
         0x009c: gameservice_client_009c_unknown_opponent_related_request
         0x00a2: gameservice_client_00a2_unknown_cookies_related

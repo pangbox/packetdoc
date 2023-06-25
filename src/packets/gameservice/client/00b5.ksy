@@ -10,11 +10,9 @@ meta:
     - ../../common/pstring
 
 doc: |
-  This packet is one of two that signals the user has opened the inventory screen.
-  
-  Given that the user ID appears twice, it might be that this packet might also be used by administration to
-  open another user's inventory (one field might be for the local user ID for a permissions check, and the other for the target user ID).
-  This is entirely hypothetical, however.
+  This packet is one of two that signals the user has opened my room.
+
+  In newer seasons, you can't enter another user's room, so the `room_user_id` will always be the same as the `user_id`.
   
   The response is [GameService Server 0x012B Inventory Open A Response](/packets/gameservice/server/012b.ksy).
   
@@ -25,9 +23,9 @@ doc: |
   * `eantoniobr/UGPangya`: `PLAYER_ENTER_ROOM`
 
 seq:
-  - id: user_id_a
+  - id: user_id
     type: u4
     doc: User's ID
-  - id: user_id_b
+  - id: room_user_id
     type: u4
-    doc: User's ID (duplicate?)
+    doc: ID of user whose room is being entered

@@ -231,7 +231,7 @@ seq:
         0x012e: gameservice_server_012e_custom_asset_response
         0x012f: gameservice_server_012f_room_invite_send_response
         0x0130: gameservice_server_0130_room_invite_send_response
-        0x0131: gameservice_server_0131_unknown
+        0x0131: gameservice_server_treasure_hunter_info
         0x0132: gameservice_server_0132_treasure_point_status
         0x0133: gameservice_server_0133_treasure_point_result
         0x0134: gameservice_server_0134_treasure_point_winnings

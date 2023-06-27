@@ -2,15 +2,15 @@
 #pragma.parseAs GameserviceServerPacket
 ---
 meta:
-  id: gameservice_server_0131_unknown
-  title: GameService Server 0131 Unknown
+  id: gameservice_server_treasure_hunter_info
+  title: GameService Server Treasure Hunter Info
   encoding: ASCII
   endian: le
   imports:
     - ../../common/pstring
 
 doc: |
-  This packet has unknown meaning.
+  This packet contains the treasure hunter bar value for all courses visible while selecting the course.
   
   This is a response to [Gameservice Client 0x0002 Hello / Login](/packets/gameservice/client/0002.ksy),
   but it also apparently sent automatically at the top of the hour.
@@ -20,7 +20,6 @@ seq:
     type: u1
   - id: entry_count
     type: u1
-    doc: Only 21 (0x15) witnessed.
   - id: entries
     type: entry
     repeat: expr
@@ -29,9 +28,9 @@ seq:
 types:
   entry:
     seq:
-      - id: entry_index
+      - id: course_id
         type: u1
-        doc: Increments from 0x00 to (entry_count - 1)
+        doc: The course_id
       - id: entry_value
         type: u4
-        doc: All seen values multiples of 10, in no particular order.
+        doc: The treasure hunter value, based on some empirical tests the minimum value to display anything is 720 and the maximum is 1000.

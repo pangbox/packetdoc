@@ -15,8 +15,9 @@ doc: |
   This is one of the responses to [GameService Client 0x0151 Quest Status Request](/packets/gameservice/client/0151.ksy).
 
 seq:
-  - id: unknown_a
-    size: 4
+  - id: status_code
+    type: u4
+    doc: If non-zero, contains an error code. The remainder of the packet is discarded.
   - id: quest_expiry_unix_time
     type: u4
     doc: Timestamp of (presumably) when the active quests will expire.
